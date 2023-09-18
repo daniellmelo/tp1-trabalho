@@ -1,0 +1,11 @@
+#include "Quadro."
+
+Quadro::Quadro()
+{
+    //ctor
+}
+
+Quadro::~Quadro()
+{
+    //dtor
+}

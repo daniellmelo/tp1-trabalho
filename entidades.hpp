@@ -24,15 +24,16 @@ public:
 
 class Quadro {
     private:
-        int codigo;
         string nome;
         string descricao;
+        int codigo;
         int limite;
+
     public:
-        int getCodigo();
-        string getNome();
-        string getDescricao();
-        int getLimite();
+        string getNome() const;
+        string getDescricao() const;
+        int getCodigo() const;
+        int getLimite() const;
 
         void setCodigo(int novoCodigo);
         void setNome(string novoNome);

@@ -1,0 +1,16 @@
+#ifndef QUADRO_
+#define QUADRO_
+
+
+class Quadro
+{
+    public:
+        Quadro();
+        virtual ~Quadro();
+
+    protected:
+
+    private:
+};
+
+#endif // QUADRO_
