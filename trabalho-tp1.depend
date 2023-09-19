@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1695069936 source:c:\users\danie\unb_local\trabalho-tp1\dominios.cpp
+
+1695090294 source:c:\users\danie\unb_local\trabalho-tp1\main.cpp
+	<iostream>
+	"../dominios.hpp"
+
+1695089029 c:\users\danie\unb_local\trabalho-tp1\dominios.hpp
+	"../entidades.hpp"
+
+1695090211 c:\users\danie\unb_local\trabalho-tp1\entidades.hpp
+	<string>
+
+1695089546 source:c:\users\danie\unb_local\trabalho-tp1\src\quadro.cpp
+	"../dominios.hpp"
+	<iostream>
+

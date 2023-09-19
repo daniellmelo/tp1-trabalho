@@ -37,9 +37,8 @@
 		<Unit filename="dominios.cpp" />
 		<Unit filename="dominios.hpp" />
 		<Unit filename="entidades.hpp" />
-		<Unit filename="include/Quadro" />
 		<Unit filename="main.cpp" />
-		<Unit filename="src/Quadro" />
+		<Unit filename="src/Quadro.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

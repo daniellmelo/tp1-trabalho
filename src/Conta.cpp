@@ -1,0 +1,30 @@
+#include "../dominios.hpp"
+
+Conta::Conta(string email, string nome, string senha): email(email), nome(nome), senha(senha)
+{
+
+}
+string Conta::getEmail() const{
+    return email;
+};
+string Conta::getNome() const{
+    return nome;
+};
+string Conta::getSenha() const{
+    return senha;
+};
+
+void Conta::setEmail(string novoEmail){
+    email = novoEmail;
+
+}
+void Conta::setNome(string novoNome){
+    nome = novoNome;
+
+}
+void Conta::setSenha(string novoSenha){
+    senha = novoSenha;
+
+}
+
+

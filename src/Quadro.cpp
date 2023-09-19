@@ -1,32 +1,44 @@
-#include "dominios.hpp"
+#include "../dominios.hpp"
+#include <iostream>
 #pragma once
 
-Quadro::Quadro() // todo set init with right members
+Quadro::Quadro(int codigo, string nome, string descricao, int limite): codigo(codigo), nome(nome), descricao(descricao), limite(limite) // todo set init with right members
 {
-    //.
+   std::cout << "Quadro criado" << std::endl; //.
 };
 
-Quadro::~Quadro()
+/*Quadro::~Quadro()
 {
     //.
-};
+};*/
 
-
+// getters
 int Quadro::getCodigo() const{
-    return Quadro.codigo;
+    return codigo;
 };
-
 std::string Quadro::getDescricao() const{
-    return Quadro.getDescricao;
+    return descricao;
 };
-
-
-int Quadro::getLimite()const{
-    return Quadro.getLimite;
+int Quadro::getLimite() const{
+    return limite;
 };
-
-std::string Quadro::nome() const{
-    return Quadro.nome;
+std::string Quadro::getNome() const{
+    return nome;
 }
 
+
+//setters
+void Quadro::setCodigo(int novoCodigo){
+    codigo = novoCodigo;
+
+}
+void Quadro::setNome(string novoNome){
+    nome = novoNome;
+}
+void Quadro::setDescricao(string novoDescricao){
+    descricao = novoDescricao;
+}
+void Quadro::setLimite(int novoLimite){
+    limite = novoLimite;
+}
 
