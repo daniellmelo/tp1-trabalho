@@ -5,7 +5,7 @@
 
 using namespace std;
 
-class Quadro { //domain
+class Quadro { // 222035625
     private:
         string nome;
         string descricao;
@@ -14,17 +14,15 @@ class Quadro { //domain
 
     public:
         Quadro(int codigo, string nome, string descricao, int limite);
-        string getNome() const;        //ok
-        string getDescricao() const;   //ok
-        int getCodigo() const;         //ok
-        int getLimite() const;         //ok
+        string getNome() const;
+        string getDescricao() const;
+        int getCodigo() const;
+        int getLimite() const;
 
-        void setCodigo(int novoCodigo);         //ok
-        void setNome(string novoNome);          //ok
-        void setDescricao(string novoDescricao);//ok
-        void setLimite(int novoLimite);         //ok
+        void setCodigo(int novoCodigo);
+        void setNome(string novoNome);
+        void setDescricao(string novoDescricao);
+        void setLimite(int novoLimite);
 };
-
-
 
 #endif // QUADRO_HPP_INCLUDED
