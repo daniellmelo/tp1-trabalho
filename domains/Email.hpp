@@ -1,12 +1,16 @@
 #ifndef EMAIL_HPP_INCLUDED
 #define EMAIL_HPP_INCLUDED
-class Email {
+
+#include "Validador.hpp"
+#include <string>
+
+class Email : virtual public Validador{
     private:
-        string value;
-        void validar(string);
+        std::string value;
+        bool validar(std::string);
     public:
-        void setEmail(string);
-        string getEmail();
+        void setEmail(std::string);
+        std::string getEmail();
 };
 
 

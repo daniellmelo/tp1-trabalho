@@ -1,13 +1,16 @@
 #ifndef LIMITE_HPP_INCLUDED
 #define LIMITE_HPP_INCLUDED
 
-class Limite {
+#include "Validador.hpp"
+
+
+class Limite : virtual public Validador{
     private:
         int limite;
-        void validar(int);
+        bool validar(std::string);
     public:
-        void setLimite(string);
-        string getLimite();
+        void setLimite(std::string);
+        std::string getLimite();
 };
 
 

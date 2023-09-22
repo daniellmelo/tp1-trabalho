@@ -1,14 +1,16 @@
 #ifndef COLUNA_HPP_INCLUDED
 #define COLUNA_HPP_INCLUDED
 
+#include "Validador.hpp"
+
 
 class Coluna : virtual public Validador {
     private:
-        string coluna;
-        void validar(string);
+        std::string coluna;
+        bool validar(std::string);
     public:
-        void setColuna(string);
-        string getColuna();
+        void setColuna(std::string);
+        std::string getColuna();
 };
 
 
