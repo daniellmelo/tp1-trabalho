@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Quadro.hpp"
 #include "Conta.hpp"
+#include "domains/Codigo.hpp"
 using namespace std;
 
 int main()
@@ -45,6 +46,16 @@ int main()
     cout << c1.getNome() << endl;
     cout << c1.getDescricao() << endl;
     cout << c1.getColuna() << endl;*/
+
+    // criação de dominio
+
+        cout << "-----------" << endl;
+
+        Codigo mycod("TT67"); //true
+        Codigo myCOD("TT6Y"); //false
+        cout << mycod.getCodigo() << endl;
+        mycod.setCodigo("JJ65");
+        cout << mycod.getCodigo() << endl;
 
 
 
