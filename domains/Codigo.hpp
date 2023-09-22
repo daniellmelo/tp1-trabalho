@@ -1,9 +1,23 @@
 #ifndef CODIGO_HPP_INCLUDED
 #define CODIGO_HPP_INCLUDED
-class Codigo {
 
+#include "Validador.hpp"
+#include <iostream>
+#include <string>
+
+
+class Codigo : virtual public Validador{ //222035625
+    public:
+        Codigo(std::string);
+    private:
+        std::string m_codigo;
+
+    public:
+        std::string getCodigo();
+        void setCodigo(std::string novoCodigo);
+
+    private:
+        bool validar(std::string codigo);
 };
-
-
 
 #endif // CODIGO_HPP_INCLUDED
