@@ -1,6 +1,6 @@
 #include "../Conta.hpp"
 
-Conta::Conta(string email, string nome, string senha): email(email), nome(nome), senha(senha)
+Conta::Conta(string email, string nome, string senha): email(email), nome(nome), senha(senha) // todo alterar tipo dos valores dos param
 {
 
 }
