@@ -1,25 +1,8 @@
-#include "../entidades.hpp"
+#include <iostream>
+#include <cctype>
 
-class Email {
+using namespace std;
 
-};
 
-class Texto {
 
-};
 
-class Senha {
-
-};
-
-class Codigo {
-
-};
-
-class Limite {
-
-};
-
-class Coluna {
-
-};
