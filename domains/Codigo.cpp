@@ -1,4 +1,5 @@
 #include "Codigo.hpp"
+#include <iostream>
 
 Codigo::Codigo(std::string codigo): m_codigo(codigo){
     std::cout << validar(m_codigo) << std::endl;
