@@ -1,21 +1,35 @@
 #include <iostream>
+
 #include "Quadro.hpp"
 #include "Conta.hpp"
 #include "domains/Senha.hpp"
 #include "domains/Codigo.hpp"
 #include "domains/Texto.hpp"
+
 using namespace std;
 
 int main()
 {
-
-
-        //t1.getTexto()
     //Criacao de Conta
-    Conta c1("email@email.com", "Minha conta", "minha_senha");
-    cout << c1.getEmail() << endl;
-    c1.setEmail("novo@email.com");
-    cout << c1.getEmail() << endl;
+        cout << "---- Criando conta..." << endl;
+        Conta c1(string("a.b@example.com"), string("Joao da Silva Jr"), string("xH?1nFm"));
+
+        cout << "NOME: " << c1.getNome() << endl;
+        cout << "EMAIL: " << c1.getEmail() << endl;
+        cout << "SENHA: " << c1.getSenha() << endl;
+
+        cout << "---- Alterando dados da conta..." << endl;
+        c1.setNome("Daniel Melo");
+        c1.setEmail("12345@domain1.com");
+        c1.setSenha("K3sS,Lx");
+
+        cout << "NOME: " << c1.getNome() << endl;
+        cout << "EMAIL: " << c1.getEmail() << endl;
+        cout << "SENHA: " << c1.getSenha() << endl;
+
+
+    //c1.setEmail("novo@email.com");
+    /*cout << c1.getEmail() << endl;
     cout << "-----------" << endl;
     cout << c1.getNome() << endl;
     c1.setNome("Novo nome");
@@ -24,8 +38,8 @@ int main()
     cout << c1.getSenha() << endl;
     c1.setSenha("nova senha");
     cout << c1.getSenha() << endl;
-    cout << "-=-=-=-=-=-=-=-=-=-=-=-" << endl;
-
+    cout << "-=-=-=-=-=-=-=-=-=-=-=-" << endl;*/
+/*
 
     // Criação de quadro
     Quadro q1(5, "Meu quadro", "Minha descricao", 3);
@@ -44,7 +58,7 @@ int main()
     cout << q1.getLimite() << endl;
     q1.setLimite(4);
     cout << q1.getLimite() << endl;
-
+*/
     // Criação de carta
 /*    Carta c1(5, "Minha carta", "Minha descricao", 3);
     cout << c1.getCodigo() << endl;
@@ -55,7 +69,7 @@ int main()
     // criação de dominio
         // código
 
-        cout << "-----------" << endl;
+ /*       cout << "-----------" << endl;
 
         Codigo mycod("TT67"); //true
         Codigo myCOD("TT6Y"); //false
@@ -81,7 +95,7 @@ int main()
         Texto t1;
         t1.setTexto("Aaaaaaaaa");
 
-
+*/
 
     return 0;
 }
