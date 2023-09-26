@@ -6,30 +6,30 @@ Quadro::Quadro(Codigo codigo, Texto nome, Texto descricao, Limite limite):
 
 // getters
 std::string Quadro::getCodigo() const{
-    return codigo.getCodigo();
+    return m_codigo.getCodigo();
 };
 std::string Quadro::getDescricao() const{
-    return descricao.getTexto();
+    return m_descricao.getTexto();
 };
 std::string Quadro::getLimite() const{
-    return limite.getLimite();
+    return m_limite.getLimite();
 };
 std::string Quadro::getNome() const{
-    return nome.getTexto();
+    return m_nome.getTexto();
 }
 
 
 //setters
 void Quadro::setCodigo(std::string novoCodigo){
-    codigo.setCodigo(novoCodigo);
+    m_codigo.setCodigo(novoCodigo);
 
 }
 void Quadro::setNome(std::string novoNome){
-    nome.setTexto(novoNome);
+    m_nome.setTexto(novoNome);
 }
 void Quadro::setDescricao(std::string novoDescricao){
-    descricao.setTexto(novoDescricao);
+    m_descricao.setTexto(novoDescricao);
 }
 void Quadro::setLimite(std::string novoLimite){
-    limite.setLimite(novoLimite);
+    m_limite.setLimite(novoLimite);
 }
