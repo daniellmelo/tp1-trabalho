@@ -5,7 +5,7 @@
 
 using namespace std;
 
-class Cartao {//domain
+class Cartao {
     private:
         int codigo;
         string nome;
