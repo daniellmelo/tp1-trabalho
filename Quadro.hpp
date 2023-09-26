@@ -1,28 +1,28 @@
-#ifndef QUADRO_HPP_INCLUDED
-#define QUADRO_HPP_INCLUDED
+#pragma once
 
 #include <string>
+#include "domains/Texto.hpp"
+#include "domains/Codigo.hpp"
+#include "domains/Limite.hpp"
 
-using namespace std;
 
 class Quadro { // 222035625
     private:
-        string nome;
-        string descricao;
-        int codigo;
-        int limite;
+        Texto  m_nome;
+        Texto  m_descricao;
+        Codigo m_codigo;
+        Limite m_limite;
 
     public:
-        Quadro(int codigo, string nome, string descricao, int limite);
-        string getNome() const;
-        string getDescricao() const;
-        int getCodigo() const;
-        int getLimite() const;
+        Quadro(Codigo codigo, Texto nome, Texto descricao, Limite limite);
+        std::string getNome() const;
+        std::string getDescricao() const;
+        std::string getCodigo() const;
+        std::string getLimite() const;
 
-        void setCodigo(int novoCodigo);
-        void setNome(string novoNome);
-        void setDescricao(string novoDescricao);
-        void setLimite(int novoLimite);
+        void setCodigo(std::string novoCodigo); // configurar para converter o int em string
+        void setNome(std::string novoNome);
+        void setDescricao(std::string novoDescricao);
+        void setLimite(std::string novoLimite);// configurar para converter o int em string
 };
 
-#endif // QUADRO_HPP_INCLUDED

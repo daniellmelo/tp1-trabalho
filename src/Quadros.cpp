@@ -1,43 +1,35 @@
 #include "../Quadro.hpp"
-#include <iostream>
-#pragma once
 
-Quadro::Quadro(int codigo, string nome, string descricao, int limite): codigo(codigo), nome(nome), descricao(descricao), limite(limite) // todo set init with right members
-{
-   std::cout << "Quadro criado" << std::endl; //.
+Quadro::Quadro(Codigo codigo, Texto nome, Texto descricao, Limite limite):
+    m_codigo(codigo), m_nome(nome), m_descricao(descricao), m_limite(limite){
 };
-
-/*Quadro::~Quadro()
-{
-    //.
-};*/
 
 // getters
-int Quadro::getCodigo() const{
-    return codigo;
+std::string Quadro::getCodigo() const{
+    return codigo.getCodigo();
 };
 std::string Quadro::getDescricao() const{
-    return descricao;
+    return descricao.getTexto();
 };
-int Quadro::getLimite() const{
-    return limite;
+std::string Quadro::getLimite() const{
+    return limite.getLimite();
 };
 std::string Quadro::getNome() const{
-    return nome;
+    return nome.getTexto();
 }
 
 
 //setters
-void Quadro::setCodigo(int novoCodigo){
-    codigo = novoCodigo;
+void Quadro::setCodigo(std::string novoCodigo){
+    codigo.setCodigo(novoCodigo);
 
 }
-void Quadro::setNome(string novoNome){
-    nome = novoNome;
+void Quadro::setNome(std::string novoNome){
+    nome.setTexto(novoNome);
 }
-void Quadro::setDescricao(string novoDescricao){
-    descricao = novoDescricao;
+void Quadro::setDescricao(std::string novoDescricao){
+    descricao.setTexto(novoDescricao);
 }
-void Quadro::setLimite(int novoLimite){
-    limite = novoLimite;
+void Quadro::setLimite(std::string novoLimite){
+    limite.setLimite(novoLimite);
 }
