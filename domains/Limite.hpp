@@ -4,13 +4,13 @@
 #include "Validador.hpp"
 
 
-class Limite : virtual public Validador{
+class Limite{
     private:
-        int limite;
-        bool validar(std::string);
+        std::string m_limite;
+        void validar(std::string limite);
     public:
-        void setLimite(std::string);
-        std::string getLimite();
+        void setLimite(std::string novoLimite);
+        std::string getLimite() const;
 };
 
 

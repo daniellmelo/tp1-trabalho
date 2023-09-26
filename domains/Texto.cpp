@@ -1,16 +1,26 @@
 
 #include "Texto.hpp"
+#include <iostream>
+Texto::Texto(std::string texto){
+    try{
+        validar(texto);
+        m_texto = texto;
+        std::cout << "Nome valido" << std::endl;
+    } catch (std::invalid_argument& e){
+        std::cout << e.what() << std::endl;
+    };
+};
 
 
-bool Texto::validar(std::string texto){
+void Texto::validar(std::string texto){
     // Verificar se o texto tem entre 5 e 30 caracteres
     if (texto.size() < 5 || texto.size() > 30) {
-        return false;
+        throw std::invalid_argument("Deve conter entre 5 a 30 caracteres.");
     }
 
     // Verificar se cada caractere é letra, dígito, sinal de pontuação ou espaço em branco
     if (!std::regex_match(texto, std::regex("^[A-Za-z0-9.,;?! ]+$"))) {
-        return false;
+        throw std::invalid_argument("Somente e permitido caracteres letra, digito, sinais de pontuacao e espacos em branco.");
     }
 
     char prevChar = '\0'; // Caractere anterior (inicializado com um caractere nulo)
@@ -20,23 +30,23 @@ bool Texto::validar(std::string texto){
     for (char c : texto) {
         // Verificar se não há acentuação (assumindo que a entrada está em ASCII)
         if (c < 0 || c > 127) {
-            return false;
+            throw std::invalid_argument("Nao deve conter acentuacao.");
         }
 
         // Verificar se o primeiro caractere é letra maiúscula
         if (!std::isalpha(texto[0]) || !std::isupper(texto[0])) {
-            return false;
+            throw std::invalid_argument("O primeiro caractere deve ser letra maiuscula.");
         }
 
         // Verificar se o primeiro caractere após sinal de pontuação (exceto vírgula ou ponto-e-vírgula) é letra maiúscula
         if (prevChar != ',' && prevChar != ';' && std::ispunct(prevChar) && !std::isupper(c)) {
-            return false;
+            throw std::invalid_argument("Primeiro caractere apos sinal de pontuacao (exceto virgula e ponto-e-virgula) deve ser maiusculo.");
         }
 
         // Verificar espaços em branco em sequência
         if (c == ' ') {
             if (prevSpace) {
-                return false;
+                throw std::invalid_argument("Nao pode haver espacos em branco em sequencia.");
             }
             prevSpace = true;
         } else {
@@ -46,32 +56,27 @@ bool Texto::validar(std::string texto){
         // Verificar sinais de pontuação em sequência
         if (std::ispunct(c)) {
             if (prevPunctuation) {
-                return false;
+                throw std::invalid_argument("Nao pode conter sinais de pontução em sequencia.");
             }
             prevPunctuation = true;
         } else {
             prevPunctuation = false;
         }
-
         prevChar = c;
     }
-
-    return true;
 };
 
 
-std::string Texto::getTexto(){
-
+std::string Texto::getTexto() const{
     return m_texto;
 };
 
 void Texto::setTexto(std::string novoTexto){
-
-    if (validar(novoTexto)){
+    try{
+        validar(novoTexto);
         m_texto = novoTexto;
-    } else {
-        throw std::invalid_argument("Texto inválido");
-
+    } catch (std::invalid_argument& e){
+        std::cout << e.what() << std::endl;
     }
 }
 

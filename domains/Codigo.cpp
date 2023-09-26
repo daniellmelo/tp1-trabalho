@@ -18,7 +18,7 @@ bool Codigo::validar(std::string codigo) {
 
 };
 
-std::string Codigo::getCodigo(){
+std::string Codigo::getCodigo() const{
     return m_codigo;
 };
 

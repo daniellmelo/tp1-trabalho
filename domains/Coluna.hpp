@@ -10,7 +10,7 @@ class Coluna : virtual public Validador {
         bool validar(std::string);
     public:
         void setColuna(std::string);
-        std::string getColuna();
+        std::string getColuna() const;
 };
 
 

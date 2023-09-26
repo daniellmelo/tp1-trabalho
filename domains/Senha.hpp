@@ -1,22 +1,16 @@
-#ifndef SENHA_HPP_INCLUDED
-#define SENHA_HPP_INCLUDED
+#pragma once
 
 #include "Validador.hpp"
 #include <string>
 
-class Senha : virtual private Validador { // 222035625
+class Senha{ // 222035625
+    public:
+        Senha(std::string senha);
     private:
         std::string m_senha;
-        bool validar(std::string senha);
-
     public:
         void setSenha(std::string novaSenha);
         std::string getSenha() const;
-
-
+    private:
+        void validar(std::string senha);
 };
-
-
-
-
-#endif // SENHA_HPP_INCLUDED

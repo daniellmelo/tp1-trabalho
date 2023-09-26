@@ -1,9 +1,7 @@
-#ifndef CODIGO_HPP_INCLUDED
-#define CODIGO_HPP_INCLUDED
+#pragma once
 
 #include "Validador.hpp"
 #include <string>
-
 
 class Codigo : virtual public Validador{ //222035625
     public:
@@ -12,11 +10,8 @@ class Codigo : virtual public Validador{ //222035625
         std::string m_codigo;
 
     public:
-        std::string getCodigo();
+        std::string getCodigo() const;
         void setCodigo(std::string novoCodigo);
-
     private:
         bool validar(std::string codigo);
 };
-
-#endif // CODIGO_HPP_INCLUDED

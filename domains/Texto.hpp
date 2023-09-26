@@ -1,18 +1,17 @@
-#ifndef TEXTO_HPP_INCLUDED
-#define TEXTO_HPP_INCLUDED
+#pragma once
 
 #include "Validador.hpp"
 
 #include <string>
 
-class Texto : virtual public Validador { //222035625
+class Texto { //222035625
+    public:
+        Texto(std::string texto);
     private:
         std::string m_texto;
-        bool validar(std::string texto);
     public:
-        std::string getTexto();
+        std::string getTexto() const;
         void setTexto(std::string novoTexto);
-
+    private:
+        void validar(std::string texto);
 };
-
-#endif // TEXTO_HPP_INCLUDED
