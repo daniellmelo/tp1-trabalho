@@ -1,28 +1,28 @@
 #include "../Conta.hpp"
 
-Conta::Conta(string email, string nome, string senha): email(email), nome(nome), senha(senha) // todo alterar tipo dos valores dos param
-{
+Conta::Conta(Email email, Texto nome, Senha senha):
+    m_email(email), m_nome(nome), m_senha(senha){ // todo alterar tipo dos valores dos param
 
 }
-string Conta::getEmail() const{
-    return email;
+std::string Conta::getEmail() const{
+    return m_email.getEmail();
 };
-string Conta::getNome() const{
-    return nome;
+std::string Conta::getNome() const{
+    return m_nome.getTexto();
 };
-string Conta::getSenha() const{
-    return senha;
+std::string Conta::getSenha() const{
+    return m_senha.getSenha();
 };
 
-void Conta::setEmail(string novoEmail){
-    email = novoEmail;
+void Conta::setEmail(std::string novoEmail){
+    m_email.setEmail(novoEmail);
 
-}
-void Conta::setNome(string novoNome){
-    nome = novoNome;
+};
+void Conta::setNome(std::string novoNome){
+    m_nome.setTexto(novoNome);
 
-}
-void Conta::setSenha(string novoSenha){
-    senha = novoSenha;
+};
+void Conta::setSenha(std::string novoSenha){
+    m_senha.setSenha(novoSenha);
 
-}
+};

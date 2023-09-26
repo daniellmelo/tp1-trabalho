@@ -1,26 +1,27 @@
-#ifndef CONTA_HPP_INCLUDED
-#define CONTA_HPP_INCLUDED
+#pragma once
 
 #include <string>
 
-using namespace std;
+#include "domains/Email.hpp"
+#include "domains/Senha.hpp"
+#include "domains/Texto.hpp"
 
 class Conta { // 222035625
-private:
-    string email;
-    string nome;
-    string senha;
+    public:
+        Conta(Email email, Texto nome, Senha senha);
 
-public:
-    Conta(string email, string nome, string senha);
-    string getEmail() const;
-    string getNome() const;
-    string getSenha() const;
+    private:
+        Email m_email;
+        Texto m_nome;
+        Senha m_senha;
 
-    void setEmail(string novoEmail);
-    void setNome(string novoNome);
-    void setSenha(string novoSenha);
+    public:
+
+        std::string getEmail() const;
+        std::string getNome() const;
+        std::string getSenha() const;
+
+        void setEmail(std::string novoEmail);
+        void setNome(std::string novoNome);
+        void setSenha(std::string novoSenha);
 };
-
-
-#endif // CONTA_HPP_INCLUDED
