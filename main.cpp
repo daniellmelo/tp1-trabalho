@@ -1,11 +1,16 @@
 #include <iostream>
 #include "Quadro.hpp"
 #include "Conta.hpp"
+#include "domains/Senha.hpp"
 #include "domains/Codigo.hpp"
+#include "domains/Texto.hpp"
 using namespace std;
 
 int main()
 {
+
+
+        //t1.getTexto()
     //Criacao de Conta
     Conta c1("email@email.com", "Minha conta", "minha_senha");
     cout << c1.getEmail() << endl;
@@ -48,6 +53,7 @@ int main()
     cout << c1.getColuna() << endl;*/
 
     // criação de dominio
+        // código
 
         cout << "-----------" << endl;
 
@@ -57,6 +63,23 @@ int main()
         mycod.setCodigo("JJ65");
         cout << mycod.getCodigo() << endl;
 
+
+    // criação de dominio
+        // senha
+        cout << "-----------\n" << endl;
+
+
+        Senha s1;
+
+        s1.setSenha("xJ5!A");
+
+        cout << s1.getSenha() << endl;
+
+
+        // texto
+
+        Texto t1;
+        t1.setTexto("Aaaaaaaaa");
 
 
 
