@@ -5,6 +5,7 @@
 #include "domains/Senha.hpp"
 #include "domains/Codigo.hpp"
 #include "domains/Texto.hpp"
+#include "domains/Limite.hpp"
 
 using namespace std;
 
@@ -27,21 +28,22 @@ int main()
         cout << "EMAIL: " << c1.getEmail() << endl;
         cout << "SENHA: " << c1.getSenha() << endl;
 
+        //CriaÃ§Ã£o de quadro
+        cout << "---- Criando quadro..." << endl;
+        Codigo codigoObject("AA00");
+        Texto nomeObject("Meu quadro");
+        Texto descricaoObject("Minha descricao");
+        Limite limiteObject("5");
 
-    //c1.setEmail("novo@email.com");
-    /*cout << c1.getEmail() << endl;
-    cout << "-----------" << endl;
-    cout << c1.getNome() << endl;
-    c1.setNome("Novo nome");
-    cout << c1.getNome() << endl;
-    cout << "-----------" << endl;
-    cout << c1.getSenha() << endl;
-    c1.setSenha("nova senha");
-    cout << c1.getSenha() << endl;
-    cout << "-=-=-=-=-=-=-=-=-=-=-=-" << endl;*/
+        Quadro q1(codigoObject, nomeObject, descricaoObject, limiteObject);
+
+        cout << "CODIGO: " << q1.getCodigo() << endl;
+        cout << "NOME: " << q1.getNome() << endl;
+        cout << "DESCRICAO: " << q1.getDescricao() << endl;
+        cout << "LIMITE: " << q1.getLimite() << endl;
 /*
 
-    // Criação de quadro
+    // CriaÃ§Ã£o de quadro
     Quadro q1(5, "Meu quadro", "Minha descricao", 3);
     cout << q1.getCodigo() << endl;
     q1.setCodigo(6);
@@ -59,15 +61,15 @@ int main()
     q1.setLimite(4);
     cout << q1.getLimite() << endl;
 */
-    // Criação de carta
+    // CriaÃ§Ã£o de carta
 /*    Carta c1(5, "Minha carta", "Minha descricao", 3);
     cout << c1.getCodigo() << endl;
     cout << c1.getNome() << endl;
     cout << c1.getDescricao() << endl;
     cout << c1.getColuna() << endl;*/
 
-    // criação de dominio
-        // código
+    // criaÃ§Ã£o de dominio
+        // cÃ³digo
 
  /*       cout << "-----------" << endl;
 
@@ -78,7 +80,7 @@ int main()
         cout << mycod.getCodigo() << endl;
 
 
-    // criação de dominio
+    // criaÃ§Ã£o de dominio
         // senha
         cout << "-----------\n" << endl;
 

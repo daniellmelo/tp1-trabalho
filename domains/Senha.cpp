@@ -19,36 +19,36 @@ void Senha::validar(std::string senha){
         throw std::invalid_argument("Sua senha deve conter no minimo 5 caracteres para ser valida.");
     }
 
-    // Verificar se há pelo menos um caractere maiúsculo
+    // Verificar se hÃ¡ pelo menos um caractere maiÃºsculo
     if (!std::regex_search(senha, std::regex("[A-Z]"))) {
         throw std::invalid_argument("Sua senha deve conter no minimo um caractere maiusculo");
     }
 
-    // Verificar se há pelo menos um caractere minúsculo
+    // Verificar se hÃ¡ pelo menos um caractere minÃºsculo
     if (!std::regex_search(senha, std::regex("[a-z]"))) {
         throw std::invalid_argument("Sua senha deve conter no minimo um caractere minusculo");
     }
 
-    // Verificar se há pelo menos um dígito
+    // Verificar se hÃ¡ pelo menos um dÃ­gito
     if (!std::regex_search(senha, std::regex("[0-9]"))) {
-        throw std::invalid_argument("Sua senha deve pelo menos um dígito.");
+        throw std::invalid_argument("Sua senha deve pelo menos um dÃ­gito.");
     }
 
-    // Verificar se há pelo menos um caractere de pontuação
+    // Verificar se hÃ¡ pelo menos um caractere de pontuaÃ§Ã£o
     if (!std::regex_search(senha, std::regex("[.,;?!]"))) {
-        throw std::invalid_argument("Sua senha deve conter no minimo um caractere de pontuação");
+        throw std::invalid_argument("Sua senha deve conter no minimo um caractere de pontuaÃ§Ã£o");
     }
 
-    // Verificar se não há caracteres duplicados usando um conjunto (unordered_set)
+    // Verificar se nÃ£o hÃ¡ caracteres duplicados usando um conjunto (unordered_set)
     std::unordered_set<char> caracteres;
     for (char c : senha) {
         if (caracteres.count(c) > 0) {
-            throw std::invalid_argument("Sua senha não pode conter caracteres duplicados.");
+            throw std::invalid_argument("Sua senha nÃ£o pode conter caracteres duplicados.");
         }
         caracteres.insert(c);
     }
 
-    // Se todas as condições forem atendidas, a senha é válida
+    // Se todas as condiÃ§Ãµes forem atendidas, a senha Ã© vÃ¡lida
 
 };
 

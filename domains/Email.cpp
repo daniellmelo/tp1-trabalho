@@ -1,11 +1,12 @@
 #include <iostream>
 
 #include "Email.hpp"
+#include <regex>
 
 Email::Email(std::string email){
     try{
-        validar(m_email);
-        std::cout << "O email eh valido" << std::endl;
+        validar(email);
+        std::cout << "Email valido" << std::endl;
         m_email = email;
     } catch (const std::exception& e) {
         std::cout << e.what() << std::endl;
@@ -26,42 +27,19 @@ void Email::setEmail(std::string novoEmail){
     }
 };
 
-void Email::validar(std::string email){
-    size_t atPos = email.find('@');
-    if (atPos == std::string::npos || atPos == 0 || atPos == email.length() - 1) {
-        std::cout << "1" << std::endl;
-        throw std::invalid_argument("Formato inválido: o '@' deve estar presente e não pode ser o primeiro ou último caractere.");
+//190063882
+void Email::validar(std::string email) {
+    std::regex emailRegex(R"([a-zA-Z0-9.]{2,10}@[a-zA-Z0-9.]{2,20})");
+
+    if (!std::regex_match(email, emailRegex)) {
+        throw std::invalid_argument("Formato invalido: o email nao corresponde ao padrao.");
     }
 
-    std::string nome = email.substr(0, atPos);
-    std::string dominio = email.substr(atPos + 1);
-
-    if (nome.length() < 2 || nome.length() > 10 || dominio.length() < 2 || dominio.length() > 20) {
-        std::cout << "2" << std::endl;
-        throw std::invalid_argument("Formato inválido: o nome e o domínio devem ter entre 2 e 10 (nome) e entre 2 e 20 (domínio) caracteres, respectivamente.");
+    if (email.find("..") != std::string::npos) {
+        throw std::invalid_argument("Formato invalido: nao podem haver pontos em sequencia.");
     }
 
-    for (char c : nome) {
-        if (!isalnum(c) && c != '.') {
-            throw std::invalid_argument("Formato inválido: o nome deve conter apenas letras, dígitos (0-9) ou pontos.");
-        }
+    if (email.find(".@") != std::string::npos || email.find("@.") != std::string::npos) {
+        throw std::invalid_argument("Formato invalido: o '@' nao pode ser precedido ou sucedido por um ponto.");
     }
-
-    for (char c : dominio) {
-        if (!isalnum(c) && c != '.') {
-            throw std::invalid_argument("Formato inválido: o domínio deve conter apenas letras, dígitos (0-9) ou pontos.");
-        }
-    }
-
-    if (nome.find("..") != std::string::npos || dominio.find("..") != std::string::npos) {
-        throw std::invalid_argument("Formato inválido: não podem haver pontos em sequência.");
-    }
-
-    if (nome.find(".@") != std::string::npos || nome.find("@.") != std::string::npos ||
-        dominio.find(".@") != std::string::npos || dominio.find("@.") != std::string::npos) {
-        throw std::invalid_argument("Formato inválido: o '@' não pode ser precedido ou sucedido por um ponto.");
-    }
-
-
-
 }

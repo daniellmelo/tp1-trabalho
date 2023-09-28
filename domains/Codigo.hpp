@@ -3,7 +3,7 @@
 #include "Validador.hpp"
 #include <string>
 
-class Codigo : virtual public Validador{ //222035625
+class Codigo{ //222035625
     public:
         Codigo(std::string);
     private:
@@ -13,5 +13,5 @@ class Codigo : virtual public Validador{ //222035625
         std::string getCodigo() const;
         void setCodigo(std::string novoCodigo);
     private:
-        bool validar(std::string codigo);
+        void validar(std::string codigo);
 };

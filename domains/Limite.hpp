@@ -11,6 +11,7 @@ class Limite{
     public:
         void setLimite(std::string novoLimite);
         std::string getLimite() const;
+        Limite(std::string limite);
 };
 
 

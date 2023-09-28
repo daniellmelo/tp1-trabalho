@@ -2,9 +2,19 @@
 #include "Limite.hpp"
 #include <iostream>
 
+Limite::Limite(std::string limite){
+    try{
+        validar(limite);
+        std::cout << "Limite valido" << std::endl;
+        m_limite = limite;
+    }   catch (const std::exception& e) {
+        std::cout << e.what() << std::endl;
+    };
+};
+
 void Limite::validar(std::string limite){
-    if(limite != "5" || limite != "10" || limite != "15" || limite != "20"){
-        throw std::invalid_argument("Limite não permitido");
+    if(limite != "5" && limite != "10" && limite != "15" && limite != "20"){
+        throw std::invalid_argument("Limite nÃ£o permitido");
     }
 }
 
