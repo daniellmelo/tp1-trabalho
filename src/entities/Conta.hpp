@@ -9,14 +9,11 @@
 class Conta { // 222035625
     public:
         Conta(Email email, Texto nome, Senha senha);
-
     private:
         Email m_email;
         Texto m_nome;
         Senha m_senha;
-
     public:
-
         std::string getEmail() const;
         std::string getNome() const;
         std::string getSenha() const;
