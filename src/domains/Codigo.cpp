@@ -5,10 +5,10 @@
 Codigo::Codigo(std::string codigo){
     try{
         validar(codigo);
-        std::cout << "Codigo valido" << std::endl;
         m_codigo = codigo;
     }   catch (const std::exception& e) {
         std::cout << e.what() << std::endl;
+        throw std::invalid_argument("Formato de codigo invalido.");
     };
 };
 

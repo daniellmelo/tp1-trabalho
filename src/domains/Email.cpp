@@ -1,15 +1,15 @@
 #include <iostream>
+#include <regex>
 
 #include "Email.hpp"
-#include <regex>
 
 Email::Email(std::string email){
     try{
         validar(email);
-        std::cout << "Email valido" << std::endl;
         m_email = email;
-    } catch (const std::exception& e) {
+    } catch (const std::invalid_argument& e) {
         std::cout << e.what() << std::endl;
+        throw std::invalid_argument("Email invalido. Tente novamente.");
     };
 
 };
@@ -27,7 +27,7 @@ void Email::setEmail(std::string novoEmail){
     }
 };
 
-//190063882
+
 void Email::validar(std::string email) {
     std::regex emailRegex(R"([a-zA-Z0-9.]{2,10}@[a-zA-Z0-9.]{2,20})");
 

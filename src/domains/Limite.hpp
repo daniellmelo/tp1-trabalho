@@ -1,8 +1,6 @@
-#ifndef LIMITE_HPP_INCLUDED
-#define LIMITE_HPP_INCLUDED
+#pragma once
 
 #include "Validador.hpp"
-
 
 class Limite{
     private:
@@ -13,7 +11,3 @@ class Limite{
         std::string getLimite() const;
         Limite(std::string limite);
 };
-
-
-
-#endif // LIMITE_HPP_INCLUDED

@@ -1,8 +1,6 @@
-#ifndef COLUNA_HPP_INCLUDED
-#define COLUNA_HPP_INCLUDED
+#pragma once
 
 #include "Validador.hpp"
-
 
 class Coluna : virtual public Validador {
     private:
@@ -12,6 +10,3 @@ class Coluna : virtual public Validador {
         void setColuna(std::string);
         std::string getColuna() const;
 };
-
-
-#endif // COLUNA_HPP_INCLUDED

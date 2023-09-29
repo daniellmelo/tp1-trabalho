@@ -5,9 +5,9 @@ Texto::Texto(std::string texto){
     try{
         validar(texto);
         m_texto = texto;
-        std::cout << "Nome valido" << std::endl;
     } catch (std::invalid_argument& e){
         std::cout << e.what() << std::endl;
+        throw std::invalid_argument("Formato de texto inválido.");
     };
 };
 
