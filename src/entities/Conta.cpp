@@ -8,9 +8,6 @@ std::string Conta::getEmail() const{
     return m_email.getEmail();
 };
 
-/// @brief Define um novo nome de usuário para a conta.
-///
-/// @param novoNome O novo nome de usuário a ser definido.
 std::string Conta::getNome() const{
     return m_nome.getTexto();
 };
