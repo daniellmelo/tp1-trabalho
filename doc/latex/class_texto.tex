@@ -2,18 +2,28 @@
 \hypertarget{class_texto}{}\label{class_texto}\index{Texto@{Texto}}
 
 
+Classe que representa um texto.  
+
+
+
+
 {\ttfamily \#include $<$Texto.\+hpp$>$}
 
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_texto_aee47c7190663205c920dffe153d4cbef}{Texto}} (std\+::string texto)
-\item 
+\begin{DoxyCompactList}\small\item\em Construtor da classe \doxylink{class_texto}{Texto}. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{class_texto_abed0b18b7b98526eb0194901ce4736a2}{get\+Texto}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Obt\'{e}m o texto atual. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_texto_a8d8d44fc332b1d58f038a9cd130b999f}{set\+Texto}} (std\+::string novo\+Texto)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Define um novo texto. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Classe que representa um texto. 
+
+Esta classe representa um texto, que \'{e} uma sequ\^{e}ncia de caracteres. Ela fornece m\'{e}todos para definir e obter o texto, bem como para validar sua formata\c{c}\~{a}o. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \Hypertarget{class_texto_aee47c7190663205c920dffe153d4cbef}\label{class_texto_aee47c7190663205c920dffe153d4cbef} 
@@ -24,6 +34,15 @@ void \mbox{\hyperlink{class_texto_a8d8d44fc332b1d58f038a9cd130b999f}{set\+Texto}
 
 
 
+Construtor da classe \doxylink{class_texto}{Texto}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texto} & A sequ\^{e}ncia de caracteres que representa o texto. \\
+\hline
+\end{DoxyParams}
+
+
 \doxysubsection{Member Function Documentation}
 \Hypertarget{class_texto_abed0b18b7b98526eb0194901ce4736a2}\label{class_texto_abed0b18b7b98526eb0194901ce4736a2} 
 \index{Texto@{Texto}!getTexto@{getTexto}}
@@ -31,12 +50,28 @@ void \mbox{\hyperlink{class_texto_a8d8d44fc332b1d58f038a9cd130b999f}{set\+Texto}
 \doxysubsubsection{\texorpdfstring{getTexto()}{getTexto()}}
 {\footnotesize\ttfamily std\+::string Texto\+::get\+Texto (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+
+
+Obt\'{e}m o texto atual. 
+
+\begin{DoxyReturn}{Returns}
+Uma string representando o texto atual. 
+\end{DoxyReturn}
 \Hypertarget{class_texto_a8d8d44fc332b1d58f038a9cd130b999f}\label{class_texto_a8d8d44fc332b1d58f038a9cd130b999f} 
 \index{Texto@{Texto}!setTexto@{setTexto}}
 \index{setTexto@{setTexto}!Texto@{Texto}}
 \doxysubsubsection{\texorpdfstring{setTexto()}{setTexto()}}
 {\footnotesize\ttfamily void Texto\+::set\+Texto (\begin{DoxyParamCaption}\item[{std\+::string}]{novo\+Texto }\end{DoxyParamCaption})}
 
+
+
+Define um novo texto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em novo\+Texto} & A nova sequ\^{e}ncia de caracteres a ser definida como texto. \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

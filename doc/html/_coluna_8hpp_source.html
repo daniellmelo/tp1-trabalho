@@ -85,20 +85,24 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="_validador_8hpp.html">Validador.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_coluna.html">    5</a></span><span class="keyword">class </span><a class="code hl_class" href="class_coluna.html">Coluna</a> : <span class="keyword">virtual</span> <span class="keyword">public</span> <a class="code hl_class" href="class_validador.html">Validador</a> {</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>        std::string coluna;</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>        <span class="keywordtype">bool</span> validar(std::string);</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_coluna.html#a6b037415cba8a05d9aba9033705fcbd7">   10</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_coluna.html#a6b037415cba8a05d9aba9033705fcbd7">setColuna</a>(std::string);</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_coluna.html#a6bf1658b666a1983c49f16e45975b6dc">   11</a></span>        std::string <a class="code hl_function" href="class_coluna.html#a6bf1658b666a1983c49f16e45975b6dc">getColuna</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>};</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="foldopen" id="foldopen00013" data-start="{" data-end="};">
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_coluna.html">   13</a></span><span class="keyword">class </span><a class="code hl_class" href="class_coluna.html">Coluna</a> : <span class="keyword">virtual</span> <span class="keyword">public</span> <a class="code hl_class" href="class_validador.html">Validador</a> {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    std::string coluna; </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordtype">bool</span> validar(std::string coluna);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="class_coluna.html#a67892b0e9d137cc1aa84a4b86d315237">   29</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_coluna.html#a67892b0e9d137cc1aa84a4b86d315237">setColuna</a>(std::string novaColuna);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_coluna.html#a6bf1658b666a1983c49f16e45975b6dc">   34</a></span>    std::string <a class="code hl_function" href="class_coluna.html#a6bf1658b666a1983c49f16e45975b6dc">getColuna</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>};</div>
 </div>
 <div class="ttc" id="a_validador_8hpp_html"><div class="ttname"><a href="_validador_8hpp.html">Validador.hpp</a></div></div>
-<div class="ttc" id="aclass_coluna_html"><div class="ttname"><a href="class_coluna.html">Coluna</a></div><div class="ttdef"><b>Definition</b> Coluna.hpp:5</div></div>
-<div class="ttc" id="aclass_coluna_html_a6b037415cba8a05d9aba9033705fcbd7"><div class="ttname"><a href="class_coluna.html#a6b037415cba8a05d9aba9033705fcbd7">Coluna::setColuna</a></div><div class="ttdeci">void setColuna(std::string)</div></div>
-<div class="ttc" id="aclass_coluna_html_a6bf1658b666a1983c49f16e45975b6dc"><div class="ttname"><a href="class_coluna.html#a6bf1658b666a1983c49f16e45975b6dc">Coluna::getColuna</a></div><div class="ttdeci">std::string getColuna() const</div></div>
+<div class="ttc" id="aclass_coluna_html"><div class="ttname"><a href="class_coluna.html">Coluna</a></div><div class="ttdoc">Classe que representa uma coluna.</div><div class="ttdef"><b>Definition</b> Coluna.hpp:13</div></div>
+<div class="ttc" id="aclass_coluna_html_a67892b0e9d137cc1aa84a4b86d315237"><div class="ttname"><a href="class_coluna.html#a67892b0e9d137cc1aa84a4b86d315237">Coluna::setColuna</a></div><div class="ttdeci">void setColuna(std::string novaColuna)</div><div class="ttdoc">Define uma nova coluna.</div></div>
+<div class="ttc" id="aclass_coluna_html_a6bf1658b666a1983c49f16e45975b6dc"><div class="ttname"><a href="class_coluna.html#a6bf1658b666a1983c49f16e45975b6dc">Coluna::getColuna</a></div><div class="ttdeci">std::string getColuna() const</div><div class="ttdoc">Obtém a coluna atual.</div></div>
 <div class="ttc" id="aclass_validador_html"><div class="ttname"><a href="class_validador.html">Validador</a></div><div class="ttdef"><b>Definition</b> Validador.hpp:6</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

@@ -2,18 +2,28 @@
 \hypertarget{class_limite}{}\label{class_limite}\index{Limite@{Limite}}
 
 
+Classe que representa um limite.  
+
+
+
+
 {\ttfamily \#include $<$Limite.\+hpp$>$}
 
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{class_limite_a2ad7e2bbb11ec0251c743a958ee31e43}{set\+Limite}} (std\+::string novo\+Limite)
-\item 
-std\+::string \mbox{\hyperlink{class_limite_a5c2f94492565e58b8e6fcb034fb1c369}{get\+Limite}} () const
-\item 
 \mbox{\hyperlink{class_limite_a88e15481379efdcb3394e1e998bdf5ae}{Limite}} (std\+::string limite)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Construtor da classe \doxylink{class_limite}{Limite}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_limite_a2ad7e2bbb11ec0251c743a958ee31e43}{set\+Limite}} (std\+::string novo\+Limite)
+\begin{DoxyCompactList}\small\item\em Define um novo limite. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_limite_a5c2f94492565e58b8e6fcb034fb1c369}{get\+Limite}} () const
+\begin{DoxyCompactList}\small\item\em Obt\'{e}m o limite atual. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Classe que representa um limite. 
+
+Esta classe representa um limite, que \'{e} uma sequ\^{e}ncia de caracteres. Ela fornece m\'{e}todos para definir e obter o limite, bem como para validar sua formata\c{c}\~{a}o. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \Hypertarget{class_limite_a88e15481379efdcb3394e1e998bdf5ae}\label{class_limite_a88e15481379efdcb3394e1e998bdf5ae} 
@@ -24,6 +34,15 @@ std\+::string \mbox{\hyperlink{class_limite_a5c2f94492565e58b8e6fcb034fb1c369}{g
 
 
 
+Construtor da classe \doxylink{class_limite}{Limite}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em limite} & A sequ\^{e}ncia de caracteres que representa o limite. \\
+\hline
+\end{DoxyParams}
+
+
 \doxysubsection{Member Function Documentation}
 \Hypertarget{class_limite_a5c2f94492565e58b8e6fcb034fb1c369}\label{class_limite_a5c2f94492565e58b8e6fcb034fb1c369} 
 \index{Limite@{Limite}!getLimite@{getLimite}}
@@ -31,12 +50,28 @@ std\+::string \mbox{\hyperlink{class_limite_a5c2f94492565e58b8e6fcb034fb1c369}{g
 \doxysubsubsection{\texorpdfstring{getLimite()}{getLimite()}}
 {\footnotesize\ttfamily std\+::string Limite\+::get\+Limite (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+
+
+Obt\'{e}m o limite atual. 
+
+\begin{DoxyReturn}{Returns}
+Uma string representando o limite atual. 
+\end{DoxyReturn}
 \Hypertarget{class_limite_a2ad7e2bbb11ec0251c743a958ee31e43}\label{class_limite_a2ad7e2bbb11ec0251c743a958ee31e43} 
 \index{Limite@{Limite}!setLimite@{setLimite}}
 \index{setLimite@{setLimite}!Limite@{Limite}}
 \doxysubsubsection{\texorpdfstring{setLimite()}{setLimite()}}
 {\footnotesize\ttfamily void Limite\+::set\+Limite (\begin{DoxyParamCaption}\item[{std\+::string}]{novo\+Limite }\end{DoxyParamCaption})}
 
+
+
+Define um novo limite. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em novo\+Limite} & A nova sequ\^{e}ncia de caracteres a ser definida como limite. \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

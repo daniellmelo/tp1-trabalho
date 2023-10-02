@@ -76,6 +76,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Classe que representa uma coluna.  
+ <a href="class_coluna.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_coluna_8hpp_source.html">Coluna.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Coluna:</div>
@@ -89,12 +92,17 @@ Inheritance diagram for Coluna:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6b037415cba8a05d9aba9033705fcbd7" id="r_a6b037415cba8a05d9aba9033705fcbd7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_coluna.html#a6b037415cba8a05d9aba9033705fcbd7">setColuna</a> (std::string)</td></tr>
-<tr class="separator:a6b037415cba8a05d9aba9033705fcbd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67892b0e9d137cc1aa84a4b86d315237" id="r_a67892b0e9d137cc1aa84a4b86d315237"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_coluna.html#a67892b0e9d137cc1aa84a4b86d315237">setColuna</a> (std::string novaColuna)</td></tr>
+<tr class="memdesc:a67892b0e9d137cc1aa84a4b86d315237"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define uma nova coluna.  <br /></td></tr>
+<tr class="separator:a67892b0e9d137cc1aa84a4b86d315237"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6bf1658b666a1983c49f16e45975b6dc" id="r_a6bf1658b666a1983c49f16e45975b6dc"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_coluna.html#a6bf1658b666a1983c49f16e45975b6dc">getColuna</a> () const</td></tr>
+<tr class="memdesc:a6bf1658b666a1983c49f16e45975b6dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obt&eacute;m a coluna atual.  <br /></td></tr>
 <tr class="separator:a6bf1658b666a1983c49f16e45975b6dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Classe que representa uma coluna. </p>
+<p>Esta classe representa uma coluna, que pode ser validada de acordo com algum crit&eacute;rio definido. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a6bf1658b666a1983c49f16e45975b6dc" name="a6bf1658b666a1983c49f16e45975b6dc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6bf1658b666a1983c49f16e45975b6dc">&#9670;&#160;</a></span>getColuna()</h2>
 
@@ -110,10 +118,13 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Obt&eacute;m a coluna atual. </p>
+<dl class="section return"><dt>Returns</dt><dd>Uma string representando a coluna atual. </dd></dl>
+
 </div>
 </div>
-<a id="a6b037415cba8a05d9aba9033705fcbd7" name="a6b037415cba8a05d9aba9033705fcbd7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b037415cba8a05d9aba9033705fcbd7">&#9670;&#160;</a></span>setColuna()</h2>
+<a id="a67892b0e9d137cc1aa84a4b86d315237" name="a67892b0e9d137cc1aa84a4b86d315237"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67892b0e9d137cc1aa84a4b86d315237">&#9670;&#160;</a></span>setColuna()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -122,11 +133,19 @@ Public Member Functions</h2></td></tr>
           <td class="memname">void Coluna::setColuna </td>
           <td>(</td>
           <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramname"><em>novaColuna</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Define uma nova coluna. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">novaColuna</td><td>A nova sequ&ecirc;ncia de caracteres a ser definida como coluna. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

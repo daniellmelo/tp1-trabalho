@@ -2,18 +2,28 @@
 \hypertarget{class_senha}{}\label{class_senha}\index{Senha@{Senha}}
 
 
+Classe que representa uma senha.  
+
+
+
+
 {\ttfamily \#include $<$Senha.\+hpp$>$}
 
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_senha_a84733dabc7c91c63b330cf4cd890fb08}{Senha}} (std\+::string senha)
-\item 
+\begin{DoxyCompactList}\small\item\em Construtor da classe \doxylink{class_senha}{Senha}. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_senha_a6b0ffe33e169ce8f502c6c3a806654a0}{set\+Senha}} (std\+::string nova\+Senha)
-\item 
+\begin{DoxyCompactList}\small\item\em Define uma nova senha. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{class_senha_a57bec8070041116d7761e21bb867ae25}{get\+Senha}} () const
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Obt\'{e}m a senha atual. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Classe que representa uma senha. 
+
+Esta classe representa uma senha, que \'{e} uma sequ\^{e}ncia de caracteres. Ela fornece m\'{e}todos para definir e obter a senha, bem como para validar sua formata\c{c}\~{a}o. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \Hypertarget{class_senha_a84733dabc7c91c63b330cf4cd890fb08}\label{class_senha_a84733dabc7c91c63b330cf4cd890fb08} 
@@ -24,6 +34,15 @@ std\+::string \mbox{\hyperlink{class_senha_a57bec8070041116d7761e21bb867ae25}{ge
 
 
 
+Construtor da classe \doxylink{class_senha}{Senha}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em senha} & A sequ\^{e}ncia de caracteres que representa a senha. \\
+\hline
+\end{DoxyParams}
+
+
 \doxysubsection{Member Function Documentation}
 \Hypertarget{class_senha_a57bec8070041116d7761e21bb867ae25}\label{class_senha_a57bec8070041116d7761e21bb867ae25} 
 \index{Senha@{Senha}!getSenha@{getSenha}}
@@ -31,12 +50,28 @@ std\+::string \mbox{\hyperlink{class_senha_a57bec8070041116d7761e21bb867ae25}{ge
 \doxysubsubsection{\texorpdfstring{getSenha()}{getSenha()}}
 {\footnotesize\ttfamily std\+::string Senha\+::get\+Senha (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+
+
+Obt\'{e}m a senha atual. 
+
+\begin{DoxyReturn}{Returns}
+Uma string representando a senha atual. 
+\end{DoxyReturn}
 \Hypertarget{class_senha_a6b0ffe33e169ce8f502c6c3a806654a0}\label{class_senha_a6b0ffe33e169ce8f502c6c3a806654a0} 
 \index{Senha@{Senha}!setSenha@{setSenha}}
 \index{setSenha@{setSenha}!Senha@{Senha}}
 \doxysubsubsection{\texorpdfstring{setSenha()}{setSenha()}}
 {\footnotesize\ttfamily void Senha\+::set\+Senha (\begin{DoxyParamCaption}\item[{std\+::string}]{nova\+Senha }\end{DoxyParamCaption})}
 
+
+
+Define uma nova senha. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nova\+Senha} & A nova sequ\^{e}ncia de caracteres a ser definida como senha. \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

@@ -2,6 +2,11 @@
 \hypertarget{class_coluna}{}\label{class_coluna}\index{Coluna@{Coluna}}
 
 
+Classe que representa uma coluna.  
+
+
+
+
 {\ttfamily \#include $<$Coluna.\+hpp$>$}
 
 Inheritance diagram for Coluna\+:\begin{figure}[H]
@@ -13,11 +18,16 @@ Inheritance diagram for Coluna\+:\begin{figure}[H]
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{class_coluna_a6b037415cba8a05d9aba9033705fcbd7}{set\+Coluna}} (std\+::string)
-\item 
+void \mbox{\hyperlink{class_coluna_a67892b0e9d137cc1aa84a4b86d315237}{set\+Coluna}} (std\+::string nova\+Coluna)
+\begin{DoxyCompactList}\small\item\em Define uma nova coluna. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{class_coluna_a6bf1658b666a1983c49f16e45975b6dc}{get\+Coluna}} () const
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Obt\'{e}m a coluna atual. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Classe que representa uma coluna. 
+
+Esta classe representa uma coluna, que pode ser validada de acordo com algum crit\'{e}rio definido. 
 
 \doxysubsection{Member Function Documentation}
 \Hypertarget{class_coluna_a6bf1658b666a1983c49f16e45975b6dc}\label{class_coluna_a6bf1658b666a1983c49f16e45975b6dc} 
@@ -26,12 +36,28 @@ std\+::string \mbox{\hyperlink{class_coluna_a6bf1658b666a1983c49f16e45975b6dc}{g
 \doxysubsubsection{\texorpdfstring{getColuna()}{getColuna()}}
 {\footnotesize\ttfamily std\+::string Coluna\+::get\+Coluna (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-\Hypertarget{class_coluna_a6b037415cba8a05d9aba9033705fcbd7}\label{class_coluna_a6b037415cba8a05d9aba9033705fcbd7} 
+
+
+Obt\'{e}m a coluna atual. 
+
+\begin{DoxyReturn}{Returns}
+Uma string representando a coluna atual. 
+\end{DoxyReturn}
+\Hypertarget{class_coluna_a67892b0e9d137cc1aa84a4b86d315237}\label{class_coluna_a67892b0e9d137cc1aa84a4b86d315237} 
 \index{Coluna@{Coluna}!setColuna@{setColuna}}
 \index{setColuna@{setColuna}!Coluna@{Coluna}}
 \doxysubsubsection{\texorpdfstring{setColuna()}{setColuna()}}
-{\footnotesize\ttfamily void Coluna\+::set\+Coluna (\begin{DoxyParamCaption}\item[{std\+::string}]{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Coluna\+::set\+Coluna (\begin{DoxyParamCaption}\item[{std\+::string}]{nova\+Coluna }\end{DoxyParamCaption})}
 
+
+
+Define uma nova coluna. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nova\+Coluna} & A nova sequ\^{e}ncia de caracteres a ser definida como coluna. \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

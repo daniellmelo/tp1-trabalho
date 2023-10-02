@@ -2,7 +2,7 @@ var searchData=
 [
   ['senha_0',['Senha',['../class_senha.html#a84733dabc7c91c63b330cf4cd890fb08',1,'Senha']]],
   ['setcodigo_1',['setcodigo',['../class_codigo.html#a97ca64d6591e54ee7878ed8cdd47ccc2',1,'Codigo::setCodigo()'],['../class_cartao.html#ab3338fcbd613070dab229b392b3e7d15',1,'Cartao::setCodigo()'],['../class_quadro.html#a3b30651e21f084f2e65ac3d819241c52',1,'Quadro::setCodigo()']]],
-  ['setcoluna_2',['setcoluna',['../class_coluna.html#a6b037415cba8a05d9aba9033705fcbd7',1,'Coluna::setColuna()'],['../class_cartao.html#a7b5c0ab3fde0600cb07518af59f051ed',1,'Cartao::setColuna(string novoColuna)']]],
+  ['setcoluna_2',['setcoluna',['../class_coluna.html#a67892b0e9d137cc1aa84a4b86d315237',1,'Coluna::setColuna()'],['../class_cartao.html#a7b5c0ab3fde0600cb07518af59f051ed',1,'Cartao::setColuna(string novoColuna)']]],
   ['setdescricao_3',['setdescricao',['../class_cartao.html#a85023d110c3be6fc463aa517a2c758ff',1,'Cartao::setDescricao()'],['../class_quadro.html#a2cded05ea4710fe8d1c4aa6600f6f5f4',1,'Quadro::setDescricao()']]],
   ['setemail_4',['setemail',['../class_email.html#a6ccd57a41bb3a20b75863b04c9d718af',1,'Email::setEmail()'],['../class_conta.html#a926a30e49694cef896dc2e53671786c2',1,'Conta::setEmail()']]],
   ['setlimite_5',['setlimite',['../class_limite.html#a2ad7e2bbb11ec0251c743a958ee31e43',1,'Limite::setLimite()'],['../class_quadro.html#abf40d100fb746058395b20d75d49d8fb',1,'Quadro::setLimite()']]],

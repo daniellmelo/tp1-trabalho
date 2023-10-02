@@ -2,23 +2,28 @@
 \hypertarget{class_email}{}\label{class_email}\index{Email@{Email}}
 
 
+Classe que representa um endere\c{c}o de e-\/mail.  
+
+
+
+
 {\ttfamily \#include $<$Email.\+hpp$>$}
 
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_email_add6daec5f0936cf8e6f74dbbf0be79d6}{Email}} (std\+::string email)
-\item 
+\begin{DoxyCompactList}\small\item\em Construtor da classe \doxylink{class_email}{Email}. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_email_a6ccd57a41bb3a20b75863b04c9d718af}{set\+Email}} (std\+::string novo\+Email)
-\item 
+\begin{DoxyCompactList}\small\item\em Define um novo endere\c{c}o de e-\/mail. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{class_email_a70860df6261f62d64413fd679f31f534}{get\+Email}} () const
-\end{DoxyCompactItemize}
-\doxysubsubsection*{Public Attributes}
-\begin{DoxyCompactItemize}
-\item 
-std\+::string \mbox{\hyperlink{class_email_ac5d86f04a15841c29c992e9895ac3e1e}{m\+\_\+email}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Obt\'{e}m o endere\c{c}o de e-\/mail atual. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Classe que representa um endere\c{c}o de e-\/mail. 
+
+Esta classe representa um endere\c{c}o de e-\/mail v\'{a}lido. Ela fornece m\'{e}todos para definir e obter o endere\c{c}o de e-\/mail, bem como para validar sua formata\c{c}\~{a}o. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \Hypertarget{class_email_add6daec5f0936cf8e6f74dbbf0be79d6}\label{class_email_add6daec5f0936cf8e6f74dbbf0be79d6} 
@@ -29,6 +34,15 @@ std\+::string \mbox{\hyperlink{class_email_ac5d86f04a15841c29c992e9895ac3e1e}{m\
 
 
 
+Construtor da classe \doxylink{class_email}{Email}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em email} & A sequ\^{e}ncia de caracteres que representa o endere\c{c}o de e-\/mail. \\
+\hline
+\end{DoxyParams}
+
+
 \doxysubsection{Member Function Documentation}
 \Hypertarget{class_email_a70860df6261f62d64413fd679f31f534}\label{class_email_a70860df6261f62d64413fd679f31f534} 
 \index{Email@{Email}!getEmail@{getEmail}}
@@ -36,6 +50,13 @@ std\+::string \mbox{\hyperlink{class_email_ac5d86f04a15841c29c992e9895ac3e1e}{m\
 \doxysubsubsection{\texorpdfstring{getEmail()}{getEmail()}}
 {\footnotesize\ttfamily std\+::string Email\+::get\+Email (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+
+
+Obt\'{e}m o endere\c{c}o de e-\/mail atual. 
+
+\begin{DoxyReturn}{Returns}
+Uma string representando o endere\c{c}o de e-\/mail atual. 
+\end{DoxyReturn}
 \Hypertarget{class_email_a6ccd57a41bb3a20b75863b04c9d718af}\label{class_email_a6ccd57a41bb3a20b75863b04c9d718af} 
 \index{Email@{Email}!setEmail@{setEmail}}
 \index{setEmail@{setEmail}!Email@{Email}}
@@ -44,13 +65,13 @@ std\+::string \mbox{\hyperlink{class_email_ac5d86f04a15841c29c992e9895ac3e1e}{m\
 
 
 
-\doxysubsection{Member Data Documentation}
-\Hypertarget{class_email_ac5d86f04a15841c29c992e9895ac3e1e}\label{class_email_ac5d86f04a15841c29c992e9895ac3e1e} 
-\index{Email@{Email}!m\_email@{m\_email}}
-\index{m\_email@{m\_email}!Email@{Email}}
-\doxysubsubsection{\texorpdfstring{m\_email}{m\_email}}
-{\footnotesize\ttfamily std\+::string Email\+::m\+\_\+email}
+Define um novo endere\c{c}o de e-\/mail. 
 
+
+\begin{DoxyParams}{Parameters}
+{\em novo\+Email} & O novo endere\c{c}o de e-\/mail a ser definido. \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
