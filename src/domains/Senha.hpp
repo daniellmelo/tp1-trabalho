@@ -1,17 +1,17 @@
+
 #pragma once
 
 #include "Validador.hpp"
 #include <string>
 
 /// @file Senha.hpp
-/// @brief Este arquivo cont&eacute;m a declara&ccedil;&atilde;o da classe Senha.
-///
+/// @brief Este arquivo contém a declaração da classe Senha.
 
 /// @class Senha
 /// @brief Classe que representa uma senha.
 ///
-/// Esta classe representa uma senha, que &eacute; uma sequ&ecirc;ncia de caracteres.
-/// Ela fornece m&eacute;todos para definir e obter a senha, bem como para validar sua formata&ccedil;&atilde;o.
+/// Esta classe representa uma senha, que é uma sequ&ecirc;ncia de caracteres.
+/// Ela fornece métodos para definir e obter a senha, bem como para validá-la.
 class Senha { // 222035625
 public:
     /// @brief Construtor da classe Senha.
@@ -32,8 +32,11 @@ public:
 private:
     /// @brief Fun&ccedil;&atilde;o privada para validar a senha.
     ///
-    /// Esta fun&ccedil;&atilde;o &eacute; usada internamente para validar a formata&ccedil;&atilde;o da senha.
+    /// Esta fun&ccedil;&atilde;o &eacute; usada internamente para validar a senha.
     ///
-    /// @param senha A sequ&ecirc;ncia de caracteres a ser validada como senha.
+    /// @param senha A sequ&ecirc;ncia de caracteres a ser validada.
     void validar(std::string senha);
+
+private:
+    std::string m_senha; ///< A senha armazenada como uma sequ&ecirc;ncia de caracteres.
 };

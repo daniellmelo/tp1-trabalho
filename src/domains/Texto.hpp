@@ -31,6 +31,8 @@ public:
     void setTexto(std::string novoTexto);
 
 private:
+    std::string m_texto; ///< O texto armazenado como uma sequ&ecirc;ncia de caracteres.
+
     /// @brief Fun&ccedil;&atilde;o privada para validar o texto.
     ///
     /// Esta fun&ccedil;&atilde;o &eacute; usada internamente para validar a formata&ccedil;&atilde;o do texto.
@@ -38,4 +40,3 @@ private:
     /// @param texto A sequ&ecirc;ncia de caracteres a ser validada como texto.
     void validar(std::string texto);
 };
-

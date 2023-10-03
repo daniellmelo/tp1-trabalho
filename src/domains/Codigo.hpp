@@ -4,36 +4,38 @@
 #include <string>
 
 /// @file Codigo.hpp
-/// @brief Este arquivo &eacute a declaração da classe Codigo.
+/// @brief Este arquivo contém a declaração da classe Codigo.
 ///
 
 /// @class Codigo
-/// @brief Classe que representa um c&oacute;digo.
+/// @brief Classe que representa um código.
 ///
-/// Esta classe representa um c&oacute;digo, que &eacute; uma sequ&ecirc;ncia de caracteres.
-/// Ela fornece m&eacute;todos para obter e definir o c&oacute;digo, bem como para valid&aacute;-lo.
+/// Esta classe representa um código, que é uma sequência de caracteres.
+/// Ela fornece métodos para obter e definir o código, bem como para validar sua formatação.
 class Codigo { // 222035625
 public:
     /// @brief Construtor da classe Codigo.
     ///
-    /// @param codigo A sequ&ecirc;ncia de caracteres que representa o c&oacute;digo.
+    /// @param codigo A sequência de caracteres que representa o código.
     Codigo(std::string codigo);
 
-    /// @brief Obt&eacute;m o c&oacute;digo.
+    /// @brief Obtém o código atual.
     ///
-    /// @return Uma string representando o c&oacute;digo.
+    /// @return Uma string representando o código atual.
     std::string getCodigo() const;
 
-    /// @brief Define um novo c&oacute;digo.
+    /// @brief Define um novo código.
     ///
-    /// @param novoCodigo O novo c&oacute;digo a ser definido.
+    /// @param novoCodigo O novo código a ser definido.
     void setCodigo(std::string novoCodigo);
 
 private:
-    /// @brief Fun&ccedil;&atilde;o privada para validar o c&oacute;digo.
+    std::string m_codigo; ///< O código representado como uma sequência de caracteres.
+
+    /// @brief Função privada para validar o código.
     ///
-    /// Esta fun&ccedil;&atilde;o &eacute; usada internamente para validar o c&oacute;digo.
+    /// Esta função é usada internamente para validar a formatação do código.
     ///
-    /// @param codigo A sequ&ecirc;ncia de caracteres a ser validada.
+    /// @param codigo A sequência de caracteres a ser validada como código.
     void validar(std::string codigo);
 };
