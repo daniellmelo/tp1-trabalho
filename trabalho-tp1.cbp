@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="trabalho-tp1" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/trabalho-tp1" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/trabalho-tp1" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="main.cpp" />
+		<Unit filename="src/domains/Codigo.cpp" />
+		<Unit filename="src/domains/Codigo.hpp" />
+		<Unit filename="src/domains/Coluna.cpp" />
+		<Unit filename="src/domains/Coluna.hpp" />
+		<Unit filename="src/domains/Email.cpp" />
+		<Unit filename="src/domains/Email.hpp" />
+		<Unit filename="src/domains/Limite.cpp" />
+		<Unit filename="src/domains/Limite.hpp" />
+		<Unit filename="src/domains/Senha.cpp" />
+		<Unit filename="src/domains/Senha.hpp" />
+		<Unit filename="src/domains/Texto.cpp" />
+		<Unit filename="src/domains/Texto.hpp" />
+		<Unit filename="src/domains/Validador.hpp" />
+		<Unit filename="src/entities/Cartao.cpp" />
+		<Unit filename="src/entities/Cartao.hpp" />
+		<Unit filename="src/entities/Conta.cpp" />
+		<Unit filename="src/entities/Conta.hpp" />
+		<Unit filename="src/entities/Quadro.hpp" />
+		<Unit filename="src/entities/Quadros.cpp" />
+		<Extensions>
+			<DoxyBlocks>
+				<comment_style block="2" line="2" />
+				<doxyfile_project />
+				<doxyfile_build />
+				<doxyfile_warnings />
+				<doxyfile_output />
+				<doxyfile_dot />
+				<general />
+			</DoxyBlocks>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
