@@ -55,7 +55,7 @@
 		<Extensions>
 			<DoxyBlocks>
 				<comment_style block="2" line="2" />
-				<doxyfile_project />
+				<doxyfile_project output_directory="doc" output_language="Portuguese" />
 				<doxyfile_build />
 				<doxyfile_warnings />
 				<doxyfile_output />
