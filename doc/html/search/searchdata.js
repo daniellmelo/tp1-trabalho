@@ -2,8 +2,8 @@ var indexSectionsWithContent =
 {
   0: "ceglqstv",
   1: "celqstv",
-  2: "celqstv",
-  3: "ceglqstv"
+  2: "celst",
+  3: "ceglst"
 };
 
 var indexSectionNames =
@@ -16,9 +16,9 @@ var indexSectionNames =
 
 var indexSectionLabels =
 {
-  0: "All",
+  0: "Tudo",
   1: "Classes",
-  2: "Files",
-  3: "Functions"
+  2: "Ficheiros",
+  3: "Funções"
 };
 
