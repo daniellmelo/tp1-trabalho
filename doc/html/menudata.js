@@ -29,7 +29,21 @@ var menudata={children:[
 {text:"Índice dos componentes",url:"classes.html"},
 {text:"Hierarquia de classes",url:"hierarchy.html"},
 {text:"Componentes membro",url:"functions.html",children:[
-{text:"Tudo",url:"functions.html"},
-{text:"Funções",url:"functions_func.html"}]}]},
+{text:"Tudo",url:"functions.html",children:[
+{text:"c",url:"functions.html#index_c"},
+{text:"e",url:"functions.html#index_e"},
+{text:"g",url:"functions.html#index_g"},
+{text:"l",url:"functions.html#index_l"},
+{text:"q",url:"functions.html#index_q"},
+{text:"s",url:"functions.html#index_s"},
+{text:"t",url:"functions.html#index_t"}]},
+{text:"Funções",url:"functions_func.html",children:[
+{text:"c",url:"functions_func.html#index_c"},
+{text:"e",url:"functions_func.html#index_e"},
+{text:"g",url:"functions_func.html#index_g"},
+{text:"l",url:"functions_func.html#index_l"},
+{text:"q",url:"functions_func.html#index_q"},
+{text:"s",url:"functions_func.html#index_s"},
+{text:"t",url:"functions_func.html#index_t"}]}]}]},
 {text:"Ficheiros",url:"files.html",children:[
 {text:"Lista de ficheiros",url:"files.html"}]}]}
