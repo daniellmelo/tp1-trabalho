@@ -50,43 +50,23 @@ int main()
         cout << "DESCRICAO: " << q1.getDescricao() << endl;
         cout << "LIMITE: " << q1.getLimite() << endl;
 
-    // Criação de carta
-/*    Carta c1(5, "Minha carta", "Minha descricao", 3);
-    cout << c1.getCodigo() << endl;
-    cout << c1.getNome() << endl;
-    cout << c1.getDescricao() << endl;
-    cout << c1.getColuna() << endl;*/
+        cout << "---- Criando cartão..." << endl;
+        Cartao cartao1(Codigo("AA11"), Texto("Meu cartao"), Texto("Esse e um cartao"), Coluna("SOLICITADO"));
+        cout << cartao1.getCodigo() << endl;
+        cout << cartao1.getNome() << endl;
+        cout << cartao1.getDescricao() << endl;
+        cout << cartao1.getColuna() << endl;
 
-    // criação de dominio
-        // código
+        cout << "---- Alterando dados do cartão..." << endl;
 
- /*       cout << "-----------" << endl;
-
-        Codigo mycod("TT67"); //true
-        Codigo myCOD("TT6Y"); //false
-        cout << mycod.getCodigo() << endl;
-        mycod.setCodigo("JJ65");
-        cout << mycod.getCodigo() << endl;
-
-
-    // criação de dominio
-        // senha
-        cout << "-----------\n" << endl;
-
-
-        Senha s1;
-
-        s1.setSenha("xJ5!A");
-
-        cout << s1.getSenha() << endl;
-
-
-        // texto
-
-        Texto t1;
-        t1.setTexto("Aaaaaaaaa");
-
-*/
+        cartao1.setCodigo("BB22");
+        cartao1.setNome("Novo nome do cartao");
+        cartao1.setDescricao("Esse e o novo cartao");
+        cartao1.setColuna("EM EXECUCAO");
+        cout << cartao1.getCodigo() << endl;
+        cout << cartao1.getNome() << endl;
+        cout << cartao1.getDescricao() << endl;
+        cout << cartao1.getColuna() << endl;
 
     return 0;
 }

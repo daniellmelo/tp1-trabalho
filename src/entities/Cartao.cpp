@@ -1,44 +1,52 @@
 #include "Cartao.hpp"
 
 #include <string>
-using namespace std;
 
-// Geters para a classe cart„o
-int Cartao::getCodigo(){
-    return codigo;
+Cartao::Cartao(Codigo codigo, Texto nome, Texto descricao, Coluna coluna):
+    m_codigo(codigo), m_nome(nome), m_descricao(descricao), m_coluna(coluna){
 };
 
-string Cartao::getNome(){
-    return nome;
+// Getters para a classe cart√£o
+std::string Cartao::getCodigo() const{
+    return m_codigo.getCodigo();
+};
+
+std::string Cartao::getNome() const{
+    return m_nome.getTexto();
 };
 
 
-string Cartao::getDescricao(){
-    return texto;
+std::string Cartao::getDescricao() const{
+    return m_descricao.getTexto();
 };
 
 
 
-string Cartao::getColuna(){
-    return coluna;
+std::string Cartao::getColuna() const{
+    return m_coluna.getColuna();
 
 };
 
 //-------------------------------------------------------
 
-// Seters para a classe cart„o
-void Cartao::setNome(string novoNome){
-    nome = novoNome;
+// Setters para a classe cart√£o
+void Cartao::setCodigo(std::string novoCodigo){
+    m_codigo.setCodigo(novoCodigo);
+
+}
+
+void Cartao::setNome(std::string novoNome){
+    m_nome.setTexto(novoNome);
 
 }
 
 
-void Cartao::setDescricao(string novoDescricao){
-    texto = novoDescricao;
+void Cartao::setDescricao(std::string novaDescricao){
+    m_descricao.setTexto(novaDescricao);
 }
 
 
-void Cartao::setColuna(string novaColuna){
-    coluna = novaColuna;
+void Cartao::setColuna(std::string novaColuna){
+    m_coluna.setColuna(novaColuna);
 
 }

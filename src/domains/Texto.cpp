@@ -7,7 +7,7 @@ Texto::Texto(std::string texto){
         m_texto = texto;
     } catch (std::invalid_argument& e){
         std::cout << e.what() << std::endl;
-        throw std::invalid_argument("Formato de texto inválido.");
+        throw std::invalid_argument("Formato de texto invÃ¡lido.");
     };
 };
 
@@ -18,32 +18,32 @@ void Texto::validar(std::string texto){
         throw std::invalid_argument("Deve conter entre 5 a 30 caracteres.");
     }
 
-    // Verificar se cada caractere é letra, dígito, sinal de pontuação ou espaço em branco
+    // Verificar se cada caractere e letra, digito, sinal de pontuacao ou espaco em branco
     if (!std::regex_match(texto, std::regex("^[A-Za-z0-9.,;?! ]+$"))) {
-        throw std::invalid_argument("Somente e permitido caracteres letra, digito, sinais de pontuacao e espacos em branco.");
+        throw std::invalid_argument("Sao permitidos somente letras (a-z A-Z), digitos (0-9), sinais de pontuacao(.,;?!) e espacos em branco.");
     }
 
     char prevChar = '\0'; // Caractere anterior (inicializado com um caractere nulo)
-    bool prevSpace = false; // Flag para verificar espaços em branco em sequência
-    bool prevPunctuation = false; // Flag para verificar sinais de pontuação em sequência
+    bool prevSpace = false; // Flag para verificar espacos em branco em sequencia
+    bool prevPunctuation = false; // Flag para verificar sinais de pontuacao em sequÃªncia
 
     for (char c : texto) {
-        // Verificar se não há acentuação (assumindo que a entrada está em ASCII)
+        // Verificar se nao ha acentuacao (assumindo que a entrada esta em ASCII)
         if (c < 0 || c > 127) {
             throw std::invalid_argument("Nao deve conter acentuacao.");
         }
 
-        // Verificar se o primeiro caractere é letra maiúscula
+        // Verificar se o primeiro caractere e letra maiuscula
         if (!std::isalpha(texto[0]) || !std::isupper(texto[0])) {
             throw std::invalid_argument("O primeiro caractere deve ser letra maiuscula.");
         }
 
-        // Verificar se o primeiro caractere após sinal de pontuação (exceto vírgula ou ponto-e-vírgula) é letra maiúscula
+        // Verificar se o primeiro caractere apos sinal de pontuacao (exceto virgula ou ponto-e-vi rgula) e letra maiuscula
         if (prevChar != ',' && prevChar != ';' && std::ispunct(prevChar) && !std::isupper(c)) {
             throw std::invalid_argument("Primeiro caractere apos sinal de pontuacao (exceto virgula e ponto-e-virgula) deve ser maiusculo.");
         }
 
-        // Verificar espaços em branco em sequência
+        // Verificar espacos em branco em sequencia
         if (c == ' ') {
             if (prevSpace) {
                 throw std::invalid_argument("Nao pode haver espacos em branco em sequencia.");
@@ -53,10 +53,10 @@ void Texto::validar(std::string texto){
             prevSpace = false;
         }
 
-        // Verificar sinais de pontuação em sequência
+        // Verificar sinais de pontuacao em sequencia
         if (std::ispunct(c)) {
             if (prevPunctuation) {
-                throw std::invalid_argument("Nao pode conter sinais de pontução em sequencia.");
+                throw std::invalid_argument("Nao pode conter sinais de pontucao em sequencia.");
             }
             prevPunctuation = true;
         } else {
