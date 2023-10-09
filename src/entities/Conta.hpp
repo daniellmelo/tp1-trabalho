@@ -16,6 +16,7 @@ class Conta { // 222035625
     /// @param email O endere&ccedil;o de email associado &agrave; conta.
     /// @param nome O nome do usu&aacute;rio associado &agrave; conta.
     /// @param senha A senha da conta.
+        Conta();
         Conta(Email email, Texto nome, Senha senha);
     private:
         Email m_email; ///< O endere&ccedil;o de email associado &agrave; conta.
