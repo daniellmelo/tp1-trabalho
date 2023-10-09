@@ -97,49 +97,45 @@ $(document).ready(function(){initNavTree('_cartao_8hpp_source.html',''); initRes
   <div class="headertitle"><div class="title">Cartao.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="_cartao_8hpp.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef CARTAO_HPP_INCLUDED</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define CARTAO_HPP_INCLUDED</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;../domains/Texto.hpp&quot;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;../domains/Codigo.hpp&quot;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;../domains/Coluna.hpp&quot;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="foldopen" id="foldopen00017" data-start="{" data-end="};">
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_cartao.html">   17</a></span><span class="keyword">class </span><a class="code hl_class" href="class_cartao.html">Cartao</a> {</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <a class="code hl_class" href="class_cartao.html">Cartao</a>(<a class="code hl_class" href="class_codigo.html">Codigo</a> codigo, <a class="code hl_class" href="class_texto.html">Texto</a> nome, <a class="code hl_class" href="class_texto.html">Texto</a> descricao, <a class="code hl_class" href="class_coluna.html">Coluna</a> coluna);</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <a class="code hl_class" href="class_codigo.html">Codigo</a> m_codigo;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <a class="code hl_class" href="class_texto.html">Texto</a> m_nome;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <a class="code hl_class" href="class_texto.html">Texto</a> m_descricao;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <a class="code hl_class" href="class_coluna.html">Coluna</a> m_coluna;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        std::string <a class="code hl_function" href="class_cartao.html#ae01acc1da7526afdd2b2219742442366">getCodigo</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        std::string <a class="code hl_function" href="class_cartao.html#aec176f7c2acb803af08829e5203af9e5">getNome</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        std::string <a class="code hl_function" href="class_cartao.html#a6b8cbf085501206318fdeb8bd2451a50">getDescricao</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        std::string <a class="code hl_function" href="class_cartao.html#a23d50192ae5a5200e760259b05bad25c">getColuna</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_cartao.html#af8e0344f32ac0be4fbdf1a635be167dd">setCodigo</a>(std::string novoCodigo);</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_cartao.html#aa60129da8e7ca2589f31468e66602783">setNome</a>(std::string novoNome);</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_cartao.html#aef377bf94b9f6a10ddfd88350aca1f2f">setDescricao</a>(std::string novaDescricao);</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_cartao.html#aa8e2bdb28e8c24f3e8c8a12963d1ab95">setColuna</a>(std::string novaColuna);</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>};</div>
+<a href="_cartao_8hpp.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;../domains/Texto.hpp&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;../domains/Codigo.hpp&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;../domains/Coluna.hpp&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="foldopen" id="foldopen00016" data-start="{" data-end="};">
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_cartao.html">   16</a></span><span class="keyword">class </span><a class="code hl_class" href="class_cartao.html">Cartao</a> {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <a class="code hl_class" href="class_cartao.html">Cartao</a>(<a class="code hl_class" href="class_codigo.html">Codigo</a> codigo, <a class="code hl_class" href="class_texto.html">Texto</a> nome, <a class="code hl_class" href="class_texto.html">Texto</a> descricao, <a class="code hl_class" href="class_coluna.html">Coluna</a> coluna);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <a class="code hl_class" href="class_codigo.html">Codigo</a> m_codigo;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <a class="code hl_class" href="class_texto.html">Texto</a> m_nome;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <a class="code hl_class" href="class_texto.html">Texto</a> m_descricao;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <a class="code hl_class" href="class_coluna.html">Coluna</a> m_coluna;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        std::string <a class="code hl_function" href="class_cartao.html#ae01acc1da7526afdd2b2219742442366">getCodigo</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        std::string <a class="code hl_function" href="class_cartao.html#aec176f7c2acb803af08829e5203af9e5">getNome</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        std::string <a class="code hl_function" href="class_cartao.html#a6b8cbf085501206318fdeb8bd2451a50">getDescricao</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        std::string <a class="code hl_function" href="class_cartao.html#a23d50192ae5a5200e760259b05bad25c">getColuna</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_cartao.html#af8e0344f32ac0be4fbdf1a635be167dd">setCodigo</a>(std::string novoCodigo);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_cartao.html#aa60129da8e7ca2589f31468e66602783">setNome</a>(std::string novoNome);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_cartao.html#aef377bf94b9f6a10ddfd88350aca1f2f">setDescricao</a>(std::string novaDescricao);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_cartao.html#aa8e2bdb28e8c24f3e8c8a12963d1ab95">setColuna</a>(std::string novaColuna);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>};</div>
 </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="preprocessor">#endif </span><span class="comment">// CARTAO_HPP_INCLUDED</span></div>
-<div class="ttc" id="aclass_cartao_html"><div class="ttname"><a href="class_cartao.html">Cartao</a></div><div class="ttdoc">Classe que representa um cartño.</div><div class="ttdef"><b>Definição</b> Cartao.hpp:17</div></div>
-<div class="ttc" id="aclass_cartao_html_a23d50192ae5a5200e760259b05bad25c"><div class="ttname"><a href="class_cartao.html#a23d50192ae5a5200e760259b05bad25c">Cartao::getColuna</a></div><div class="ttdeci">std::string getColuna() const</div><div class="ttdoc">Obtém a coluna do cartño.</div><div class="ttdef"><b>Definição</b> Cartao.cpp:25</div></div>
-<div class="ttc" id="aclass_cartao_html_a6b8cbf085501206318fdeb8bd2451a50"><div class="ttname"><a href="class_cartao.html#a6b8cbf085501206318fdeb8bd2451a50">Cartao::getDescricao</a></div><div class="ttdeci">std::string getDescricao() const</div><div class="ttdoc">Obtém a descrição do cartño.</div><div class="ttdef"><b>Definição</b> Cartao.cpp:19</div></div>
+<div class="ttc" id="aclass_cartao_html"><div class="ttname"><a href="class_cartao.html">Cartao</a></div><div class="ttdoc">Classe que representa um Cartão.</div><div class="ttdef"><b>Definição</b> Cartao.hpp:16</div></div>
+<div class="ttc" id="aclass_cartao_html_a23d50192ae5a5200e760259b05bad25c"><div class="ttname"><a href="class_cartao.html#a23d50192ae5a5200e760259b05bad25c">Cartao::getColuna</a></div><div class="ttdeci">std::string getColuna() const</div><div class="ttdoc">Obtém a coluna do cartão.</div><div class="ttdef"><b>Definição</b> Cartao.cpp:25</div></div>
+<div class="ttc" id="aclass_cartao_html_a6b8cbf085501206318fdeb8bd2451a50"><div class="ttname"><a href="class_cartao.html#a6b8cbf085501206318fdeb8bd2451a50">Cartao::getDescricao</a></div><div class="ttdeci">std::string getDescricao() const</div><div class="ttdoc">Obtém a descrição do cartão.</div><div class="ttdef"><b>Definição</b> Cartao.cpp:19</div></div>
 <div class="ttc" id="aclass_cartao_html_aa60129da8e7ca2589f31468e66602783"><div class="ttname"><a href="class_cartao.html#aa60129da8e7ca2589f31468e66602783">Cartao::setNome</a></div><div class="ttdeci">void setNome(std::string novoNome)</div><div class="ttdoc">Define um novo nome para o cartño.</div><div class="ttdef"><b>Definição</b> Cartao.cpp:38</div></div>
-<div class="ttc" id="aclass_cartao_html_aa8e2bdb28e8c24f3e8c8a12963d1ab95"><div class="ttname"><a href="class_cartao.html#aa8e2bdb28e8c24f3e8c8a12963d1ab95">Cartao::setColuna</a></div><div class="ttdeci">void setColuna(std::string novaColuna)</div><div class="ttdoc">Define uma nova coluna para o cartño.</div><div class="ttdef"><b>Definição</b> Cartao.cpp:49</div></div>
-<div class="ttc" id="aclass_cartao_html_ae01acc1da7526afdd2b2219742442366"><div class="ttname"><a href="class_cartao.html#ae01acc1da7526afdd2b2219742442366">Cartao::getCodigo</a></div><div class="ttdeci">std::string getCodigo() const</div><div class="ttdoc">Obtém o código do cartño.</div><div class="ttdef"><b>Definição</b> Cartao.cpp:10</div></div>
-<div class="ttc" id="aclass_cartao_html_aec176f7c2acb803af08829e5203af9e5"><div class="ttname"><a href="class_cartao.html#aec176f7c2acb803af08829e5203af9e5">Cartao::getNome</a></div><div class="ttdeci">std::string getNome() const</div><div class="ttdoc">Obtém o nome do cartño.</div><div class="ttdef"><b>Definição</b> Cartao.cpp:14</div></div>
-<div class="ttc" id="aclass_cartao_html_aef377bf94b9f6a10ddfd88350aca1f2f"><div class="ttname"><a href="class_cartao.html#aef377bf94b9f6a10ddfd88350aca1f2f">Cartao::setDescricao</a></div><div class="ttdeci">void setDescricao(std::string novaDescricao)</div><div class="ttdoc">Define uma nova descrição para o cartño.</div><div class="ttdef"><b>Definição</b> Cartao.cpp:44</div></div>
-<div class="ttc" id="aclass_cartao_html_af8e0344f32ac0be4fbdf1a635be167dd"><div class="ttname"><a href="class_cartao.html#af8e0344f32ac0be4fbdf1a635be167dd">Cartao::setCodigo</a></div><div class="ttdeci">void setCodigo(std::string novoCodigo)</div><div class="ttdoc">Define um novo código para o cartño.</div><div class="ttdef"><b>Definição</b> Cartao.cpp:33</div></div>
+<div class="ttc" id="aclass_cartao_html_aa8e2bdb28e8c24f3e8c8a12963d1ab95"><div class="ttname"><a href="class_cartao.html#aa8e2bdb28e8c24f3e8c8a12963d1ab95">Cartao::setColuna</a></div><div class="ttdeci">void setColuna(std::string novaColuna)</div><div class="ttdoc">Define uma nova coluna para o cartão.</div><div class="ttdef"><b>Definição</b> Cartao.cpp:49</div></div>
+<div class="ttc" id="aclass_cartao_html_ae01acc1da7526afdd2b2219742442366"><div class="ttname"><a href="class_cartao.html#ae01acc1da7526afdd2b2219742442366">Cartao::getCodigo</a></div><div class="ttdeci">std::string getCodigo() const</div><div class="ttdoc">Obtém o código do Cartão.</div><div class="ttdef"><b>Definição</b> Cartao.cpp:10</div></div>
+<div class="ttc" id="aclass_cartao_html_aec176f7c2acb803af08829e5203af9e5"><div class="ttname"><a href="class_cartao.html#aec176f7c2acb803af08829e5203af9e5">Cartao::getNome</a></div><div class="ttdeci">std::string getNome() const</div><div class="ttdoc">Obtém o nome do Cartão.</div><div class="ttdef"><b>Definição</b> Cartao.cpp:14</div></div>
+<div class="ttc" id="aclass_cartao_html_aef377bf94b9f6a10ddfd88350aca1f2f"><div class="ttname"><a href="class_cartao.html#aef377bf94b9f6a10ddfd88350aca1f2f">Cartao::setDescricao</a></div><div class="ttdeci">void setDescricao(std::string novaDescricao)</div><div class="ttdoc">Define uma nova descrição para o cartão.</div><div class="ttdef"><b>Definição</b> Cartao.cpp:44</div></div>
+<div class="ttc" id="aclass_cartao_html_af8e0344f32ac0be4fbdf1a635be167dd"><div class="ttname"><a href="class_cartao.html#af8e0344f32ac0be4fbdf1a635be167dd">Cartao::setCodigo</a></div><div class="ttdeci">void setCodigo(std::string novoCodigo)</div><div class="ttdoc">Define um novo código para o cartão.</div><div class="ttdef"><b>Definição</b> Cartao.cpp:33</div></div>
 <div class="ttc" id="aclass_codigo_html"><div class="ttname"><a href="class_codigo.html">Codigo</a></div><div class="ttdoc">Classe que representa um código.</div><div class="ttdef"><b>Definição</b> Codigo.hpp:15</div></div>
 <div class="ttc" id="aclass_coluna_html"><div class="ttname"><a href="class_coluna.html">Coluna</a></div><div class="ttdoc">Classe que representa uma coluna.</div><div class="ttdef"><b>Definição</b> Coluna.hpp:13</div></div>
 <div class="ttc" id="aclass_texto_html"><div class="ttname"><a href="class_texto.html">Texto</a></div><div class="ttdoc">Classe que representa um texto.</div><div class="ttdef"><b>Definição</b> Texto.hpp:16</div></div>
@@ -149,7 +145,7 @@ $(document).ready(function(){initNavTree('_cartao_8hpp_source.html',''); initRes
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_d691984d1d74be3b164cee16192654be.html">entities</a></li><li class="navelem"><a class="el" href="_cartao_8hpp.html">Cartao.hpp</a></li>
-    <li class="footer">Gerado em Segunda, 9 de Outubro de 2023 09:27:49 para trabalho-tp1 por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Gerado em Segunda, 9 de Outubro de 2023 10:15:21 para trabalho-tp1 por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

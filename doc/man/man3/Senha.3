@@ -1,0 +1,84 @@
+.TH "Senha" 3 "trabalho-tp1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Senha \- Classe que representa uma senha\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Senha\&.hpp>\fP
+.PP
+Subclasse de \fBDominio\fP\&.
+.SS "Membros Públicos"
+
+.in +1c
+.ti -1c
+.RI "\fBSenha\fP (std::string senha)"
+.br
+.RI "Construtor da classe \fBSenha\fP\&. "
+.ti -1c
+.RI "void \fBsetSenha\fP (std::string novaSenha)"
+.br
+.RI "Define uma nova senha\&. "
+.ti -1c
+.RI "std::string \fBgetSenha\fP () const"
+.br
+.RI "Obte\*(`m a senha atual\&. "
+.in -1c
+.SS "Outros membros herdados"
+.SH "Descrição detalhada"
+.PP 
+Classe que representa uma senha\&. 
+
+Esta classe representa uma senha, que e\*(` uma seque\*^ncia de caracteres\&. Ela fornece m�todos para definir e obter a senha, bem como para valida\*(`-la\&. 
+.PP
+Definição na linha \fB15\fP do arquivo \fBSenha\&.hpp\fP\&.
+.SH "Construtores e Destrutores"
+.PP 
+.SS "Senha::Senha (std::string senha)"
+
+.PP
+Construtor da classe \fBSenha\fP\&. 
+.PP
+\fBParâmetros\fP
+.RS 4
+\fIsenha\fP A seque\*^ncia de caracteres que representa a senha\&. 
+.RE
+.PP
+
+.PP
+Definição na linha \fB6\fP do arquivo \fBSenha\&.cpp\fP\&.
+.SH "Documentação das funções"
+.PP 
+.SS "std::string Senha::getSenha () const"
+
+.PP
+Obte\*(`m a senha atual\&. 
+.PP
+\fBRetorna\fP
+.RS 4
+Uma string representando a senha atual\&. 
+.RE
+.PP
+
+.PP
+Definição na linha \fB56\fP do arquivo \fBSenha\&.cpp\fP\&.
+.SS "void Senha::setSenha (std::string novaSenha)"
+
+.PP
+Define uma nova senha\&. 
+.PP
+\fBParâmetros\fP
+.RS 4
+\fInovaSenha\fP A nova seque\*^ncia de caracteres a ser definida como senha\&. 
+.RE
+.PP
+
+.PP
+Definição na linha \fB60\fP do arquivo \fBSenha\&.cpp\fP\&.
+
+.SH "Autor"
+.PP 
+Gerado automaticamente por Doxygen para trabalho-tp1 a partir do código fonte\&.

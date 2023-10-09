@@ -1,33 +1,34 @@
 \doxysection{Cartao.\+hpp}
 \hypertarget{_cartao_8hpp_source}{}\label{_cartao_8hpp_source}\index{C:/Users/danie/unb\_local/trabalho-\/tp1/src/entities/Cartao.hpp@{C:/Users/danie/unb\_local/trabalho-\/tp1/src/entities/Cartao.hpp}}
-\mbox{\hyperlink{_cartao_8hpp}{Go to the documentation of this file.}}
+\mbox{\hyperlink{_cartao_8hpp}{Ir para a documentação desse arquivo.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ CARTAO\_HPP\_INCLUDED}}
-\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ CARTAO\_HPP\_INCLUDED}}
-\DoxyCodeLine{00003\ }
-\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
-\DoxyCodeLine{00005\ }
-\DoxyCodeLine{00006\ \textcolor{keyword}{using\ namespace\ }std;}
-\DoxyCodeLine{00007\ }
-\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_cartao}{Cartao}}\ \{}
-\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ codigo;}
-\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ nome;}
-\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ texto;}
-\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ coluna;}
-\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_cartao_ac098e61106c105b9caf651a7963607f7}{getCodigo}}();}
-\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_cartao_aa4d742d9cc917b3e71777c062839378c}{getNome}}();}
-\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_cartao_aa92d06cfa5a6ac3a56434296f98dfbac}{getDescricao}}();}
-\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_cartao_a7b2111495d5ef73f3c03f26deb388917}{getColuna}}();}
-\DoxyCodeLine{00019\ }
-\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_cartao_ab3338fcbd613070dab229b392b3e7d15}{setCodigo}}(\textcolor{keywordtype}{int}\ novoCodigo);}
-\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_cartao_a78bfddd91e6293a8e472c7419fb36f78}{setNome}}(\textcolor{keywordtype}{string}\ novoNome);}
-\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_cartao_a85023d110c3be6fc463aa517a2c758ff}{setDescricao}}(\textcolor{keywordtype}{string}\ novoDescricao);}
-\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_cartao_a7b5c0ab3fde0600cb07518af59f051ed}{setColuna}}(\textcolor{keywordtype}{string}\ novoColuna);}
-\DoxyCodeLine{00024\ \};}
-\DoxyCodeLine{00025\ }
-\DoxyCodeLine{00026\ }
-\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CARTAO\_HPP\_INCLUDED}}
+\DoxyCodeLine{\Hypertarget{_cartao_8hpp_source_l00001}00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{\Hypertarget{_cartao_8hpp_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{_cartao_8hpp_source_l00003}00003\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{\Hypertarget{_cartao_8hpp_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{_cartao_8hpp_source_l00005}00005\ \textcolor{preprocessor}{\#include\ "{}../domains/Texto.hpp"{}}}
+\DoxyCodeLine{\Hypertarget{_cartao_8hpp_source_l00006}00006\ \textcolor{preprocessor}{\#include\ "{}../domains/Codigo.hpp"{}}}
+\DoxyCodeLine{\Hypertarget{_cartao_8hpp_source_l00007}00007\ \textcolor{preprocessor}{\#include\ "{}../domains/Coluna.hpp"{}}}
+\DoxyCodeLine{\Hypertarget{_cartao_8hpp_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{_cartao_8hpp_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{_cartao_8hpp_source_l00016}\mbox{\hyperlink{class_cartao}{00016}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_cartao}{Cartao}}\ \{}
+\DoxyCodeLine{\Hypertarget{_cartao_8hpp_source_l00017}00017\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_cartao_8hpp_source_l00024}00024\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_cartao}{Cartao}}(\mbox{\hyperlink{class_codigo}{Codigo}}\ codigo,\ \mbox{\hyperlink{class_texto}{Texto}}\ nome,\ \mbox{\hyperlink{class_texto}{Texto}}\ descricao,\ \mbox{\hyperlink{class_coluna}{Coluna}}\ coluna);}
+\DoxyCodeLine{\Hypertarget{_cartao_8hpp_source_l00025}00025\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_cartao_8hpp_source_l00026}00026\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_codigo}{Codigo}}\ m\_codigo;}
+\DoxyCodeLine{\Hypertarget{_cartao_8hpp_source_l00027}00027\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_texto}{Texto}}\ m\_nome;}
+\DoxyCodeLine{\Hypertarget{_cartao_8hpp_source_l00028}00028\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_texto}{Texto}}\ m\_descricao;}
+\DoxyCodeLine{\Hypertarget{_cartao_8hpp_source_l00029}00029\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_coluna}{Coluna}}\ m\_coluna;}
+\DoxyCodeLine{\Hypertarget{_cartao_8hpp_source_l00030}00030\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_cartao_8hpp_source_l00034}00034\ }
+\DoxyCodeLine{\Hypertarget{_cartao_8hpp_source_l00035}00035\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{class_cartao_ae01acc1da7526afdd2b2219742442366}{getCodigo}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_cartao_8hpp_source_l00039}00039\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{class_cartao_aec176f7c2acb803af08829e5203af9e5}{getNome}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_cartao_8hpp_source_l00043}00043\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{class_cartao_a6b8cbf085501206318fdeb8bd2451a50}{getDescricao}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_cartao_8hpp_source_l00047}00047\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{class_cartao_a23d50192ae5a5200e760259b05bad25c}{getColuna}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_cartao_8hpp_source_l00051}00051\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_cartao_af8e0344f32ac0be4fbdf1a635be167dd}{setCodigo}}(std::string\ novoCodigo);}
+\DoxyCodeLine{\Hypertarget{_cartao_8hpp_source_l00055}00055\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_cartao_aa60129da8e7ca2589f31468e66602783}{setNome}}(std::string\ novoNome);}
+\DoxyCodeLine{\Hypertarget{_cartao_8hpp_source_l00059}00059\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_cartao_aef377bf94b9f6a10ddfd88350aca1f2f}{setDescricao}}(std::string\ novaDescricao);}
+\DoxyCodeLine{\Hypertarget{_cartao_8hpp_source_l00063}00063\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_cartao_aa8e2bdb28e8c24f3e8c8a12963d1ab95}{setColuna}}(std::string\ novaColuna);}
+\DoxyCodeLine{\Hypertarget{_cartao_8hpp_source_l00064}00064\ \};}
 
 \end{DoxyCode}

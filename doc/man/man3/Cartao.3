@@ -1,0 +1,189 @@
+.TH "Cartao" 3 "trabalho-tp1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Cartao \- Classe que representa um Carta\*~o\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Cartao\&.hpp>\fP
+.SS "Membros Públicos"
+
+.in +1c
+.ti -1c
+.RI "\fBCartao\fP (\fBCodigo\fP codigo, \fBTexto\fP nome, \fBTexto\fP descricao, \fBColuna\fP coluna)"
+.br
+.RI "Construtor da classe Carta\*~o\&. "
+.ti -1c
+.RI "std::string \fBgetCodigo\fP () const"
+.br
+.RI "Obte\*(`m o co\*(`digo do Carta\*~o\&. "
+.ti -1c
+.RI "std::string \fBgetNome\fP () const"
+.br
+.RI "Obte\*(`m o nome do Carta\*~o\&. "
+.ti -1c
+.RI "std::string \fBgetDescricao\fP () const"
+.br
+.RI "Obte\*(`m a descric\*,a\*~o do carta\*~o\&. "
+.ti -1c
+.RI "std::string \fBgetColuna\fP () const"
+.br
+.RI "Obte\*(`m a coluna do carta\*~o\&. "
+.ti -1c
+.RI "void \fBsetCodigo\fP (std::string novoCodigo)"
+.br
+.RI "Define um novo co\*(`digo para o carta\*~o\&. "
+.ti -1c
+.RI "void \fBsetNome\fP (std::string novoNome)"
+.br
+.RI "Define um novo nome para o cartn\*~o\&. "
+.ti -1c
+.RI "void \fBsetDescricao\fP (std::string novaDescricao)"
+.br
+.RI "Define uma nova descric\*,a\*~o para o carta\*~o\&. "
+.ti -1c
+.RI "void \fBsetColuna\fP (std::string novaColuna)"
+.br
+.RI "Define uma nova coluna para o carta\*~o\&. "
+.in -1c
+.SH "Descrição detalhada"
+.PP 
+Classe que representa um Carta\*~o\&. 
+
+Esta classe representa um carta\*~o que conte\*(`m informac\*,o\*~es como nome, descric\*,a\*~o, co\*(`digo e coluna\&. 
+.PP
+Definição na linha \fB16\fP do arquivo \fBCartao\&.hpp\fP\&.
+.SH "Construtores e Destrutores"
+.PP 
+.SS "Cartao::Cartao (\fBCodigo\fP codigo, \fBTexto\fP nome, \fBTexto\fP descricao, \fBColuna\fP coluna)"
+
+.PP
+Construtor da classe Carta\*~o\&. 
+.PP
+\fBParâmetros\fP
+.RS 4
+\fIcodigo\fP O co\*(`digo do Carta\*~o\&. 
+.br
+\fInome\fP O nome do Carta\*~o\&. 
+.br
+\fIdescricao\fP A descric\*,a\*~o do Carta\*~o\&. 
+.br
+\fIcoluna\fP A coluna do Carta\*~o\&. 
+.RE
+.PP
+
+.PP
+Definição na linha \fB5\fP do arquivo \fBCartao\&.cpp\fP\&.
+.SH "Documentação das funções"
+.PP 
+.SS "std::string Cartao::getCodigo () const"
+
+.PP
+Obte\*(`m o co\*(`digo do Carta\*~o\&. 
+.PP
+\fBRetorna\fP
+.RS 4
+Uma string representando o co\*(`digo do Carta\*~o\&. 
+.RE
+.PP
+
+.PP
+Definição na linha \fB10\fP do arquivo \fBCartao\&.cpp\fP\&.
+.SS "std::string Cartao::getColuna () const"
+
+.PP
+Obte\*(`m a coluna do carta\*~o\&. 
+.PP
+\fBRetorna\fP
+.RS 4
+Uma string representando a coluna carta\*~o\&. 
+.RE
+.PP
+
+.PP
+Definição na linha \fB25\fP do arquivo \fBCartao\&.cpp\fP\&.
+.SS "std::string Cartao::getDescricao () const"
+
+.PP
+Obte\*(`m a descric\*,a\*~o do carta\*~o\&. 
+.PP
+\fBRetorna\fP
+.RS 4
+Uma string representando a descric\*,a\*~o do carta\*~o\&. 
+.RE
+.PP
+
+.PP
+Definição na linha \fB19\fP do arquivo \fBCartao\&.cpp\fP\&.
+.SS "std::string Cartao::getNome () const"
+
+.PP
+Obte\*(`m o nome do Carta\*~o\&. 
+.PP
+\fBRetorna\fP
+.RS 4
+Uma string representando o nome do Carta\*~o\&. 
+.RE
+.PP
+
+.PP
+Definição na linha \fB14\fP do arquivo \fBCartao\&.cpp\fP\&.
+.SS "void Cartao::setCodigo (std::string novoCodigo)"
+
+.PP
+Define um novo co\*(`digo para o carta\*~o\&. 
+.PP
+\fBParâmetros\fP
+.RS 4
+\fInovoCodigo\fP O novo co\*(`digo a ser definido\&. 
+.RE
+.PP
+
+.PP
+Definição na linha \fB33\fP do arquivo \fBCartao\&.cpp\fP\&.
+.SS "void Cartao::setColuna (std::string novaColuna)"
+
+.PP
+Define uma nova coluna para o carta\*~o\&. 
+.PP
+\fBParâmetros\fP
+.RS 4
+\fInovaColuna\fP A nova coluna a ser definida\&. 
+.RE
+.PP
+
+.PP
+Definição na linha \fB49\fP do arquivo \fBCartao\&.cpp\fP\&.
+.SS "void Cartao::setDescricao (std::string novaDescricao)"
+
+.PP
+Define uma nova descric\*,a\*~o para o carta\*~o\&. 
+.PP
+\fBParâmetros\fP
+.RS 4
+\fInovaDescricao\fP A nova descric\*,a\*~o a ser definida\&. 
+.RE
+.PP
+
+.PP
+Definição na linha \fB44\fP do arquivo \fBCartao\&.cpp\fP\&.
+.SS "void Cartao::setNome (std::string novoNome)"
+
+.PP
+Define um novo nome para o cartn\*~o\&. 
+.PP
+\fBParâmetros\fP
+.RS 4
+\fInovoCodigo\fP O novo nome a ser definido\&. 
+.RE
+.PP
+
+.PP
+Definição na linha \fB38\fP do arquivo \fBCartao\&.cpp\fP\&.
+
+.SH "Autor"
+.PP 
+Gerado automaticamente por Doxygen para trabalho-tp1 a partir do código fonte\&.

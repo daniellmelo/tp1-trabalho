@@ -1,0 +1,151 @@
+.TH "Conta" 3 "trabalho-tp1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Conta
+.SH SYNOPSIS
+.br
+.PP
+.SS "Membros Públicos"
+
+.in +1c
+.ti -1c
+.RI "\fBConta\fP ()"
+.br
+.RI "Construtor da classe \fBConta\fP\&. "
+.ti -1c
+.RI "\fBConta\fP (\fBEmail\fP email, \fBTexto\fP nome, \fBSenha\fP senha)"
+.br
+.ti -1c
+.RI "std::string \fBgetEmail\fP () const"
+.br
+.RI "Obte\*(`m o enderec\*,o de email da conta\&. "
+.ti -1c
+.RI "std::string \fBgetNome\fP () const"
+.br
+.RI "Obte\*(`m o nome do usua\*(`rio da conta\&. "
+.ti -1c
+.RI "std::string \fBgetSenha\fP () const"
+.br
+.RI "Obte\*(`m a senha da conta\&. "
+.ti -1c
+.RI "void \fBsetEmail\fP (std::string novoEmail)"
+.br
+.RI "Define um novo enderec\*,o de email para a conta\&. "
+.ti -1c
+.RI "void \fBsetNome\fP (std::string novoNome)"
+.br
+.RI "Define um novo nome de usua\*(`rio para a conta\&. "
+.ti -1c
+.RI "void \fBsetSenha\fP (std::string novoSenha)"
+.br
+.RI "Define uma nova senha para a conta\&. "
+.in -1c
+.SH "Descrição detalhada"
+.PP 
+Definição na linha \fB13\fP do arquivo \fBConta\&.hpp\fP\&.
+.SH "Construtores e Destrutores"
+.PP 
+.SS "Conta::Conta ()"
+
+.PP
+Construtor da classe \fBConta\fP\&. 
+.PP
+\fBParâmetros\fP
+.RS 4
+\fIemail\fP O enderec\*,o de email associado a\*: conta\&. 
+.br
+\fInome\fP O nome do usua\*(`rio associado a\*: conta\&. 
+.br
+\fIsenha\fP A senha da conta\&. 
+.RE
+.PP
+
+.SS "Conta::Conta (\fBEmail\fP email, \fBTexto\fP nome, \fBSenha\fP senha)"
+
+.PP
+Definição na linha \fB3\fP do arquivo \fBConta\&.cpp\fP\&.
+.SH "Documentação das funções"
+.PP 
+.SS "std::string Conta::getEmail () const"
+
+.PP
+Obte\*(`m o enderec\*,o de email da conta\&. 
+.PP
+\fBRetorna\fP
+.RS 4
+Uma string representando o enderec\*,o de email\&. 
+.RE
+.PP
+
+.PP
+Definição na linha \fB7\fP do arquivo \fBConta\&.cpp\fP\&.
+.SS "std::string Conta::getNome () const"
+
+.PP
+Obte\*(`m o nome do usua\*(`rio da conta\&. 
+.PP
+\fBRetorna\fP
+.RS 4
+Uma string representando o nome do usua\*(`rio\&. 
+.RE
+.PP
+
+.PP
+Definição na linha \fB11\fP do arquivo \fBConta\&.cpp\fP\&.
+.SS "std::string Conta::getSenha () const"
+
+.PP
+Obte\*(`m a senha da conta\&. 
+.PP
+\fBRetorna\fP
+.RS 4
+Uma string representando a senha\&. 
+.RE
+.PP
+
+.PP
+Definição na linha \fB14\fP do arquivo \fBConta\&.cpp\fP\&.
+.SS "void Conta::setEmail (std::string novoEmail)"
+
+.PP
+Define um novo enderec\*,o de email para a conta\&. 
+.PP
+\fBParâmetros\fP
+.RS 4
+\fInovoEmail\fP O novo enderec\*,o de email a ser definido\&. 
+.RE
+.PP
+
+.PP
+Definição na linha \fB18\fP do arquivo \fBConta\&.cpp\fP\&.
+.SS "void Conta::setNome (std::string novoNome)"
+
+.PP
+Define um novo nome de usua\*(`rio para a conta\&. 
+.PP
+\fBParâmetros\fP
+.RS 4
+\fInovoNome\fP O novo nome de usua\*(`rio a ser definido 
+.RE
+.PP
+
+.PP
+Definição na linha \fB22\fP do arquivo \fBConta\&.cpp\fP\&.
+.SS "void Conta::setSenha (std::string novoSenha)"
+
+.PP
+Define uma nova senha para a conta\&. 
+.PP
+\fBParâmetros\fP
+.RS 4
+\fInovoSenha\fP A nova senha a ser definida\&. 
+.RE
+.PP
+
+.PP
+Definição na linha \fB26\fP do arquivo \fBConta\&.cpp\fP\&.
+
+.SH "Autor"
+.PP 
+Gerado automaticamente por Doxygen para trabalho-tp1 a partir do código fonte\&.

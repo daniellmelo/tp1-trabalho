@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['validador_0',['Validador',['../class_validador.html',1,'']]]
+  ['texto_0',['Texto',['../class_texto.html',1,'']]]
 ];

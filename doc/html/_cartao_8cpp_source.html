@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>trabalho-tp1: Código-Fonte de C:/Users/danie/unb_local/trabalho-tp1/src/entities/Cartao.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">trabalho-tp1
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_d691984d1d74be3b164cee16192654be.html">entities</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">Cartao.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="_cartao_8hpp.html">Cartao.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="foldopen" id="foldopen00005" data-start="{" data-end="}">
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_cartao.html#a5bbb661b223edfa09ade7098f8d27549">    5</a></span><a class="code hl_function" href="class_cartao.html#a5bbb661b223edfa09ade7098f8d27549">Cartao::Cartao</a>(<a class="code hl_class" href="class_codigo.html">Codigo</a> codigo, <a class="code hl_class" href="class_texto.html">Texto</a> nome, <a class="code hl_class" href="class_texto.html">Texto</a> descricao, <a class="code hl_class" href="class_coluna.html">Coluna</a> coluna):</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    m_codigo(codigo), m_nome(nome), m_descricao(descricao), m_coluna(coluna){</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>};</div>
+</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">// Getters para a classe cartão</span></div>
+<div class="foldopen" id="foldopen00010" data-start="{" data-end="}">
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_cartao.html#ae01acc1da7526afdd2b2219742442366">   10</a></span>std::string <a class="code hl_function" href="class_cartao.html#ae01acc1da7526afdd2b2219742442366">Cartao::getCodigo</a>()<span class="keyword"> const</span>{</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keywordflow">return</span> m_codigo.<a class="code hl_function" href="class_codigo.html#a2c19930fb343131616eb97fe622b1bbb">getCodigo</a>();</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>};</div>
+</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="foldopen" id="foldopen00014" data-start="{" data-end="}">
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_cartao.html#aec176f7c2acb803af08829e5203af9e5">   14</a></span>std::string <a class="code hl_function" href="class_cartao.html#aec176f7c2acb803af08829e5203af9e5">Cartao::getNome</a>()<span class="keyword"> const</span>{</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keywordflow">return</span> m_nome.<a class="code hl_function" href="class_texto.html#abed0b18b7b98526eb0194901ce4736a2">getTexto</a>();</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>};</div>
+</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="}">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_cartao.html#a6b8cbf085501206318fdeb8bd2451a50">   19</a></span>std::string <a class="code hl_function" href="class_cartao.html#a6b8cbf085501206318fdeb8bd2451a50">Cartao::getDescricao</a>()<span class="keyword"> const</span>{</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordflow">return</span> m_descricao.<a class="code hl_function" href="class_texto.html#abed0b18b7b98526eb0194901ce4736a2">getTexto</a>();</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>};</div>
+</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="foldopen" id="foldopen00025" data-start="{" data-end="}">
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_cartao.html#a23d50192ae5a5200e760259b05bad25c">   25</a></span>std::string <a class="code hl_function" href="class_cartao.html#a23d50192ae5a5200e760259b05bad25c">Cartao::getColuna</a>()<span class="keyword"> const</span>{</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordflow">return</span> m_coluna.<a class="code hl_function" href="class_coluna.html#a6bf1658b666a1983c49f16e45975b6dc">getColuna</a>();</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>};</div>
+</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">//-------------------------------------------------------</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">// Setters para a classe cartão</span></div>
+<div class="foldopen" id="foldopen00033" data-start="{" data-end="}">
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="class_cartao.html#af8e0344f32ac0be4fbdf1a635be167dd">   33</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_cartao.html#af8e0344f32ac0be4fbdf1a635be167dd">Cartao::setCodigo</a>(std::string novoCodigo){</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    m_codigo.<a class="code hl_function" href="class_codigo.html#a97ca64d6591e54ee7878ed8cdd47ccc2">setCodigo</a>(novoCodigo);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>}</div>
+</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="foldopen" id="foldopen00038" data-start="{" data-end="}">
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="class_cartao.html#aa60129da8e7ca2589f31468e66602783">   38</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_cartao.html#aa60129da8e7ca2589f31468e66602783">Cartao::setNome</a>(std::string novoNome){</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    m_nome.<a class="code hl_function" href="class_texto.html#a8d8d44fc332b1d58f038a9cd130b999f">setTexto</a>(novoNome);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>}</div>
+</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="foldopen" id="foldopen00044" data-start="{" data-end="}">
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="class_cartao.html#aef377bf94b9f6a10ddfd88350aca1f2f">   44</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_cartao.html#aef377bf94b9f6a10ddfd88350aca1f2f">Cartao::setDescricao</a>(std::string novaDescricao){</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    m_descricao.<a class="code hl_function" href="class_texto.html#a8d8d44fc332b1d58f038a9cd130b999f">setTexto</a>(novaDescricao);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>}</div>
+</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="foldopen" id="foldopen00049" data-start="{" data-end="}">
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="class_cartao.html#aa8e2bdb28e8c24f3e8c8a12963d1ab95">   49</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_cartao.html#aa8e2bdb28e8c24f3e8c8a12963d1ab95">Cartao::setColuna</a>(std::string novaColuna){</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    m_coluna.<a class="code hl_function" href="class_coluna.html#a67892b0e9d137cc1aa84a4b86d315237">setColuna</a>(novaColuna);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>}</div>
+</div>
+<div class="ttc" id="a_cartao_8hpp_html"><div class="ttname"><a href="_cartao_8hpp.html">Cartao.hpp</a></div><div class="ttdoc">Este arquivo contém a declaração da classe Cartao.</div></div>
+<div class="ttc" id="aclass_cartao_html_a23d50192ae5a5200e760259b05bad25c"><div class="ttname"><a href="class_cartao.html#a23d50192ae5a5200e760259b05bad25c">Cartao::getColuna</a></div><div class="ttdeci">std::string getColuna() const</div><div class="ttdoc">Obtém a coluna do cartão.</div><div class="ttdef"><b>Definição</b> <a href="_cartao_8cpp_source.html#l00025">Cartao.cpp:25</a></div></div>
+<div class="ttc" id="aclass_cartao_html_a5bbb661b223edfa09ade7098f8d27549"><div class="ttname"><a href="class_cartao.html#a5bbb661b223edfa09ade7098f8d27549">Cartao::Cartao</a></div><div class="ttdeci">Cartao(Codigo codigo, Texto nome, Texto descricao, Coluna coluna)</div><div class="ttdoc">Construtor da classe Cartão.</div><div class="ttdef"><b>Definição</b> <a href="_cartao_8cpp_source.html#l00005">Cartao.cpp:5</a></div></div>
+<div class="ttc" id="aclass_cartao_html_a6b8cbf085501206318fdeb8bd2451a50"><div class="ttname"><a href="class_cartao.html#a6b8cbf085501206318fdeb8bd2451a50">Cartao::getDescricao</a></div><div class="ttdeci">std::string getDescricao() const</div><div class="ttdoc">Obtém a descrição do cartão.</div><div class="ttdef"><b>Definição</b> <a href="_cartao_8cpp_source.html#l00019">Cartao.cpp:19</a></div></div>
+<div class="ttc" id="aclass_cartao_html_aa60129da8e7ca2589f31468e66602783"><div class="ttname"><a href="class_cartao.html#aa60129da8e7ca2589f31468e66602783">Cartao::setNome</a></div><div class="ttdeci">void setNome(std::string novoNome)</div><div class="ttdoc">Define um novo nome para o cartño.</div><div class="ttdef"><b>Definição</b> <a href="_cartao_8cpp_source.html#l00038">Cartao.cpp:38</a></div></div>
+<div class="ttc" id="aclass_cartao_html_aa8e2bdb28e8c24f3e8c8a12963d1ab95"><div class="ttname"><a href="class_cartao.html#aa8e2bdb28e8c24f3e8c8a12963d1ab95">Cartao::setColuna</a></div><div class="ttdeci">void setColuna(std::string novaColuna)</div><div class="ttdoc">Define uma nova coluna para o cartão.</div><div class="ttdef"><b>Definição</b> <a href="_cartao_8cpp_source.html#l00049">Cartao.cpp:49</a></div></div>
+<div class="ttc" id="aclass_cartao_html_ae01acc1da7526afdd2b2219742442366"><div class="ttname"><a href="class_cartao.html#ae01acc1da7526afdd2b2219742442366">Cartao::getCodigo</a></div><div class="ttdeci">std::string getCodigo() const</div><div class="ttdoc">Obtém o código do Cartão.</div><div class="ttdef"><b>Definição</b> <a href="_cartao_8cpp_source.html#l00010">Cartao.cpp:10</a></div></div>
+<div class="ttc" id="aclass_cartao_html_aec176f7c2acb803af08829e5203af9e5"><div class="ttname"><a href="class_cartao.html#aec176f7c2acb803af08829e5203af9e5">Cartao::getNome</a></div><div class="ttdeci">std::string getNome() const</div><div class="ttdoc">Obtém o nome do Cartão.</div><div class="ttdef"><b>Definição</b> <a href="_cartao_8cpp_source.html#l00014">Cartao.cpp:14</a></div></div>
+<div class="ttc" id="aclass_cartao_html_aef377bf94b9f6a10ddfd88350aca1f2f"><div class="ttname"><a href="class_cartao.html#aef377bf94b9f6a10ddfd88350aca1f2f">Cartao::setDescricao</a></div><div class="ttdeci">void setDescricao(std::string novaDescricao)</div><div class="ttdoc">Define uma nova descrição para o cartão.</div><div class="ttdef"><b>Definição</b> <a href="_cartao_8cpp_source.html#l00044">Cartao.cpp:44</a></div></div>
+<div class="ttc" id="aclass_cartao_html_af8e0344f32ac0be4fbdf1a635be167dd"><div class="ttname"><a href="class_cartao.html#af8e0344f32ac0be4fbdf1a635be167dd">Cartao::setCodigo</a></div><div class="ttdeci">void setCodigo(std::string novoCodigo)</div><div class="ttdoc">Define um novo código para o cartão.</div><div class="ttdef"><b>Definição</b> <a href="_cartao_8cpp_source.html#l00033">Cartao.cpp:33</a></div></div>
+<div class="ttc" id="aclass_codigo_html"><div class="ttname"><a href="class_codigo.html">Codigo</a></div><div class="ttdoc">Classe que representa um código.</div><div class="ttdef"><b>Definição</b> <a href="_codigo_8hpp_source.html#l00015">Codigo.hpp:15</a></div></div>
+<div class="ttc" id="aclass_codigo_html_a2c19930fb343131616eb97fe622b1bbb"><div class="ttname"><a href="class_codigo.html#a2c19930fb343131616eb97fe622b1bbb">Codigo::getCodigo</a></div><div class="ttdeci">std::string getCodigo() const</div><div class="ttdoc">Obtém o código atual.</div><div class="ttdef"><b>Definição</b> <a href="_codigo_8cpp_source.html#l00024">Codigo.cpp:24</a></div></div>
+<div class="ttc" id="aclass_codigo_html_a97ca64d6591e54ee7878ed8cdd47ccc2"><div class="ttname"><a href="class_codigo.html#a97ca64d6591e54ee7878ed8cdd47ccc2">Codigo::setCodigo</a></div><div class="ttdeci">void setCodigo(std::string novoCodigo)</div><div class="ttdoc">Define um novo código.</div><div class="ttdef"><b>Definição</b> <a href="_codigo_8cpp_source.html#l00028">Codigo.cpp:28</a></div></div>
+<div class="ttc" id="aclass_coluna_html"><div class="ttname"><a href="class_coluna.html">Coluna</a></div><div class="ttdoc">Classe que representa uma coluna.</div><div class="ttdef"><b>Definição</b> <a href="_coluna_8hpp_source.html#l00013">Coluna.hpp:13</a></div></div>
+<div class="ttc" id="aclass_coluna_html_a67892b0e9d137cc1aa84a4b86d315237"><div class="ttname"><a href="class_coluna.html#a67892b0e9d137cc1aa84a4b86d315237">Coluna::setColuna</a></div><div class="ttdeci">void setColuna(std::string novaColuna)</div><div class="ttdoc">Define uma nova coluna.</div><div class="ttdef"><b>Definição</b> <a href="_coluna_8cpp_source.html#l00025">Coluna.cpp:25</a></div></div>
+<div class="ttc" id="aclass_coluna_html_a6bf1658b666a1983c49f16e45975b6dc"><div class="ttname"><a href="class_coluna.html#a6bf1658b666a1983c49f16e45975b6dc">Coluna::getColuna</a></div><div class="ttdeci">std::string getColuna() const</div><div class="ttdoc">Obtém a coluna atual.</div><div class="ttdef"><b>Definição</b> <a href="_coluna_8cpp_source.html#l00021">Coluna.cpp:21</a></div></div>
+<div class="ttc" id="aclass_texto_html"><div class="ttname"><a href="class_texto.html">Texto</a></div><div class="ttdoc">Classe que representa um texto.</div><div class="ttdef"><b>Definição</b> <a href="_texto_8hpp_source.html#l00016">Texto.hpp:16</a></div></div>
+<div class="ttc" id="aclass_texto_html_a8d8d44fc332b1d58f038a9cd130b999f"><div class="ttname"><a href="class_texto.html#a8d8d44fc332b1d58f038a9cd130b999f">Texto::setTexto</a></div><div class="ttdeci">void setTexto(std::string novoTexto)</div><div class="ttdoc">Define um novo texto.</div><div class="ttdef"><b>Definição</b> <a href="_texto_8cpp_source.html#l00071">Texto.cpp:71</a></div></div>
+<div class="ttc" id="aclass_texto_html_abed0b18b7b98526eb0194901ce4736a2"><div class="ttname"><a href="class_texto.html#abed0b18b7b98526eb0194901ce4736a2">Texto::getTexto</a></div><div class="ttdeci">std::string getTexto() const</div><div class="ttdoc">Obtém o texto atual.</div><div class="ttdef"><b>Definição</b> <a href="_texto_8cpp_source.html#l00067">Texto.cpp:67</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

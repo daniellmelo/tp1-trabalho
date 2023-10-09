@@ -1,0 +1,189 @@
+.TH "Quadro" 3 "trabalho-tp1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Quadro \- Classe que representa um quadro\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Quadro\&.hpp>\fP
+.SS "Membros Públicos"
+
+.in +1c
+.ti -1c
+.RI "\fBQuadro\fP (\fBCodigo\fP codigo, \fBTexto\fP nome, \fBTexto\fP descricao, \fBLimite\fP limite)"
+.br
+.RI "Construtor da classe \fBQuadro\fP\&. "
+.ti -1c
+.RI "std::string \fBgetNome\fP () const"
+.br
+.RI "Obte\*(`m o nome do quadro\&. "
+.ti -1c
+.RI "std::string \fBgetDescricao\fP () const"
+.br
+.RI "Obte\*(`m a descric\*,a\*~o do quadro\&. "
+.ti -1c
+.RI "std::string \fBgetCodigo\fP () const"
+.br
+.RI "Obte\*(`m o co\*(`digo do quadro\&. "
+.ti -1c
+.RI "std::string \fBgetLimite\fP () const"
+.br
+.RI "Obte\*(`m o limite do quadro\&. "
+.ti -1c
+.RI "void \fBsetCodigo\fP (std::string novoCodigo)"
+.br
+.RI "Define um novo co\*(`digo para o quadro\&. "
+.ti -1c
+.RI "void \fBsetNome\fP (std::string novoNome)"
+.br
+.RI "Define um novo nome para o quadro\&. "
+.ti -1c
+.RI "void \fBsetDescricao\fP (std::string novoDescricao)"
+.br
+.RI "Define uma nova descric\*,a\*~o para o quadro\&. "
+.ti -1c
+.RI "void \fBsetLimite\fP (std::string novoLimite)"
+.br
+.RI "Define um novo limite para o quadro\&. "
+.in -1c
+.SH "Descrição detalhada"
+.PP 
+Classe que representa um quadro\&. 
+
+Esta classe representa um quadro que conte\*(`m informac\*,o\*~es como nome, descric\*,a\*~o, co\*(`digo e limite\&. 
+.PP
+Definição na linha \fB15\fP do arquivo \fBQuadro\&.hpp\fP\&.
+.SH "Construtores e Destrutores"
+.PP 
+.SS "Quadro::Quadro (\fBCodigo\fP codigo, \fBTexto\fP nome, \fBTexto\fP descricao, \fBLimite\fP limite)"
+
+.PP
+Construtor da classe \fBQuadro\fP\&. 
+.PP
+\fBParâmetros\fP
+.RS 4
+\fIcodigo\fP O co\*(`digo do quadro\&. 
+.br
+\fInome\fP O nome do quadro\&. 
+.br
+\fIdescricao\fP A descric\*,a\*~o do quadro\&. 
+.br
+\fIlimite\fP O limite do quadro\&. 
+.RE
+.PP
+
+.PP
+Definição na linha \fB3\fP do arquivo \fBQuadro\&.cpp\fP\&.
+.SH "Documentação das funções"
+.PP 
+.SS "std::string Quadro::getCodigo () const"
+
+.PP
+Obte\*(`m o co\*(`digo do quadro\&. 
+.PP
+\fBRetorna\fP
+.RS 4
+Uma string representando o co\*(`digo do quadro\&. 
+.RE
+.PP
+
+.PP
+Definição na linha \fB8\fP do arquivo \fBQuadro\&.cpp\fP\&.
+.SS "std::string Quadro::getDescricao () const"
+
+.PP
+Obte\*(`m a descric\*,a\*~o do quadro\&. 
+.PP
+\fBRetorna\fP
+.RS 4
+Uma string representando a descric\*,a\*~o do quadro\&. 
+.RE
+.PP
+
+.PP
+Definição na linha \fB11\fP do arquivo \fBQuadro\&.cpp\fP\&.
+.SS "std::string Quadro::getLimite () const"
+
+.PP
+Obte\*(`m o limite do quadro\&. 
+.PP
+\fBRetorna\fP
+.RS 4
+Uma string representando o limite do quadro\&. 
+.RE
+.PP
+
+.PP
+Definição na linha \fB14\fP do arquivo \fBQuadro\&.cpp\fP\&.
+.SS "std::string Quadro::getNome () const"
+
+.PP
+Obte\*(`m o nome do quadro\&. 
+.PP
+\fBRetorna\fP
+.RS 4
+Uma string representando o nome do quadro\&. 
+.RE
+.PP
+
+.PP
+Definição na linha \fB17\fP do arquivo \fBQuadro\&.cpp\fP\&.
+.SS "void Quadro::setCodigo (std::string novoCodigo)"
+
+.PP
+Define um novo co\*(`digo para o quadro\&. 
+.PP
+\fBParâmetros\fP
+.RS 4
+\fInovoCodigo\fP O novo co\*(`digo a ser definido\&. 
+.RE
+.PP
+
+.PP
+Definição na linha \fB23\fP do arquivo \fBQuadro\&.cpp\fP\&.
+.SS "void Quadro::setDescricao (std::string novoDescricao)"
+
+.PP
+Define uma nova descric\*,a\*~o para o quadro\&. 
+.PP
+\fBParâmetros\fP
+.RS 4
+\fInovoDescricao\fP A nova descric\*,a\*~o a ser definida\&. 
+.RE
+.PP
+
+.PP
+Definição na linha \fB30\fP do arquivo \fBQuadro\&.cpp\fP\&.
+.SS "void Quadro::setLimite (std::string novoLimite)"
+
+.PP
+Define um novo limite para o quadro\&. 
+.PP
+\fBParâmetros\fP
+.RS 4
+\fInovoLimite\fP O novo limite a ser definido\&. 
+.RE
+.PP
+
+.PP
+Definição na linha \fB33\fP do arquivo \fBQuadro\&.cpp\fP\&.
+.SS "void Quadro::setNome (std::string novoNome)"
+
+.PP
+Define um novo nome para o quadro\&. 
+.PP
+\fBParâmetros\fP
+.RS 4
+\fInovoNome\fP O novo nome a ser definido\&. 
+.RE
+.PP
+
+.PP
+Definição na linha \fB27\fP do arquivo \fBQuadro\&.cpp\fP\&.
+
+.SH "Autor"
+.PP 
+Gerado automaticamente por Doxygen para trabalho-tp1 a partir do código fonte\&.

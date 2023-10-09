@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>trabalho-tp1: Código-Fonte de C:/Users/danie/unb_local/trabalho-tp1/src/entities/Conta.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">trabalho-tp1
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_d691984d1d74be3b164cee16192654be.html">entities</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">Conta.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="_conta_8hpp.html">Conta.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><a class="code hl_function" href="class_conta.html#ab22bc5e18f43b383aca57201ee68cb1e">Conta::Conta</a>(<a class="code hl_class" href="class_email.html">Email</a> email, <a class="code hl_class" href="class_texto.html">Texto</a> nome, <a class="code hl_class" href="class_senha.html">Senha</a> senha):</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>    m_email(email), m_nome(nome), m_senha(senha){ <span class="comment">// todo alterar tipo dos valores dos param</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>}</div>
+<div class="foldopen" id="foldopen00007" data-start="{" data-end="}">
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_conta.html#a0e9c1b914d26084711a651af07439c36">    7</a></span>std::string <a class="code hl_function" href="class_conta.html#a0e9c1b914d26084711a651af07439c36">Conta::getEmail</a>()<span class="keyword"> const</span>{</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keywordflow">return</span> m_email.<a class="code hl_function" href="class_email.html#a70860df6261f62d64413fd679f31f534">getEmail</a>();</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>};</div>
+</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="foldopen" id="foldopen00011" data-start="{" data-end="}">
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_conta.html#a87cd1df69c12e0dfdb6ab70a4aa2fd4b">   11</a></span>std::string <a class="code hl_function" href="class_conta.html#a87cd1df69c12e0dfdb6ab70a4aa2fd4b">Conta::getNome</a>()<span class="keyword"> const</span>{</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keywordflow">return</span> m_nome.<a class="code hl_function" href="class_texto.html#abed0b18b7b98526eb0194901ce4736a2">getTexto</a>();</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>};</div>
+</div>
+<div class="foldopen" id="foldopen00014" data-start="{" data-end="}">
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_conta.html#aace6d48702efd2d146db2e97ba1efba1">   14</a></span>std::string <a class="code hl_function" href="class_conta.html#aace6d48702efd2d146db2e97ba1efba1">Conta::getSenha</a>()<span class="keyword"> const</span>{</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keywordflow">return</span> m_senha.<a class="code hl_function" href="class_senha.html#a57bec8070041116d7761e21bb867ae25">getSenha</a>();</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>};</div>
+</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="foldopen" id="foldopen00018" data-start="{" data-end="}">
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_conta.html#a926a30e49694cef896dc2e53671786c2">   18</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_conta.html#a926a30e49694cef896dc2e53671786c2">Conta::setEmail</a>(std::string novoEmail){</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    m_email.<a class="code hl_function" href="class_email.html#a6ccd57a41bb3a20b75863b04c9d718af">setEmail</a>(novoEmail);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>};</div>
+</div>
+<div class="foldopen" id="foldopen00022" data-start="{" data-end="}">
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_conta.html#a371d79fb101b2e6f77efa1ad203d6750">   22</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_conta.html#a371d79fb101b2e6f77efa1ad203d6750">Conta::setNome</a>(std::string novoNome){</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    m_nome.<a class="code hl_function" href="class_texto.html#a8d8d44fc332b1d58f038a9cd130b999f">setTexto</a>(novoNome);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>};</div>
+</div>
+<div class="foldopen" id="foldopen00026" data-start="{" data-end="}">
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="class_conta.html#a215496688f2e1aaff981cf62ff624e38">   26</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_conta.html#a215496688f2e1aaff981cf62ff624e38">Conta::setSenha</a>(std::string novoSenha){</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    m_senha.<a class="code hl_function" href="class_senha.html#a6b0ffe33e169ce8f502c6c3a806654a0">setSenha</a>(novoSenha);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>};</div>
+</div>
+<div class="ttc" id="a_conta_8hpp_html"><div class="ttname"><a href="_conta_8hpp.html">Conta.hpp</a></div><div class="ttdoc">Classe que representa uma conta de usuário.</div></div>
+<div class="ttc" id="aclass_conta_html_a0e9c1b914d26084711a651af07439c36"><div class="ttname"><a href="class_conta.html#a0e9c1b914d26084711a651af07439c36">Conta::getEmail</a></div><div class="ttdeci">std::string getEmail() const</div><div class="ttdoc">Obtém o endereço de email da conta.</div><div class="ttdef"><b>Definição</b> <a href="_conta_8cpp_source.html#l00007">Conta.cpp:7</a></div></div>
+<div class="ttc" id="aclass_conta_html_a215496688f2e1aaff981cf62ff624e38"><div class="ttname"><a href="class_conta.html#a215496688f2e1aaff981cf62ff624e38">Conta::setSenha</a></div><div class="ttdeci">void setSenha(std::string novoSenha)</div><div class="ttdoc">Define uma nova senha para a conta.</div><div class="ttdef"><b>Definição</b> <a href="_conta_8cpp_source.html#l00026">Conta.cpp:26</a></div></div>
+<div class="ttc" id="aclass_conta_html_a371d79fb101b2e6f77efa1ad203d6750"><div class="ttname"><a href="class_conta.html#a371d79fb101b2e6f77efa1ad203d6750">Conta::setNome</a></div><div class="ttdeci">void setNome(std::string novoNome)</div><div class="ttdoc">Define um novo nome de usuário para a conta.</div><div class="ttdef"><b>Definição</b> <a href="_conta_8cpp_source.html#l00022">Conta.cpp:22</a></div></div>
+<div class="ttc" id="aclass_conta_html_a87cd1df69c12e0dfdb6ab70a4aa2fd4b"><div class="ttname"><a href="class_conta.html#a87cd1df69c12e0dfdb6ab70a4aa2fd4b">Conta::getNome</a></div><div class="ttdeci">std::string getNome() const</div><div class="ttdoc">Obtém o nome do usuário da conta.</div><div class="ttdef"><b>Definição</b> <a href="_conta_8cpp_source.html#l00011">Conta.cpp:11</a></div></div>
+<div class="ttc" id="aclass_conta_html_a926a30e49694cef896dc2e53671786c2"><div class="ttname"><a href="class_conta.html#a926a30e49694cef896dc2e53671786c2">Conta::setEmail</a></div><div class="ttdeci">void setEmail(std::string novoEmail)</div><div class="ttdoc">Define um novo endereço de email para a conta.</div><div class="ttdef"><b>Definição</b> <a href="_conta_8cpp_source.html#l00018">Conta.cpp:18</a></div></div>
+<div class="ttc" id="aclass_conta_html_aace6d48702efd2d146db2e97ba1efba1"><div class="ttname"><a href="class_conta.html#aace6d48702efd2d146db2e97ba1efba1">Conta::getSenha</a></div><div class="ttdeci">std::string getSenha() const</div><div class="ttdoc">Obtém a senha da conta.</div><div class="ttdef"><b>Definição</b> <a href="_conta_8cpp_source.html#l00014">Conta.cpp:14</a></div></div>
+<div class="ttc" id="aclass_conta_html_ab22bc5e18f43b383aca57201ee68cb1e"><div class="ttname"><a href="class_conta.html#ab22bc5e18f43b383aca57201ee68cb1e">Conta::Conta</a></div><div class="ttdeci">Conta()</div><div class="ttdoc">Construtor da classe Conta.</div></div>
+<div class="ttc" id="aclass_email_html"><div class="ttname"><a href="class_email.html">Email</a></div><div class="ttdoc">Classe que representa um endereço de e-mail.</div><div class="ttdef"><b>Definição</b> <a href="_email_8hpp_source.html#l00016">Email.hpp:16</a></div></div>
+<div class="ttc" id="aclass_email_html_a6ccd57a41bb3a20b75863b04c9d718af"><div class="ttname"><a href="class_email.html#a6ccd57a41bb3a20b75863b04c9d718af">Email::setEmail</a></div><div class="ttdeci">void setEmail(std::string novoEmail)</div><div class="ttdoc">Define um novo endereço de e-mail.</div><div class="ttdef"><b>Definição</b> <a href="_email_8cpp_source.html#l00019">Email.cpp:19</a></div></div>
+<div class="ttc" id="aclass_email_html_a70860df6261f62d64413fd679f31f534"><div class="ttname"><a href="class_email.html#a70860df6261f62d64413fd679f31f534">Email::getEmail</a></div><div class="ttdeci">std::string getEmail() const</div><div class="ttdoc">Obtém o endereço de e-mail atual.</div><div class="ttdef"><b>Definição</b> <a href="_email_8cpp_source.html#l00015">Email.cpp:15</a></div></div>
+<div class="ttc" id="aclass_senha_html"><div class="ttname"><a href="class_senha.html">Senha</a></div><div class="ttdoc">Classe que representa uma senha.</div><div class="ttdef"><b>Definição</b> <a href="_senha_8hpp_source.html#l00015">Senha.hpp:15</a></div></div>
+<div class="ttc" id="aclass_senha_html_a57bec8070041116d7761e21bb867ae25"><div class="ttname"><a href="class_senha.html#a57bec8070041116d7761e21bb867ae25">Senha::getSenha</a></div><div class="ttdeci">std::string getSenha() const</div><div class="ttdoc">Obtém a senha atual.</div><div class="ttdef"><b>Definição</b> <a href="_senha_8cpp_source.html#l00056">Senha.cpp:56</a></div></div>
+<div class="ttc" id="aclass_senha_html_a6b0ffe33e169ce8f502c6c3a806654a0"><div class="ttname"><a href="class_senha.html#a6b0ffe33e169ce8f502c6c3a806654a0">Senha::setSenha</a></div><div class="ttdeci">void setSenha(std::string novaSenha)</div><div class="ttdoc">Define uma nova senha.</div><div class="ttdef"><b>Definição</b> <a href="_senha_8cpp_source.html#l00060">Senha.cpp:60</a></div></div>
+<div class="ttc" id="aclass_texto_html"><div class="ttname"><a href="class_texto.html">Texto</a></div><div class="ttdoc">Classe que representa um texto.</div><div class="ttdef"><b>Definição</b> <a href="_texto_8hpp_source.html#l00016">Texto.hpp:16</a></div></div>
+<div class="ttc" id="aclass_texto_html_a8d8d44fc332b1d58f038a9cd130b999f"><div class="ttname"><a href="class_texto.html#a8d8d44fc332b1d58f038a9cd130b999f">Texto::setTexto</a></div><div class="ttdeci">void setTexto(std::string novoTexto)</div><div class="ttdoc">Define um novo texto.</div><div class="ttdef"><b>Definição</b> <a href="_texto_8cpp_source.html#l00071">Texto.cpp:71</a></div></div>
+<div class="ttc" id="aclass_texto_html_abed0b18b7b98526eb0194901ce4736a2"><div class="ttname"><a href="class_texto.html#abed0b18b7b98526eb0194901ce4736a2">Texto::getTexto</a></div><div class="ttdeci">std::string getTexto() const</div><div class="ttdoc">Obtém o texto atual.</div><div class="ttdef"><b>Definição</b> <a href="_texto_8cpp_source.html#l00067">Texto.cpp:67</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

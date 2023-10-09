@@ -1,34 +1,40 @@
 \doxysection{Quadro.\+hpp}
 \hypertarget{_quadro_8hpp_source}{}\label{_quadro_8hpp_source}\index{C:/Users/danie/unb\_local/trabalho-\/tp1/src/entities/Quadro.hpp@{C:/Users/danie/unb\_local/trabalho-\/tp1/src/entities/Quadro.hpp}}
-\mbox{\hyperlink{_quadro_8hpp}{Go to the documentation of this file.}}
+\mbox{\hyperlink{_quadro_8hpp}{Ir para a documentação desse arquivo.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
-\DoxyCodeLine{00002\ }
-\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <string>}}
-\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}../domains/Texto.hpp"{}}}
-\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}../domains/Codigo.hpp"{}}}
-\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}../domains/Limite.hpp"{}}}
-\DoxyCodeLine{00007\ }
-\DoxyCodeLine{00008\ }
-\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_quadro}{Quadro}}\ \{\ \textcolor{comment}{//\ 222035625}}
-\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_texto}{Texto}}\ \ m\_nome;}
-\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_texto}{Texto}}\ \ m\_descricao;}
-\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_codigo}{Codigo}}\ m\_codigo;}
-\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_limite}{Limite}}\ m\_limite;}
-\DoxyCodeLine{00015\ }
-\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_quadro}{Quadro}}(\mbox{\hyperlink{class_codigo}{Codigo}}\ codigo,\ \mbox{\hyperlink{class_texto}{Texto}}\ nome,\ \mbox{\hyperlink{class_texto}{Texto}}\ descricao,\ \mbox{\hyperlink{class_limite}{Limite}}\ limite);}
-\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{class_quadro_ae87472bb79c7073b7d6747d930d41a23}{getNome}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{class_quadro_a7a8e238c28a7fb111f555a8508041824}{getDescricao}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{class_quadro_a33a17fd0b1e8c9269b183552696e0135}{getCodigo}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{class_quadro_a4dfe3c0be1384ffda934bc32af1ae1f4}{getLimite}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00022\ }
-\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_quadro_a3b30651e21f084f2e65ac3d819241c52}{setCodigo}}(std::string\ novoCodigo);\ \textcolor{comment}{//\ configurar\ para\ converter\ o\ int\ em\ string}}
-\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_quadro_a104bb64d863d2ce11d264bd269ebe2e6}{setNome}}(std::string\ novoNome);}
-\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_quadro_a2cded05ea4710fe8d1c4aa6600f6f5f4}{setDescricao}}(std::string\ novoDescricao);}
-\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_quadro_abf40d100fb746058395b20d75d49d8fb}{setLimite}}(std::string\ novoLimite);\textcolor{comment}{//\ configurar\ para\ converter\ o\ int\ em\ string}}
-\DoxyCodeLine{00027\ \};}
-\DoxyCodeLine{00028\ }
+\DoxyCodeLine{\Hypertarget{_quadro_8hpp_source_l00001}00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{\Hypertarget{_quadro_8hpp_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{_quadro_8hpp_source_l00003}00003\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{\Hypertarget{_quadro_8hpp_source_l00004}00004\ \textcolor{preprocessor}{\#include\ "{}../domains/Texto.hpp"{}}}
+\DoxyCodeLine{\Hypertarget{_quadro_8hpp_source_l00005}00005\ \textcolor{preprocessor}{\#include\ "{}../domains/Codigo.hpp"{}}}
+\DoxyCodeLine{\Hypertarget{_quadro_8hpp_source_l00006}00006\ \textcolor{preprocessor}{\#include\ "{}../domains/Limite.hpp"{}}}
+\DoxyCodeLine{\Hypertarget{_quadro_8hpp_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{_quadro_8hpp_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{_quadro_8hpp_source_l00015}\mbox{\hyperlink{class_quadro}{00015}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_quadro}{Quadro}}\ \{\ \textcolor{comment}{//\ 222035625}}
+\DoxyCodeLine{\Hypertarget{_quadro_8hpp_source_l00016}00016\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_quadro_8hpp_source_l00017}00017\ \ \ \ \ \mbox{\hyperlink{class_texto}{Texto}}\ \ m\_nome;\ }
+\DoxyCodeLine{\Hypertarget{_quadro_8hpp_source_l00018}00018\ \ \ \ \ \mbox{\hyperlink{class_texto}{Texto}}\ \ m\_descricao;\ }
+\DoxyCodeLine{\Hypertarget{_quadro_8hpp_source_l00019}00019\ \ \ \ \ \mbox{\hyperlink{class_codigo}{Codigo}}\ m\_codigo;\ }
+\DoxyCodeLine{\Hypertarget{_quadro_8hpp_source_l00020}00020\ \ \ \ \ \mbox{\hyperlink{class_limite}{Limite}}\ m\_limite;\ }
+\DoxyCodeLine{\Hypertarget{_quadro_8hpp_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{_quadro_8hpp_source_l00022}00022\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_quadro_8hpp_source_l00029}00029\ \ \ \ \ \mbox{\hyperlink{class_quadro}{Quadro}}(\mbox{\hyperlink{class_codigo}{Codigo}}\ codigo,\ \mbox{\hyperlink{class_texto}{Texto}}\ nome,\ \mbox{\hyperlink{class_texto}{Texto}}\ descricao,\ \mbox{\hyperlink{class_limite}{Limite}}\ limite);}
+\DoxyCodeLine{\Hypertarget{_quadro_8hpp_source_l00030}00030\ }
+\DoxyCodeLine{\Hypertarget{_quadro_8hpp_source_l00034}00034\ \ \ \ \ std::string\ \mbox{\hyperlink{class_quadro_ae87472bb79c7073b7d6747d930d41a23}{getNome}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_quadro_8hpp_source_l00035}00035\ }
+\DoxyCodeLine{\Hypertarget{_quadro_8hpp_source_l00039}00039\ \ \ \ \ std::string\ \mbox{\hyperlink{class_quadro_a7a8e238c28a7fb111f555a8508041824}{getDescricao}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_quadro_8hpp_source_l00040}00040\ }
+\DoxyCodeLine{\Hypertarget{_quadro_8hpp_source_l00044}00044\ \ \ \ \ std::string\ \mbox{\hyperlink{class_quadro_a33a17fd0b1e8c9269b183552696e0135}{getCodigo}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_quadro_8hpp_source_l00045}00045\ }
+\DoxyCodeLine{\Hypertarget{_quadro_8hpp_source_l00049}00049\ \ \ \ \ std::string\ \mbox{\hyperlink{class_quadro_a4dfe3c0be1384ffda934bc32af1ae1f4}{getLimite}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_quadro_8hpp_source_l00050}00050\ }
+\DoxyCodeLine{\Hypertarget{_quadro_8hpp_source_l00054}00054\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_quadro_a3b30651e21f084f2e65ac3d819241c52}{setCodigo}}(std::string\ novoCodigo);}
+\DoxyCodeLine{\Hypertarget{_quadro_8hpp_source_l00055}00055\ }
+\DoxyCodeLine{\Hypertarget{_quadro_8hpp_source_l00059}00059\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_quadro_a104bb64d863d2ce11d264bd269ebe2e6}{setNome}}(std::string\ novoNome);}
+\DoxyCodeLine{\Hypertarget{_quadro_8hpp_source_l00060}00060\ }
+\DoxyCodeLine{\Hypertarget{_quadro_8hpp_source_l00064}00064\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_quadro_a2cded05ea4710fe8d1c4aa6600f6f5f4}{setDescricao}}(std::string\ novoDescricao);}
+\DoxyCodeLine{\Hypertarget{_quadro_8hpp_source_l00065}00065\ }
+\DoxyCodeLine{\Hypertarget{_quadro_8hpp_source_l00069}00069\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_quadro_abf40d100fb746058395b20d75d49d8fb}{setLimite}}(std::string\ novoLimite);}
+\DoxyCodeLine{\Hypertarget{_quadro_8hpp_source_l00070}00070\ \};}
 
 \end{DoxyCode}

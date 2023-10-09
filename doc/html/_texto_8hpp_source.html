@@ -99,13 +99,13 @@ $(document).ready(function(){initNavTree('_texto_8hpp_source.html',''); initResi
 <div class="contents">
 <a href="_texto_8hpp.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;Validador.hpp&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;./Dominio.hpp&quot;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
 <div class="foldopen" id="foldopen00016" data-start="{" data-end="};">
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_texto.html">   16</a></span><span class="keyword">class </span><a class="code hl_class" href="class_texto.html">Texto</a> { <span class="comment">// 222035625</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_texto.html">   16</a></span><span class="keyword">class </span><a class="code hl_class" href="class_texto.html">Texto</a> : <span class="keyword">public</span> Dominio{ <span class="comment">// 222035625</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <a class="code hl_class" href="class_texto.html">Texto</a>(std::string texto);</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
@@ -120,15 +120,15 @@ $(document).ready(function(){initNavTree('_texto_8hpp_source.html',''); initResi
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>};</div>
 </div>
 <div class="ttc" id="aclass_texto_html"><div class="ttname"><a href="class_texto.html">Texto</a></div><div class="ttdoc">Classe que representa um texto.</div><div class="ttdef"><b>Definição</b> Texto.hpp:16</div></div>
-<div class="ttc" id="aclass_texto_html_a8d8d44fc332b1d58f038a9cd130b999f"><div class="ttname"><a href="class_texto.html#a8d8d44fc332b1d58f038a9cd130b999f">Texto::setTexto</a></div><div class="ttdeci">void setTexto(std::string novoTexto)</div><div class="ttdoc">Define um novo texto.</div><div class="ttdef"><b>Definição</b> Texto.cpp:74</div></div>
-<div class="ttc" id="aclass_texto_html_abed0b18b7b98526eb0194901ce4736a2"><div class="ttname"><a href="class_texto.html#abed0b18b7b98526eb0194901ce4736a2">Texto::getTexto</a></div><div class="ttdeci">std::string getTexto() const</div><div class="ttdoc">Obtém o texto atual.</div><div class="ttdef"><b>Definição</b> Texto.cpp:70</div></div>
+<div class="ttc" id="aclass_texto_html_a8d8d44fc332b1d58f038a9cd130b999f"><div class="ttname"><a href="class_texto.html#a8d8d44fc332b1d58f038a9cd130b999f">Texto::setTexto</a></div><div class="ttdeci">void setTexto(std::string novoTexto)</div><div class="ttdoc">Define um novo texto.</div><div class="ttdef"><b>Definição</b> Texto.cpp:71</div></div>
+<div class="ttc" id="aclass_texto_html_abed0b18b7b98526eb0194901ce4736a2"><div class="ttname"><a href="class_texto.html#abed0b18b7b98526eb0194901ce4736a2">Texto::getTexto</a></div><div class="ttdeci">std::string getTexto() const</div><div class="ttdoc">Obtém o texto atual.</div><div class="ttdef"><b>Definição</b> Texto.cpp:67</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_7aca4e07460d7af406ceabbc52525eea.html">domains</a></li><li class="navelem"><a class="el" href="_texto_8hpp.html">Texto.hpp</a></li>
-    <li class="footer">Gerado em Segunda, 9 de Outubro de 2023 09:27:49 para trabalho-tp1 por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Gerado em Segunda, 9 de Outubro de 2023 10:15:21 para trabalho-tp1 por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

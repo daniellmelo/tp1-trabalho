@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['validador_2ehpp_0',['Validador.hpp',['../_validador_8hpp.html',1,'']]]
+  ['texto_2ehpp_0',['Texto.hpp',['../_texto_8hpp.html',1,'']]]
 ];

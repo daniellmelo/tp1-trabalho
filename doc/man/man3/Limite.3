@@ -1,0 +1,84 @@
+.TH "Limite" 3 "trabalho-tp1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Limite \- Classe que representa um limite\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Limite\&.hpp>\fP
+.PP
+Subclasse de \fBDominio\fP\&.
+.SS "Membros Públicos"
+
+.in +1c
+.ti -1c
+.RI "\fBLimite\fP (std::string limite)"
+.br
+.RI "Construtor da classe \fBLimite\fP\&. "
+.ti -1c
+.RI "void \fBsetLimite\fP (std::string novoLimite)"
+.br
+.RI "Define um novo limite\&. "
+.ti -1c
+.RI "std::string \fBgetLimite\fP () const"
+.br
+.RI "Obte\*(`m o limite atual\&. "
+.in -1c
+.SS "Outros membros herdados"
+.SH "Descrição detalhada"
+.PP 
+Classe que representa um limite\&. 
+
+Esta classe representa um limite, que e\*(` uma seque\*^ncia de caracteres\&. Ela fornece me\*(`todos para definir e obter o limite, bem como para validar sua formatac\*,a\*~o\&. 
+.PP
+Definição na linha \fB14\fP do arquivo \fBLimite\&.hpp\fP\&.
+.SH "Construtores e Destrutores"
+.PP 
+.SS "Limite::Limite (std::string limite)"
+
+.PP
+Construtor da classe \fBLimite\fP\&. 
+.PP
+\fBParâmetros\fP
+.RS 4
+\fIlimite\fP A seque\*^ncia de caracteres que representa o limite\&. 
+.RE
+.PP
+
+.PP
+Definição na linha \fB5\fP do arquivo \fBLimite\&.cpp\fP\&.
+.SH "Documentação das funções"
+.PP 
+.SS "std::string Limite::getLimite () const"
+
+.PP
+Obte\*(`m o limite atual\&. 
+.PP
+\fBRetorna\fP
+.RS 4
+Uma string representando o limite atual\&. 
+.RE
+.PP
+
+.PP
+Definição na linha \fB32\fP do arquivo \fBLimite\&.cpp\fP\&.
+.SS "void Limite::setLimite (std::string novoLimite)"
+
+.PP
+Define um novo limite\&. 
+.PP
+\fBParâmetros\fP
+.RS 4
+\fInovoLimite\fP A nova seque\*^ncia de caracteres a ser definida como limite\&. 
+.RE
+.PP
+
+.PP
+Definição na linha \fB22\fP do arquivo \fBLimite\&.cpp\fP\&.
+
+.SH "Autor"
+.PP 
+Gerado automaticamente por Doxygen para trabalho-tp1 a partir do código fonte\&.

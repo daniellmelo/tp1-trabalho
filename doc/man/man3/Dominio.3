@@ -1,0 +1,45 @@
+.TH "Dominio" 3 "trabalho-tp1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Dominio \- Classe abstrata que representa um domi\*(`nio\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Dominio\&.hpp>\fP
+.PP
+Superclasse de \fBCodigo\fP, \fBColuna\fP\fC [virtual]\fP, \fBEmail\fP, \fBLimite\fP, \fBSenha\fP e \fBTexto\fP\&.
+.SS "Membros protegidos"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBvalidar\fP (std::string dados)=0"
+.br
+.RI "Func\*,a\*~o virtual pura para validar dados do domi\*(`nio\&. "
+.in -1c
+.SH "Descrição detalhada"
+.PP 
+Classe abstrata que representa um domi\*(`nio\&. 
+
+Esta classe abstrata define uma interface para classes de domi\*(`nio\&. As classes derivadas devem implementar a func\*,a\*~o virtual 'validar' para validar dados do domi\*(`nio\&. 
+.PP
+Definição na linha \fB15\fP do arquivo \fBDominio\&.hpp\fP\&.
+.SH "Documentação das funções"
+.PP 
+.SS "virtual void Dominio::validar (std::string dados)\fC [protected]\fP, \fC [pure virtual]\fP"
+
+.PP
+Func\*,a\*~o virtual pura para validar dados do domi\*(`nio\&. Esta func\*,a\*~o deve ser implementada nas classes derivadas para validar dados do domi\*(`nio\&.
+.PP
+\fBParâmetros\fP
+.RS 4
+\fIdados\fP Uma string representando os dados a serem validados\&. 
+.RE
+.PP
+
+
+.SH "Autor"
+.PP 
+Gerado automaticamente por Doxygen para trabalho-tp1 a partir do código fonte\&.

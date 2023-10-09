@@ -1,33 +1,47 @@
-\doxysection{Quadro Class Reference}
+\doxysection{Referência da Classe Quadro}
 \hypertarget{class_quadro}{}\label{class_quadro}\index{Quadro@{Quadro}}
+
+
+Classe que representa um quadro.  
+
+
 
 
 {\ttfamily \#include $<$Quadro.\+hpp$>$}
 
-\doxysubsubsection*{Public Member Functions}
+\doxysubsubsection*{Membros Públicos}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_quadro_ae19d87cd8266c8b63a0c98842734a9af}{Quadro}} (\mbox{\hyperlink{class_codigo}{Codigo}} codigo, \mbox{\hyperlink{class_texto}{Texto}} nome, \mbox{\hyperlink{class_texto}{Texto}} descricao, \mbox{\hyperlink{class_limite}{Limite}} limite)
-\item 
+\begin{DoxyCompactList}\small\item\em Construtor da classe \doxylink{class_quadro}{Quadro}. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{class_quadro_ae87472bb79c7073b7d6747d930d41a23}{get\+Nome}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Obt\'{e}m o nome do quadro. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{class_quadro_a7a8e238c28a7fb111f555a8508041824}{get\+Descricao}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Obt\'{e}m a descri\c{c}\~{a}o do quadro. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{class_quadro_a33a17fd0b1e8c9269b183552696e0135}{get\+Codigo}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Obt\'{e}m o c\'{o}digo do quadro. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{class_quadro_a4dfe3c0be1384ffda934bc32af1ae1f4}{get\+Limite}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Obt\'{e}m o limite do quadro. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_quadro_a3b30651e21f084f2e65ac3d819241c52}{set\+Codigo}} (std\+::string novo\+Codigo)
-\item 
+\begin{DoxyCompactList}\small\item\em Define um novo c\'{o}digo para o quadro. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_quadro_a104bb64d863d2ce11d264bd269ebe2e6}{set\+Nome}} (std\+::string novo\+Nome)
-\item 
+\begin{DoxyCompactList}\small\item\em Define um novo nome para o quadro. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_quadro_a2cded05ea4710fe8d1c4aa6600f6f5f4}{set\+Descricao}} (std\+::string novo\+Descricao)
-\item 
+\begin{DoxyCompactList}\small\item\em Define uma nova descri\c{c}\~{a}o para o quadro. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_quadro_abf40d100fb746058395b20d75d49d8fb}{set\+Limite}} (std\+::string novo\+Limite)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Define um novo limite para o quadro. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\doxysubsection{Constructor \& Destructor Documentation}
+\doxysubsection{Descrição detalhada}
+Classe que representa um quadro. 
+
+Esta classe representa um quadro que cont\'{e}m informa\c{c}\~{o}es como nome, descri\c{c}\~{a}o, c\'{o}digo e limite. 
+
+Definição na linha \mbox{\hyperlink{_quadro_8hpp_source_l00015}{15}} do arquivo \mbox{\hyperlink{_quadro_8hpp_source}{Quadro.\+hpp}}.
+
+
+
+\doxysubsection{Construtores e Destrutores}
 \Hypertarget{class_quadro_ae19d87cd8266c8b63a0c98842734a9af}\label{class_quadro_ae19d87cd8266c8b63a0c98842734a9af} 
 \index{Quadro@{Quadro}!Quadro@{Quadro}}
 \index{Quadro@{Quadro}!Quadro@{Quadro}}
@@ -36,12 +50,42 @@ void \mbox{\hyperlink{class_quadro_abf40d100fb746058395b20d75d49d8fb}{set\+Limit
 
 
 
-\doxysubsection{Member Function Documentation}
+Construtor da classe \doxylink{class_quadro}{Quadro}. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em codigo} & O c\'{o}digo do quadro. \\
+\hline
+{\em nome} & O nome do quadro. \\
+\hline
+{\em descricao} & A descri\c{c}\~{a}o do quadro. \\
+\hline
+{\em limite} & O limite do quadro. \\
+\hline
+\end{DoxyParams}
+
+
+Definição na linha \mbox{\hyperlink{_quadro_8cpp_source_l00003}{3}} do arquivo \mbox{\hyperlink{_quadro_8cpp_source}{Quadro.\+cpp}}.
+
+
+
+\doxysubsection{Documentação das funções}
 \Hypertarget{class_quadro_a33a17fd0b1e8c9269b183552696e0135}\label{class_quadro_a33a17fd0b1e8c9269b183552696e0135} 
 \index{Quadro@{Quadro}!getCodigo@{getCodigo}}
 \index{getCodigo@{getCodigo}!Quadro@{Quadro}}
 \doxysubsubsection{\texorpdfstring{getCodigo()}{getCodigo()}}
 {\footnotesize\ttfamily std\+::string Quadro\+::get\+Codigo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obt\'{e}m o c\'{o}digo do quadro. 
+
+\begin{DoxyReturn}{Retorna}
+Uma string representando o c\'{o}digo do quadro. 
+\end{DoxyReturn}
+
+
+Definição na linha \mbox{\hyperlink{_quadro_8cpp_source_l00008}{8}} do arquivo \mbox{\hyperlink{_quadro_8cpp_source}{Quadro.\+cpp}}.
 
 \Hypertarget{class_quadro_a7a8e238c28a7fb111f555a8508041824}\label{class_quadro_a7a8e238c28a7fb111f555a8508041824} 
 \index{Quadro@{Quadro}!getDescricao@{getDescricao}}
@@ -49,11 +93,33 @@ void \mbox{\hyperlink{class_quadro_abf40d100fb746058395b20d75d49d8fb}{set\+Limit
 \doxysubsubsection{\texorpdfstring{getDescricao()}{getDescricao()}}
 {\footnotesize\ttfamily std\+::string Quadro\+::get\+Descricao (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+
+
+Obt\'{e}m a descri\c{c}\~{a}o do quadro. 
+
+\begin{DoxyReturn}{Retorna}
+Uma string representando a descri\c{c}\~{a}o do quadro. 
+\end{DoxyReturn}
+
+
+Definição na linha \mbox{\hyperlink{_quadro_8cpp_source_l00011}{11}} do arquivo \mbox{\hyperlink{_quadro_8cpp_source}{Quadro.\+cpp}}.
+
 \Hypertarget{class_quadro_a4dfe3c0be1384ffda934bc32af1ae1f4}\label{class_quadro_a4dfe3c0be1384ffda934bc32af1ae1f4} 
 \index{Quadro@{Quadro}!getLimite@{getLimite}}
 \index{getLimite@{getLimite}!Quadro@{Quadro}}
 \doxysubsubsection{\texorpdfstring{getLimite()}{getLimite()}}
 {\footnotesize\ttfamily std\+::string Quadro\+::get\+Limite (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obt\'{e}m o limite do quadro. 
+
+\begin{DoxyReturn}{Retorna}
+Uma string representando o limite do quadro. 
+\end{DoxyReturn}
+
+
+Definição na linha \mbox{\hyperlink{_quadro_8cpp_source_l00014}{14}} do arquivo \mbox{\hyperlink{_quadro_8cpp_source}{Quadro.\+cpp}}.
 
 \Hypertarget{class_quadro_ae87472bb79c7073b7d6747d930d41a23}\label{class_quadro_ae87472bb79c7073b7d6747d930d41a23} 
 \index{Quadro@{Quadro}!getNome@{getNome}}
@@ -61,11 +127,35 @@ void \mbox{\hyperlink{class_quadro_abf40d100fb746058395b20d75d49d8fb}{set\+Limit
 \doxysubsubsection{\texorpdfstring{getNome()}{getNome()}}
 {\footnotesize\ttfamily std\+::string Quadro\+::get\+Nome (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+
+
+Obt\'{e}m o nome do quadro. 
+
+\begin{DoxyReturn}{Retorna}
+Uma string representando o nome do quadro. 
+\end{DoxyReturn}
+
+
+Definição na linha \mbox{\hyperlink{_quadro_8cpp_source_l00017}{17}} do arquivo \mbox{\hyperlink{_quadro_8cpp_source}{Quadro.\+cpp}}.
+
 \Hypertarget{class_quadro_a3b30651e21f084f2e65ac3d819241c52}\label{class_quadro_a3b30651e21f084f2e65ac3d819241c52} 
 \index{Quadro@{Quadro}!setCodigo@{setCodigo}}
 \index{setCodigo@{setCodigo}!Quadro@{Quadro}}
 \doxysubsubsection{\texorpdfstring{setCodigo()}{setCodigo()}}
 {\footnotesize\ttfamily void Quadro\+::set\+Codigo (\begin{DoxyParamCaption}\item[{std\+::string}]{novo\+Codigo }\end{DoxyParamCaption})}
+
+
+
+Define um novo c\'{o}digo para o quadro. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em novo\+Codigo} & O novo c\'{o}digo a ser definido. \\
+\hline
+\end{DoxyParams}
+
+
+Definição na linha \mbox{\hyperlink{_quadro_8cpp_source_l00023}{23}} do arquivo \mbox{\hyperlink{_quadro_8cpp_source}{Quadro.\+cpp}}.
 
 \Hypertarget{class_quadro_a2cded05ea4710fe8d1c4aa6600f6f5f4}\label{class_quadro_a2cded05ea4710fe8d1c4aa6600f6f5f4} 
 \index{Quadro@{Quadro}!setDescricao@{setDescricao}}
@@ -73,11 +163,37 @@ void \mbox{\hyperlink{class_quadro_abf40d100fb746058395b20d75d49d8fb}{set\+Limit
 \doxysubsubsection{\texorpdfstring{setDescricao()}{setDescricao()}}
 {\footnotesize\ttfamily void Quadro\+::set\+Descricao (\begin{DoxyParamCaption}\item[{std\+::string}]{novo\+Descricao }\end{DoxyParamCaption})}
 
+
+
+Define uma nova descri\c{c}\~{a}o para o quadro. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em novo\+Descricao} & A nova descri\c{c}\~{a}o a ser definida. \\
+\hline
+\end{DoxyParams}
+
+
+Definição na linha \mbox{\hyperlink{_quadro_8cpp_source_l00030}{30}} do arquivo \mbox{\hyperlink{_quadro_8cpp_source}{Quadro.\+cpp}}.
+
 \Hypertarget{class_quadro_abf40d100fb746058395b20d75d49d8fb}\label{class_quadro_abf40d100fb746058395b20d75d49d8fb} 
 \index{Quadro@{Quadro}!setLimite@{setLimite}}
 \index{setLimite@{setLimite}!Quadro@{Quadro}}
 \doxysubsubsection{\texorpdfstring{setLimite()}{setLimite()}}
 {\footnotesize\ttfamily void Quadro\+::set\+Limite (\begin{DoxyParamCaption}\item[{std\+::string}]{novo\+Limite }\end{DoxyParamCaption})}
+
+
+
+Define um novo limite para o quadro. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em novo\+Limite} & O novo limite a ser definido. \\
+\hline
+\end{DoxyParams}
+
+
+Definição na linha \mbox{\hyperlink{_quadro_8cpp_source_l00033}{33}} do arquivo \mbox{\hyperlink{_quadro_8cpp_source}{Quadro.\+cpp}}.
 
 \Hypertarget{class_quadro_a104bb64d863d2ce11d264bd269ebe2e6}\label{class_quadro_a104bb64d863d2ce11d264bd269ebe2e6} 
 \index{Quadro@{Quadro}!setNome@{setNome}}
@@ -87,7 +203,20 @@ void \mbox{\hyperlink{class_quadro_abf40d100fb746058395b20d75d49d8fb}{set\+Limit
 
 
 
-The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+Define um novo nome para o quadro. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em novo\+Nome} & O novo nome a ser definido. \\
+\hline
+\end{DoxyParams}
+
+
+Definição na linha \mbox{\hyperlink{_quadro_8cpp_source_l00027}{27}} do arquivo \mbox{\hyperlink{_quadro_8cpp_source}{Quadro.\+cpp}}.
+
+
+
+A documentação para essa classe foi gerada a partir dos seguintes arquivos\+:\begin{DoxyCompactItemize}
 \item 
 C\+:/\+Users/danie/unb\+\_\+local/trabalho-\/tp1/src/entities/\mbox{\hyperlink{_quadro_8hpp}{Quadro.\+hpp}}\item 
-C\+:/\+Users/danie/unb\+\_\+local/trabalho-\/tp1/src/entities/\mbox{\hyperlink{_quadros_8cpp}{Quadros.\+cpp}}\end{DoxyCompactItemize}
+C\+:/\+Users/danie/unb\+\_\+local/trabalho-\/tp1/src/entities/Quadro.\+cpp\end{DoxyCompactItemize}

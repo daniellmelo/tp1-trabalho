@@ -1,0 +1,84 @@
+.TH "Email" 3 "trabalho-tp1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Email \- Classe que representa um enderec\*,o de e-mail\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Email\&.hpp>\fP
+.PP
+Subclasse de \fBDominio\fP\&.
+.SS "Membros Públicos"
+
+.in +1c
+.ti -1c
+.RI "\fBEmail\fP (std::string email)"
+.br
+.RI "Construtor da classe \fBEmail\fP\&. "
+.ti -1c
+.RI "void \fBsetEmail\fP (std::string novoEmail)"
+.br
+.RI "Define um novo enderec\*,o de e-mail\&. "
+.ti -1c
+.RI "std::string \fBgetEmail\fP () const"
+.br
+.RI "Obte\*(`m o enderec\*,o de e-mail atual\&. "
+.in -1c
+.SS "Outros membros herdados"
+.SH "Descrição detalhada"
+.PP 
+Classe que representa um enderec\*,o de e-mail\&. 
+
+Esta classe representa um enderec\*,o de e-mail va\*(`lido\&. Ela fornece me\*(`todos para definir e obter o enderec\*,o de e-mail, bem como para validar sua formatac\*,a\*~o\&. 
+.PP
+Definição na linha \fB16\fP do arquivo \fBEmail\&.hpp\fP\&.
+.SH "Construtores e Destrutores"
+.PP 
+.SS "Email::Email (std::string email)"
+
+.PP
+Construtor da classe \fBEmail\fP\&. 
+.PP
+\fBParâmetros\fP
+.RS 4
+\fIemail\fP A seque\*^ncia de caracteres que representa o enderec\*,o de e-mail\&. 
+.RE
+.PP
+
+.PP
+Definição na linha \fB4\fP do arquivo \fBEmail\&.cpp\fP\&.
+.SH "Documentação das funções"
+.PP 
+.SS "std::string Email::getEmail () const"
+
+.PP
+Obte\*(`m o enderec\*,o de e-mail atual\&. 
+.PP
+\fBRetorna\fP
+.RS 4
+Uma string representando o enderec\*,o de e-mail atual\&. 
+.RE
+.PP
+
+.PP
+Definição na linha \fB15\fP do arquivo \fBEmail\&.cpp\fP\&.
+.SS "void Email::setEmail (std::string novoEmail)"
+
+.PP
+Define um novo enderec\*,o de e-mail\&. 
+.PP
+\fBParâmetros\fP
+.RS 4
+\fInovoEmail\fP O novo enderec\*,o de e-mail a ser definido\&. 
+.RE
+.PP
+
+.PP
+Definição na linha \fB19\fP do arquivo \fBEmail\&.cpp\fP\&.
+
+.SH "Autor"
+.PP 
+Gerado automaticamente por Doxygen para trabalho-tp1 a partir do código fonte\&.

@@ -1,7 +1,7 @@
 var indexSectionsWithContent =
 {
-  0: "ceglqstv",
-  1: "celqstv",
+  0: "ceglqst",
+  1: "celqst",
   2: "celqst",
   3: "ceglqst"
 };

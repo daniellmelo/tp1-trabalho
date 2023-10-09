@@ -1,0 +1,84 @@
+.TH "Texto" 3 "trabalho-tp1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Texto \- Classe que representa um texto\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Texto\&.hpp>\fP
+.PP
+Subclasse de \fBDominio\fP\&.
+.SS "Membros Públicos"
+
+.in +1c
+.ti -1c
+.RI "\fBTexto\fP (std::string texto)"
+.br
+.RI "Construtor da classe \fBTexto\fP\&. "
+.ti -1c
+.RI "std::string \fBgetTexto\fP () const"
+.br
+.RI "Obte\*(`m o texto atual\&. "
+.ti -1c
+.RI "void \fBsetTexto\fP (std::string novoTexto)"
+.br
+.RI "Define um novo texto\&. "
+.in -1c
+.SS "Outros membros herdados"
+.SH "Descrição detalhada"
+.PP 
+Classe que representa um texto\&. 
+
+Esta classe representa um texto, que e\*(` uma seque\*^ncia de caracteres\&. Ela fornece me\*(`todos para definir e obter o texto, bem como para validar sua formatac\*,a\*~o\&. 
+.PP
+Definição na linha \fB16\fP do arquivo \fBTexto\&.hpp\fP\&.
+.SH "Construtores e Destrutores"
+.PP 
+.SS "Texto::Texto (std::string texto)"
+
+.PP
+Construtor da classe \fBTexto\fP\&. 
+.PP
+\fBParâmetros\fP
+.RS 4
+\fItexto\fP A seque\*^ncia de caracteres que representa o texto\&. 
+.RE
+.PP
+
+.PP
+Definição na linha \fB3\fP do arquivo \fBTexto\&.cpp\fP\&.
+.SH "Documentação das funções"
+.PP 
+.SS "std::string Texto::getTexto () const"
+
+.PP
+Obte\*(`m o texto atual\&. 
+.PP
+\fBRetorna\fP
+.RS 4
+Uma string representando o texto atual\&. 
+.RE
+.PP
+
+.PP
+Definição na linha \fB67\fP do arquivo \fBTexto\&.cpp\fP\&.
+.SS "void Texto::setTexto (std::string novoTexto)"
+
+.PP
+Define um novo texto\&. 
+.PP
+\fBParâmetros\fP
+.RS 4
+\fInovoTexto\fP A nova seque\*^ncia de caracteres a ser definida como texto\&. 
+.RE
+.PP
+
+.PP
+Definição na linha \fB71\fP do arquivo \fBTexto\&.cpp\fP\&.
+
+.SH "Autor"
+.PP 
+Gerado automaticamente por Doxygen para trabalho-tp1 a partir do código fonte\&.

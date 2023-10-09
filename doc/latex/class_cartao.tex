@@ -1,82 +1,222 @@
-\doxysection{Cartao Class Reference}
+\doxysection{Referência da Classe Cartao}
 \hypertarget{class_cartao}{}\label{class_cartao}\index{Cartao@{Cartao}}
+
+
+Classe que representa um Cart\~{a}o.  
+
+
 
 
 {\ttfamily \#include $<$Cartao.\+hpp$>$}
 
-\doxysubsubsection*{Public Member Functions}
+\doxysubsubsection*{Membros Públicos}
 \begin{DoxyCompactItemize}
 \item 
-int \mbox{\hyperlink{class_cartao_ac098e61106c105b9caf651a7963607f7}{get\+Codigo}} ()
-\item 
-string \mbox{\hyperlink{class_cartao_aa4d742d9cc917b3e71777c062839378c}{get\+Nome}} ()
-\item 
-string \mbox{\hyperlink{class_cartao_aa92d06cfa5a6ac3a56434296f98dfbac}{get\+Descricao}} ()
-\item 
-string \mbox{\hyperlink{class_cartao_a7b2111495d5ef73f3c03f26deb388917}{get\+Coluna}} ()
-\item 
-void \mbox{\hyperlink{class_cartao_ab3338fcbd613070dab229b392b3e7d15}{set\+Codigo}} (int novo\+Codigo)
-\item 
-void \mbox{\hyperlink{class_cartao_a78bfddd91e6293a8e472c7419fb36f78}{set\+Nome}} (string novo\+Nome)
-\item 
-void \mbox{\hyperlink{class_cartao_a85023d110c3be6fc463aa517a2c758ff}{set\+Descricao}} (string novo\+Descricao)
-\item 
-void \mbox{\hyperlink{class_cartao_a7b5c0ab3fde0600cb07518af59f051ed}{set\+Coluna}} (string novo\+Coluna)
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{class_cartao_a5bbb661b223edfa09ade7098f8d27549}{Cartao}} (\mbox{\hyperlink{class_codigo}{Codigo}} codigo, \mbox{\hyperlink{class_texto}{Texto}} nome, \mbox{\hyperlink{class_texto}{Texto}} descricao, \mbox{\hyperlink{class_coluna}{Coluna}} coluna)
+\begin{DoxyCompactList}\small\item\em Construtor da classe Cart\~{a}o. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_cartao_ae01acc1da7526afdd2b2219742442366}{get\+Codigo}} () const
+\begin{DoxyCompactList}\small\item\em Obt\'{e}m o c\'{o}digo do Cart\~{a}o. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_cartao_aec176f7c2acb803af08829e5203af9e5}{get\+Nome}} () const
+\begin{DoxyCompactList}\small\item\em Obt\'{e}m o nome do Cart\~{a}o. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_cartao_a6b8cbf085501206318fdeb8bd2451a50}{get\+Descricao}} () const
+\begin{DoxyCompactList}\small\item\em Obt\'{e}m a descri\c{c}\~{a}o do cart\~{a}o. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_cartao_a23d50192ae5a5200e760259b05bad25c}{get\+Coluna}} () const
+\begin{DoxyCompactList}\small\item\em Obt\'{e}m a coluna do cart\~{a}o. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cartao_af8e0344f32ac0be4fbdf1a635be167dd}{set\+Codigo}} (std\+::string novo\+Codigo)
+\begin{DoxyCompactList}\small\item\em Define um novo c\'{o}digo para o cart\~{a}o. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cartao_aa60129da8e7ca2589f31468e66602783}{set\+Nome}} (std\+::string novo\+Nome)
+\begin{DoxyCompactList}\small\item\em Define um novo nome para o cart\~{n}o. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cartao_aef377bf94b9f6a10ddfd88350aca1f2f}{set\+Descricao}} (std\+::string nova\+Descricao)
+\begin{DoxyCompactList}\small\item\em Define uma nova descri\c{c}\~{a}o para o cart\~{a}o. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cartao_aa8e2bdb28e8c24f3e8c8a12963d1ab95}{set\+Coluna}} (std\+::string nova\+Coluna)
+\begin{DoxyCompactList}\small\item\em Define uma nova coluna para o cart\~{a}o. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\doxysubsection{Member Function Documentation}
-\Hypertarget{class_cartao_ac098e61106c105b9caf651a7963607f7}\label{class_cartao_ac098e61106c105b9caf651a7963607f7} 
+\doxysubsection{Descrição detalhada}
+Classe que representa um Cart\~{a}o. 
+
+Esta classe representa um cart\~{a}o que cont\'{e}m informa\c{c}\~{o}es como nome, descri\c{c}\~{a}o, c\'{o}digo e coluna. 
+
+Definição na linha \mbox{\hyperlink{_cartao_8hpp_source_l00016}{16}} do arquivo \mbox{\hyperlink{_cartao_8hpp_source}{Cartao.\+hpp}}.
+
+
+
+\doxysubsection{Construtores e Destrutores}
+\Hypertarget{class_cartao_a5bbb661b223edfa09ade7098f8d27549}\label{class_cartao_a5bbb661b223edfa09ade7098f8d27549} 
+\index{Cartao@{Cartao}!Cartao@{Cartao}}
+\index{Cartao@{Cartao}!Cartao@{Cartao}}
+\doxysubsubsection{\texorpdfstring{Cartao()}{Cartao()}}
+{\footnotesize\ttfamily Cartao\+::\+Cartao (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_codigo}{Codigo}}}]{codigo,  }\item[{\mbox{\hyperlink{class_texto}{Texto}}}]{nome,  }\item[{\mbox{\hyperlink{class_texto}{Texto}}}]{descricao,  }\item[{\mbox{\hyperlink{class_coluna}{Coluna}}}]{coluna }\end{DoxyParamCaption})}
+
+
+
+Construtor da classe Cart\~{a}o. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em codigo} & O c\'{o}digo do Cart\~{a}o. \\
+\hline
+{\em nome} & O nome do Cart\~{a}o. \\
+\hline
+{\em descricao} & A descri\c{c}\~{a}o do Cart\~{a}o. \\
+\hline
+{\em coluna} & A coluna do Cart\~{a}o. \\
+\hline
+\end{DoxyParams}
+
+
+Definição na linha \mbox{\hyperlink{_cartao_8cpp_source_l00005}{5}} do arquivo \mbox{\hyperlink{_cartao_8cpp_source}{Cartao.\+cpp}}.
+
+
+
+\doxysubsection{Documentação das funções}
+\Hypertarget{class_cartao_ae01acc1da7526afdd2b2219742442366}\label{class_cartao_ae01acc1da7526afdd2b2219742442366} 
 \index{Cartao@{Cartao}!getCodigo@{getCodigo}}
 \index{getCodigo@{getCodigo}!Cartao@{Cartao}}
 \doxysubsubsection{\texorpdfstring{getCodigo()}{getCodigo()}}
-{\footnotesize\ttfamily int Cartao\+::get\+Codigo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily std\+::string Cartao\+::get\+Codigo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-\Hypertarget{class_cartao_a7b2111495d5ef73f3c03f26deb388917}\label{class_cartao_a7b2111495d5ef73f3c03f26deb388917} 
+
+
+Obt\'{e}m o c\'{o}digo do Cart\~{a}o. 
+
+\begin{DoxyReturn}{Retorna}
+Uma string representando o c\'{o}digo do Cart\~{a}o. 
+\end{DoxyReturn}
+
+
+Definição na linha \mbox{\hyperlink{_cartao_8cpp_source_l00010}{10}} do arquivo \mbox{\hyperlink{_cartao_8cpp_source}{Cartao.\+cpp}}.
+
+\Hypertarget{class_cartao_a23d50192ae5a5200e760259b05bad25c}\label{class_cartao_a23d50192ae5a5200e760259b05bad25c} 
 \index{Cartao@{Cartao}!getColuna@{getColuna}}
 \index{getColuna@{getColuna}!Cartao@{Cartao}}
 \doxysubsubsection{\texorpdfstring{getColuna()}{getColuna()}}
-{\footnotesize\ttfamily string Cartao\+::get\+Coluna (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily std\+::string Cartao\+::get\+Coluna (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-\Hypertarget{class_cartao_aa92d06cfa5a6ac3a56434296f98dfbac}\label{class_cartao_aa92d06cfa5a6ac3a56434296f98dfbac} 
+
+
+Obt\'{e}m a coluna do cart\~{a}o. 
+
+\begin{DoxyReturn}{Retorna}
+Uma string representando a coluna cart\~{a}o. 
+\end{DoxyReturn}
+
+
+Definição na linha \mbox{\hyperlink{_cartao_8cpp_source_l00025}{25}} do arquivo \mbox{\hyperlink{_cartao_8cpp_source}{Cartao.\+cpp}}.
+
+\Hypertarget{class_cartao_a6b8cbf085501206318fdeb8bd2451a50}\label{class_cartao_a6b8cbf085501206318fdeb8bd2451a50} 
 \index{Cartao@{Cartao}!getDescricao@{getDescricao}}
 \index{getDescricao@{getDescricao}!Cartao@{Cartao}}
 \doxysubsubsection{\texorpdfstring{getDescricao()}{getDescricao()}}
-{\footnotesize\ttfamily string Cartao\+::get\+Descricao (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily std\+::string Cartao\+::get\+Descricao (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-\Hypertarget{class_cartao_aa4d742d9cc917b3e71777c062839378c}\label{class_cartao_aa4d742d9cc917b3e71777c062839378c} 
+
+
+Obt\'{e}m a descri\c{c}\~{a}o do cart\~{a}o. 
+
+\begin{DoxyReturn}{Retorna}
+Uma string representando a descri\c{c}\~{a}o do cart\~{a}o. 
+\end{DoxyReturn}
+
+
+Definição na linha \mbox{\hyperlink{_cartao_8cpp_source_l00019}{19}} do arquivo \mbox{\hyperlink{_cartao_8cpp_source}{Cartao.\+cpp}}.
+
+\Hypertarget{class_cartao_aec176f7c2acb803af08829e5203af9e5}\label{class_cartao_aec176f7c2acb803af08829e5203af9e5} 
 \index{Cartao@{Cartao}!getNome@{getNome}}
 \index{getNome@{getNome}!Cartao@{Cartao}}
 \doxysubsubsection{\texorpdfstring{getNome()}{getNome()}}
-{\footnotesize\ttfamily string Cartao\+::get\+Nome (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily std\+::string Cartao\+::get\+Nome (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-\Hypertarget{class_cartao_ab3338fcbd613070dab229b392b3e7d15}\label{class_cartao_ab3338fcbd613070dab229b392b3e7d15} 
+
+
+Obt\'{e}m o nome do Cart\~{a}o. 
+
+\begin{DoxyReturn}{Retorna}
+Uma string representando o nome do Cart\~{a}o. 
+\end{DoxyReturn}
+
+
+Definição na linha \mbox{\hyperlink{_cartao_8cpp_source_l00014}{14}} do arquivo \mbox{\hyperlink{_cartao_8cpp_source}{Cartao.\+cpp}}.
+
+\Hypertarget{class_cartao_af8e0344f32ac0be4fbdf1a635be167dd}\label{class_cartao_af8e0344f32ac0be4fbdf1a635be167dd} 
 \index{Cartao@{Cartao}!setCodigo@{setCodigo}}
 \index{setCodigo@{setCodigo}!Cartao@{Cartao}}
 \doxysubsubsection{\texorpdfstring{setCodigo()}{setCodigo()}}
-{\footnotesize\ttfamily void Cartao\+::set\+Codigo (\begin{DoxyParamCaption}\item[{int}]{novo\+Codigo }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Cartao\+::set\+Codigo (\begin{DoxyParamCaption}\item[{std\+::string}]{novo\+Codigo }\end{DoxyParamCaption})}
 
-\Hypertarget{class_cartao_a7b5c0ab3fde0600cb07518af59f051ed}\label{class_cartao_a7b5c0ab3fde0600cb07518af59f051ed} 
+
+
+Define um novo c\'{o}digo para o cart\~{a}o. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em novo\+Codigo} & O novo c\'{o}digo a ser definido. \\
+\hline
+\end{DoxyParams}
+
+
+Definição na linha \mbox{\hyperlink{_cartao_8cpp_source_l00033}{33}} do arquivo \mbox{\hyperlink{_cartao_8cpp_source}{Cartao.\+cpp}}.
+
+\Hypertarget{class_cartao_aa8e2bdb28e8c24f3e8c8a12963d1ab95}\label{class_cartao_aa8e2bdb28e8c24f3e8c8a12963d1ab95} 
 \index{Cartao@{Cartao}!setColuna@{setColuna}}
 \index{setColuna@{setColuna}!Cartao@{Cartao}}
 \doxysubsubsection{\texorpdfstring{setColuna()}{setColuna()}}
-{\footnotesize\ttfamily void Cartao\+::set\+Coluna (\begin{DoxyParamCaption}\item[{string}]{novo\+Coluna }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Cartao\+::set\+Coluna (\begin{DoxyParamCaption}\item[{std\+::string}]{nova\+Coluna }\end{DoxyParamCaption})}
 
-\Hypertarget{class_cartao_a85023d110c3be6fc463aa517a2c758ff}\label{class_cartao_a85023d110c3be6fc463aa517a2c758ff} 
+
+
+Define uma nova coluna para o cart\~{a}o. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em nova\+Coluna} & A nova coluna a ser definida. \\
+\hline
+\end{DoxyParams}
+
+
+Definição na linha \mbox{\hyperlink{_cartao_8cpp_source_l00049}{49}} do arquivo \mbox{\hyperlink{_cartao_8cpp_source}{Cartao.\+cpp}}.
+
+\Hypertarget{class_cartao_aef377bf94b9f6a10ddfd88350aca1f2f}\label{class_cartao_aef377bf94b9f6a10ddfd88350aca1f2f} 
 \index{Cartao@{Cartao}!setDescricao@{setDescricao}}
 \index{setDescricao@{setDescricao}!Cartao@{Cartao}}
 \doxysubsubsection{\texorpdfstring{setDescricao()}{setDescricao()}}
-{\footnotesize\ttfamily void Cartao\+::set\+Descricao (\begin{DoxyParamCaption}\item[{string}]{novo\+Descricao }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Cartao\+::set\+Descricao (\begin{DoxyParamCaption}\item[{std\+::string}]{nova\+Descricao }\end{DoxyParamCaption})}
 
-\Hypertarget{class_cartao_a78bfddd91e6293a8e472c7419fb36f78}\label{class_cartao_a78bfddd91e6293a8e472c7419fb36f78} 
+
+
+Define uma nova descri\c{c}\~{a}o para o cart\~{a}o. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em nova\+Descricao} & A nova descri\c{c}\~{a}o a ser definida. \\
+\hline
+\end{DoxyParams}
+
+
+Definição na linha \mbox{\hyperlink{_cartao_8cpp_source_l00044}{44}} do arquivo \mbox{\hyperlink{_cartao_8cpp_source}{Cartao.\+cpp}}.
+
+\Hypertarget{class_cartao_aa60129da8e7ca2589f31468e66602783}\label{class_cartao_aa60129da8e7ca2589f31468e66602783} 
 \index{Cartao@{Cartao}!setNome@{setNome}}
 \index{setNome@{setNome}!Cartao@{Cartao}}
 \doxysubsubsection{\texorpdfstring{setNome()}{setNome()}}
-{\footnotesize\ttfamily void Cartao\+::set\+Nome (\begin{DoxyParamCaption}\item[{string}]{novo\+Nome }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Cartao\+::set\+Nome (\begin{DoxyParamCaption}\item[{std\+::string}]{novo\+Nome }\end{DoxyParamCaption})}
 
 
 
-The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+Define um novo nome para o cart\~{n}o. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em novo\+Codigo} & O novo nome a ser definido. \\
+\hline
+\end{DoxyParams}
+
+
+Definição na linha \mbox{\hyperlink{_cartao_8cpp_source_l00038}{38}} do arquivo \mbox{\hyperlink{_cartao_8cpp_source}{Cartao.\+cpp}}.
+
+
+
+A documentação para essa classe foi gerada a partir dos seguintes arquivos\+:\begin{DoxyCompactItemize}
 \item 
 C\+:/\+Users/danie/unb\+\_\+local/trabalho-\/tp1/src/entities/\mbox{\hyperlink{_cartao_8hpp}{Cartao.\+hpp}}\item 
-C\+:/\+Users/danie/unb\+\_\+local/trabalho-\/tp1/src/entities/\mbox{\hyperlink{_cartao_8cpp}{Cartao.\+cpp}}\end{DoxyCompactItemize}
+C\+:/\+Users/danie/unb\+\_\+local/trabalho-\/tp1/src/entities/Cartao.\+cpp\end{DoxyCompactItemize}

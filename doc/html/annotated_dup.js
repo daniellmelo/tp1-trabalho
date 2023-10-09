@@ -8,6 +8,5 @@ var annotated_dup =
     [ "Limite", "class_limite.html", "class_limite" ],
     [ "Quadro", "class_quadro.html", "class_quadro" ],
     [ "Senha", "class_senha.html", "class_senha" ],
-    [ "Texto", "class_texto.html", "class_texto" ],
-    [ "Validador", "class_validador.html", null ]
+    [ "Texto", "class_texto.html", "class_texto" ]
 ];
