@@ -37,6 +37,7 @@
 		<Unit filename="src/domains/Codigo.hpp" />
 		<Unit filename="src/domains/Coluna.cpp" />
 		<Unit filename="src/domains/Coluna.hpp" />
+		<Unit filename="src/domains/Dominio.hpp" />
 		<Unit filename="src/domains/Email.cpp" />
 		<Unit filename="src/domains/Email.hpp" />
 		<Unit filename="src/domains/Limite.cpp" />
@@ -45,13 +46,12 @@
 		<Unit filename="src/domains/Senha.hpp" />
 		<Unit filename="src/domains/Texto.cpp" />
 		<Unit filename="src/domains/Texto.hpp" />
-		<Unit filename="src/domains/Validador.hpp" />
 		<Unit filename="src/entities/Cartao.cpp" />
 		<Unit filename="src/entities/Cartao.hpp" />
 		<Unit filename="src/entities/Conta.cpp" />
 		<Unit filename="src/entities/Conta.hpp" />
+		<Unit filename="src/entities/Quadro.cpp" />
 		<Unit filename="src/entities/Quadro.hpp" />
-		<Unit filename="src/entities/Quadros.cpp" />
 		<Unit filename="src/testes/unitarios/dominio/CodigoTeste.cpp" />
 		<Unit filename="src/testes/unitarios/dominio/CodigoTeste.hpp" />
 		<Unit filename="src/testes/unitarios/dominio/ColunaTeste.cpp" />
