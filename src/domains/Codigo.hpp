@@ -4,38 +4,38 @@
 #include <string>
 
 /// @file Codigo.hpp
-/// @brief Este arquivo contém a declaração da classe Codigo.
+/// @brief Este arquivo cont&eacute;m a declara&ccedil;&atilde;o da classe C&oacute;digo.
 ///
 
 /// @class Codigo
-/// @brief Classe que representa um código.
+/// @brief Classe que representa um c&oacute;digo.
 ///
-/// Esta classe representa um código, que é uma sequência de caracteres.
-/// Ela fornece métodos para obter e definir o código, bem como para validar sua formatação.
+/// Esta classe representa um c&oacute;digo, que &eacute; uma sequ&ecirc;ncia de caracteres.
+/// Ela fornece m&eacute;todos para obter e definir o c&oacute;digo, bem como para validar sua formata&ccedil;&atilde;o.
 class Codigo { // 222035625
 public:
-    /// @brief Construtor da classe Codigo.
+    /// @brief Construtor da classe C&oacute;digo.
     ///
-    /// @param codigo A sequência de caracteres que representa o código.
+    /// @param codigo A sequ&ecirc;ncia de caracteres que representa o c&oacute;digo.
     Codigo(std::string codigo);
 
-    /// @brief Obtém o código atual.
+    /// @brief Obt&eacute;m o c&oacute;digo atual.
     ///
-    /// @return Uma string representando o código atual.
+    /// @return Uma string representando o c&oacute;digo atual.
     std::string getCodigo() const;
 
-    /// @brief Define um novo código.
+    /// @brief Define um novo c&oacute;digo.
     ///
-    /// @param novoCodigo O novo código a ser definido.
+    /// @param novoCodigo O novo c&oacute;digo a ser definido.
     void setCodigo(std::string novoCodigo);
 
 private:
-    std::string m_codigo; ///< O código representado como uma sequência de caracteres.
+    std::string m_codigo; ///< O c&oacute;digo representado como uma sequ&ecirc;ncia de caracteres.
 
-    /// @brief Função privada para validar o código.
+    /// @brief Fun&ccedil;&atilde;o privada para validar o c&oacute;digo.
     ///
-    /// Esta função é usada internamente para validar a formatação do código.
+    /// Esta fun&ccedil;&atilde;o &eacute; usada internamente para validar a formata&ccedil;&atilde;o do c&oacute;digo.
     ///
-    /// @param codigo A sequência de caracteres a ser validada como código.
+    /// @param codigo A sequ&ecirc;ncia de caracteres a ser validada como c&oacute;digo.
     void validar(std::string codigo);
 };
