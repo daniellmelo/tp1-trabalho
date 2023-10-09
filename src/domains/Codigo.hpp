@@ -17,6 +17,7 @@ public:
     /// @brief Construtor da classe Codigo.
     ///
     /// @param codigo A sequência de caracteres que representa o código.
+    Codigo();
     Codigo(std::string codigo);
 
     /// @brief Obtém o código atual.
