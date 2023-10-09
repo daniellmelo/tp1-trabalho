@@ -12,7 +12,7 @@
 /// Esta classe representa uma coluna, que pode ser validada de acordo com algum crit&eacute;rio definido.
 class Coluna : virtual public Validador {
 private:
-    std::string coluna; ///< A coluna.
+    std::string m_coluna; ///< A coluna.
 
     /// @brief Fun&ccedil;&atilde;o privada para validar a coluna.
     ///
@@ -23,6 +23,7 @@ private:
     bool validar(std::string coluna);
 
 public:
+    Coluna(std::string coluna);
     /// @brief Define uma nova coluna.
     ///
     /// @param novaColuna A nova sequ&ecirc;ncia de caracteres a ser definida como coluna.

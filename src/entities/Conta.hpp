@@ -45,7 +45,7 @@ class Conta { // 222035625
 
 /// @brief Define um novo nome de usu&aacute;rio para a conta.
 ///
-/// @param novoNome O novo nome de usu&aacute;rio a ser d
+/// @param novoNome O novo nome de usu&aacute;rio a ser definido
         void setNome(std::string novoNome);
 
 /// @brief Define uma nova senha para a conta.
