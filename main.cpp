@@ -1,6 +1,5 @@
 // -*- coding: utf-8 -*-
 #include <iostream>
-#include <locale>
 
 #include "src/entities/Quadro.hpp"
 #include "src/entities/Cartao.hpp"
@@ -52,16 +51,16 @@ int main()
         cout << cartao1.getDescricao() << endl;
         cout << cartao1.getColuna() << endl;
 
-        cout << "---- Alterando dados do cartão..." << endl;
+        cout << "---- Alterando dados do cartao..." << endl;
 
-        cartao1.setCodigo("BB22");
-        cartao1.setNome("Novo nome do cartao");
+        cartao1.setCodigo("BB2kjkj2");
+        /*cartao1.setNome("Novo nome do cartao");
         cartao1.setDescricao("Esse e o novo cartao");
         cartao1.setColuna("EM EXECUCAO");
         cout << cartao1.getCodigo() << endl;
         cout << cartao1.getNome() << endl;
         cout << cartao1.getDescricao() << endl;
-        cout << cartao1.getColuna() << endl;
+        cout << cartao1.getColuna() << endl;*/
     return 0;
 };
 
