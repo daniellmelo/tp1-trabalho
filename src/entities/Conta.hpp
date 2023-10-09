@@ -6,9 +6,12 @@
 #include "../domains/Senha.hpp"
 #include "../domains/Texto.hpp"
 
-/// @brief Classe que representa uma conta de usu&aacute;rio.
+/// @file Conta.hpp
+/// @brief Classe que representa uma Conta de usu&aacute;rio.
+
+/// @class Conta
+/// @brief Classe que representa uma conta.
 ///
-/// Esta classe representa uma conta de usu&aacute;rio que cont&eacute;m informa&ccedil;&otilde;es como email, nome e senha.
 class Conta { // 222035625
     public:
     /// @brief Construtor da classe Conta.
