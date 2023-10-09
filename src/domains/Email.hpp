@@ -2,7 +2,7 @@
 
 #include <string>
 
-#include "Validador.hpp"
+#include "./Dominio.hpp"
 
 /// @file Email.hpp
 /// @brief Este arquivo cont&eacute;m a declara&ccedil;&atilde;o da classe Email.
@@ -13,7 +13,7 @@
 ///
 /// Esta classe representa um endere&ccedil;o de e-mail v&aacute;lido.
 /// Ela fornece m&eacute;todos para definir e obter o endere&ccedil;o de e-mail, bem como para validar sua formata&ccedil;&atilde;o.
-class Email { // 190063882
+class Email : public Dominio{ // 190063882
 public:
     /// @brief Construtor da classe Email.
     ///

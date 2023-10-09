@@ -8,18 +8,18 @@ Coluna::Coluna(std::string coluna){
     } catch (const std::invalid_argument& e) {
         std::cout << e.what() << std::endl;
         throw std::invalid_argument("Valor para coluna invalido.");
-    };
+    }
 
+};
+
+void Coluna::validar(std::string coluna){
+    if(coluna != "SOLICITADO" && coluna != "EM EXECUCAO" && coluna != "CONCLUIDO"){
+        throw std::invalid_argument("Insira uma coluna valida");
+    };
 };
 
 std::string Coluna::getColuna() const{
     return m_coluna;
-};
-
-bool Coluna::validar(std::string coluna){
-    if(coluna != "SOLICITADO" && coluna != "EM EXECUCAO" && coluna != "CONCLUIDO"){
-        throw std::invalid_argument("Insira uma coluna valida");
-    };
 };
 
 void Coluna::setColuna(std::string novaColuna){

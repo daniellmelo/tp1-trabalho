@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Validador.hpp"
+#include "./Dominio.hpp"
 
 /// @file Coluna.hpp
 /// @brief Este arquivo cont&eacute;m a declara&ccedil;&atilde;o da classe Coluna.
@@ -10,18 +10,9 @@
 /// @brief Classe que representa uma coluna.
 ///
 /// Esta classe representa uma coluna, que pode ser validada de acordo com algum crit&eacute;rio definido.
-class Coluna : virtual public Validador {
+class Coluna: public virtual Dominio{
 private:
     std::string m_coluna; ///< A coluna.
-
-    /// @brief Fun&ccedil;&atilde;o privada para validar a coluna.
-    ///
-    /// Esta fun&ccedil;&atilde;o &eacute; usada internamente para validar a coluna de acordo com algum crit&eacute;rio.
-    ///
-    /// @param coluna A sequ&ecirc;ncia de caracteres a ser validada como coluna.
-    /// @return true se a coluna for v&aacute;lida, false caso contr&aacute;rio.
-    bool validar(std::string coluna);
-
 public:
     Coluna(std::string coluna);
     /// @brief Define uma nova coluna.
@@ -33,4 +24,13 @@ public:
     ///
     /// @return Uma string representando a coluna atual.
     std::string getColuna() const;
+
+private:
+    /// @brief Fun&ccedil;&atilde;o para validar a coluna.
+    ///
+    /// Esta fun&ccedil;&atilde;o &eacute; usada internamente para validar a coluna de acordo com algum crit&eacute;rio.
+    ///
+    /// @param coluna A sequ&ecirc;ncia de caracteres a ser validada como coluna.
+    /// @return true se a coluna for v&aacute;lida, false caso contr&aacute;rio.
+    void validar(std::string codigo);
 };

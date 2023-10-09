@@ -1,18 +1,18 @@
 
 #pragma once
 
-#include "Validador.hpp"
+#include "./Dominio.hpp"
 #include <string>
 
 /// @file Senha.hpp
-/// @brief Este arquivo cont&eacute;m a declaração da classe Senha.
+/// @brief Este arquivo cont&eacute;m a declara&ccedil;&atilde;o da classe Senha.
 
 /// @class Senha
 /// @brief Classe que representa uma senha.
 ///
 /// Esta classe representa uma senha, que &eacute; uma sequ&ecirc;ncia de caracteres.
 /// Ela fornece métodos para definir e obter a senha, bem como para valid&aacute;-la.
-class Senha { // 222035625
+class Senha : public Dominio{ // 222035625
 public:
     /// @brief Construtor da classe Senha.
     ///

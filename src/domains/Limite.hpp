@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Validador.hpp"
+#include "./Dominio.hpp"
 
 /// @file Limite.hpp
 /// @brief Este arquivo cont&eacute;m a declara&ccedil;&atilde;o da classe Limite.
@@ -11,7 +11,7 @@
 ///
 /// Esta classe representa um limite, que &eacute; uma sequ&ecirc;ncia de caracteres.
 /// Ela fornece m&eacute;todos para definir e obter o limite, bem como para validar sua formata&ccedil;&atilde;o.
-class Limite {
+class Limite : public Dominio{
 private:
     std::string m_limite; ///< O limite.
 

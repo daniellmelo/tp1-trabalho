@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Validador.hpp"
+#include "./Dominio.hpp"
 
 #include <string>
 
@@ -13,7 +13,7 @@
 ///
 /// Esta classe representa um texto, que &eacute; uma sequ&ecirc;ncia de caracteres.
 /// Ela fornece m&eacute;todos para definir e obter o texto, bem como para validar sua formata&ccedil;&atilde;o.
-class Texto { // 222035625
+class Texto : public Dominio{ // 222035625
 public:
     /// @brief Construtor da classe Texto.
     ///

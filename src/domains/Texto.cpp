@@ -1,4 +1,3 @@
-
 #include "Texto.hpp"
 #include <iostream>
 Texto::Texto(std::string texto){
@@ -10,7 +9,6 @@ Texto::Texto(std::string texto){
         throw std::invalid_argument("Formato de texto inválido.");
     };
 };
-
 
 void Texto::validar(std::string texto){
     // Verificar se o texto tem entre 5 e 30 caracteres
@@ -65,7 +63,6 @@ void Texto::validar(std::string texto){
         prevChar = c;
     }
 };
-
 
 std::string Texto::getTexto() const{
     return m_texto;

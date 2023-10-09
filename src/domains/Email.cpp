@@ -1,6 +1,4 @@
 #include <iostream>
-#include <regex>
-
 #include "Email.hpp"
 
 Email::Email(std::string email){
@@ -26,7 +24,6 @@ void Email::setEmail(std::string novoEmail){
         std::cout << e.what() << std::endl;
     }
 };
-
 
 void Email::validar(std::string email) {
     std::regex emailRegex(R"([a-zA-Z0-9.]{2,10}@[a-zA-Z0-9.]{2,20})");
