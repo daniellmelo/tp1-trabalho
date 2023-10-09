@@ -1,0 +1,5 @@
+warning: source '..\src\entities\Quadros.cpp' is not a readable file or directory... skipping.
+C:/Users/danie/unb_local/trabalho-tp1/src/entities/Cartao.hpp:55: warning: argument 'novoCodigo' of command @param is not found in the argument list of Cartao::setNome(std::string novoNome)
+C:/Users/danie/unb_local/trabalho-tp1/src/entities/Cartao.hpp:55: warning: The following parameter of Cartao::setNome(std::string novoNome) is not documented:
+  parameter 'novoNome'
+C:/Users/danie/unb_local/trabalho-tp1/src/entities/Conta.hpp:16: warning: Conta::Conta has @param documentation sections but no arguments

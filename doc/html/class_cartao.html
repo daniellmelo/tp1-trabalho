@@ -95,34 +95,282 @@ $(document).ready(function(){initNavTree('class_cartao.html',''); initResizable(
   <div class="headertitle"><div class="title">Referência à classe Cartao</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Classe que representa um cart&ntilde;o.  
+ <a href="class_cartao.html#details">Mais...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_cartao_8hpp_source.html">Cartao.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Membros públicos</h2></td></tr>
-<tr class="memitem:ac098e61106c105b9caf651a7963607f7" id="r_ac098e61106c105b9caf651a7963607f7"><td class="memItemLeft" align="right" valign="top"><a id="ac098e61106c105b9caf651a7963607f7" name="ac098e61106c105b9caf651a7963607f7"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>getCodigo</b> ()</td></tr>
-<tr class="separator:ac098e61106c105b9caf651a7963607f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4d742d9cc917b3e71777c062839378c" id="r_aa4d742d9cc917b3e71777c062839378c"><td class="memItemLeft" align="right" valign="top"><a id="aa4d742d9cc917b3e71777c062839378c" name="aa4d742d9cc917b3e71777c062839378c"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>getNome</b> ()</td></tr>
-<tr class="separator:aa4d742d9cc917b3e71777c062839378c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa92d06cfa5a6ac3a56434296f98dfbac" id="r_aa92d06cfa5a6ac3a56434296f98dfbac"><td class="memItemLeft" align="right" valign="top"><a id="aa92d06cfa5a6ac3a56434296f98dfbac" name="aa92d06cfa5a6ac3a56434296f98dfbac"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>getDescricao</b> ()</td></tr>
-<tr class="separator:aa92d06cfa5a6ac3a56434296f98dfbac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b2111495d5ef73f3c03f26deb388917" id="r_a7b2111495d5ef73f3c03f26deb388917"><td class="memItemLeft" align="right" valign="top"><a id="a7b2111495d5ef73f3c03f26deb388917" name="a7b2111495d5ef73f3c03f26deb388917"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>getColuna</b> ()</td></tr>
-<tr class="separator:a7b2111495d5ef73f3c03f26deb388917"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3338fcbd613070dab229b392b3e7d15" id="r_ab3338fcbd613070dab229b392b3e7d15"><td class="memItemLeft" align="right" valign="top"><a id="ab3338fcbd613070dab229b392b3e7d15" name="ab3338fcbd613070dab229b392b3e7d15"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setCodigo</b> (int novoCodigo)</td></tr>
-<tr class="separator:ab3338fcbd613070dab229b392b3e7d15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78bfddd91e6293a8e472c7419fb36f78" id="r_a78bfddd91e6293a8e472c7419fb36f78"><td class="memItemLeft" align="right" valign="top"><a id="a78bfddd91e6293a8e472c7419fb36f78" name="a78bfddd91e6293a8e472c7419fb36f78"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setNome</b> (string novoNome)</td></tr>
-<tr class="separator:a78bfddd91e6293a8e472c7419fb36f78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85023d110c3be6fc463aa517a2c758ff" id="r_a85023d110c3be6fc463aa517a2c758ff"><td class="memItemLeft" align="right" valign="top"><a id="a85023d110c3be6fc463aa517a2c758ff" name="a85023d110c3be6fc463aa517a2c758ff"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setDescricao</b> (string novoDescricao)</td></tr>
-<tr class="separator:a85023d110c3be6fc463aa517a2c758ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b5c0ab3fde0600cb07518af59f051ed" id="r_a7b5c0ab3fde0600cb07518af59f051ed"><td class="memItemLeft" align="right" valign="top"><a id="a7b5c0ab3fde0600cb07518af59f051ed" name="a7b5c0ab3fde0600cb07518af59f051ed"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setColuna</b> (string novoColuna)</td></tr>
-<tr class="separator:a7b5c0ab3fde0600cb07518af59f051ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bbb661b223edfa09ade7098f8d27549" id="r_a5bbb661b223edfa09ade7098f8d27549"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cartao.html#a5bbb661b223edfa09ade7098f8d27549">Cartao</a> (<a class="el" href="class_codigo.html">Codigo</a> codigo, <a class="el" href="class_texto.html">Texto</a> nome, <a class="el" href="class_texto.html">Texto</a> descricao, <a class="el" href="class_coluna.html">Coluna</a> coluna)</td></tr>
+<tr class="memdesc:a5bbb661b223edfa09ade7098f8d27549"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construtor da classe Cart&ntilde;o.  <br /></td></tr>
+<tr class="separator:a5bbb661b223edfa09ade7098f8d27549"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae01acc1da7526afdd2b2219742442366" id="r_ae01acc1da7526afdd2b2219742442366"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cartao.html#ae01acc1da7526afdd2b2219742442366">getCodigo</a> () const</td></tr>
+<tr class="memdesc:ae01acc1da7526afdd2b2219742442366"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obt&eacute;m o c&oacute;digo do cart&ntilde;o.  <br /></td></tr>
+<tr class="separator:ae01acc1da7526afdd2b2219742442366"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec176f7c2acb803af08829e5203af9e5" id="r_aec176f7c2acb803af08829e5203af9e5"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cartao.html#aec176f7c2acb803af08829e5203af9e5">getNome</a> () const</td></tr>
+<tr class="memdesc:aec176f7c2acb803af08829e5203af9e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obt&eacute;m o nome do cart&ntilde;o.  <br /></td></tr>
+<tr class="separator:aec176f7c2acb803af08829e5203af9e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b8cbf085501206318fdeb8bd2451a50" id="r_a6b8cbf085501206318fdeb8bd2451a50"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cartao.html#a6b8cbf085501206318fdeb8bd2451a50">getDescricao</a> () const</td></tr>
+<tr class="memdesc:a6b8cbf085501206318fdeb8bd2451a50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obt&eacute;m a descri&ccedil;&atilde;o do cart&ntilde;o.  <br /></td></tr>
+<tr class="separator:a6b8cbf085501206318fdeb8bd2451a50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23d50192ae5a5200e760259b05bad25c" id="r_a23d50192ae5a5200e760259b05bad25c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cartao.html#a23d50192ae5a5200e760259b05bad25c">getColuna</a> () const</td></tr>
+<tr class="memdesc:a23d50192ae5a5200e760259b05bad25c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obt&eacute;m a coluna do cart&ntilde;o.  <br /></td></tr>
+<tr class="separator:a23d50192ae5a5200e760259b05bad25c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8e0344f32ac0be4fbdf1a635be167dd" id="r_af8e0344f32ac0be4fbdf1a635be167dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cartao.html#af8e0344f32ac0be4fbdf1a635be167dd">setCodigo</a> (std::string novoCodigo)</td></tr>
+<tr class="memdesc:af8e0344f32ac0be4fbdf1a635be167dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define um novo c&oacute;digo para o cart&ntilde;o.  <br /></td></tr>
+<tr class="separator:af8e0344f32ac0be4fbdf1a635be167dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa60129da8e7ca2589f31468e66602783" id="r_aa60129da8e7ca2589f31468e66602783"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cartao.html#aa60129da8e7ca2589f31468e66602783">setNome</a> (std::string novoNome)</td></tr>
+<tr class="memdesc:aa60129da8e7ca2589f31468e66602783"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define um novo nome para o cart&ntilde;o.  <br /></td></tr>
+<tr class="separator:aa60129da8e7ca2589f31468e66602783"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef377bf94b9f6a10ddfd88350aca1f2f" id="r_aef377bf94b9f6a10ddfd88350aca1f2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cartao.html#aef377bf94b9f6a10ddfd88350aca1f2f">setDescricao</a> (std::string novaDescricao)</td></tr>
+<tr class="memdesc:aef377bf94b9f6a10ddfd88350aca1f2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define uma nova descri&ccedil;&atilde;o para o cart&ntilde;o.  <br /></td></tr>
+<tr class="separator:aef377bf94b9f6a10ddfd88350aca1f2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8e2bdb28e8c24f3e8c8a12963d1ab95" id="r_aa8e2bdb28e8c24f3e8c8a12963d1ab95"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cartao.html#aa8e2bdb28e8c24f3e8c8a12963d1ab95">setColuna</a> (std::string novaColuna)</td></tr>
+<tr class="memdesc:aa8e2bdb28e8c24f3e8c8a12963d1ab95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define uma nova coluna para o cart&ntilde;o.  <br /></td></tr>
+<tr class="separator:aa8e2bdb28e8c24f3e8c8a12963d1ab95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Classe que representa um cart&ntilde;o. </p>
+<p>Esta classe representa um cart&ntilde;o que cont&eacute;m informa&ccedil;&otilde;es como nome, descri&ccedil;&atilde;o, c&oacute;digo e coluna. </p>
+</div><h2 class="groupheader">Documentação dos Construtores &amp; Destrutor</h2>
+<a id="a5bbb661b223edfa09ade7098f8d27549" name="a5bbb661b223edfa09ade7098f8d27549"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bbb661b223edfa09ade7098f8d27549">&#9670;&#160;</a></span>Cartao()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Cartao::Cartao </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_codigo.html">Codigo</a>&#160;</td>
+          <td class="paramname"><em>codigo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_texto.html">Texto</a>&#160;</td>
+          <td class="paramname"><em>nome</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_texto.html">Texto</a>&#160;</td>
+          <td class="paramname"><em>descricao</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_coluna.html">Coluna</a>&#160;</td>
+          <td class="paramname"><em>coluna</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construtor da classe Cart&ntilde;o. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">codigo</td><td>O c&oacute;digo do cart&ntilde;o. </td></tr>
+    <tr><td class="paramname">nome</td><td>O nome do cart&ntilde;o. </td></tr>
+    <tr><td class="paramname">descricao</td><td>A descri&ccedil;&atilde;o do cart&ntilde;o. </td></tr>
+    <tr><td class="paramname">coluna</td><td>A coluna do cart&ntilde;o. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentação das funções</h2>
+<a id="ae01acc1da7526afdd2b2219742442366" name="ae01acc1da7526afdd2b2219742442366"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae01acc1da7526afdd2b2219742442366">&#9670;&#160;</a></span>getCodigo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Cartao::getCodigo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Obt&eacute;m o c&oacute;digo do cart&ntilde;o. </p>
+<dl class="section return"><dt>Retorna</dt><dd>Uma string representando o c&oacute;digo do cart&ntilde;o. </dd></dl>
+
+</div>
+</div>
+<a id="a23d50192ae5a5200e760259b05bad25c" name="a23d50192ae5a5200e760259b05bad25c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23d50192ae5a5200e760259b05bad25c">&#9670;&#160;</a></span>getColuna()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Cartao::getColuna </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Obt&eacute;m a coluna do cart&ntilde;o. </p>
+<dl class="section return"><dt>Retorna</dt><dd>Uma string representando a coluna cart&ntilde;o. </dd></dl>
+
+</div>
+</div>
+<a id="a6b8cbf085501206318fdeb8bd2451a50" name="a6b8cbf085501206318fdeb8bd2451a50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b8cbf085501206318fdeb8bd2451a50">&#9670;&#160;</a></span>getDescricao()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Cartao::getDescricao </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Obt&eacute;m a descri&ccedil;&atilde;o do cart&ntilde;o. </p>
+<dl class="section return"><dt>Retorna</dt><dd>Uma string representando a descri&ccedil;&atilde;o do cart&ntilde;o. </dd></dl>
+
+</div>
+</div>
+<a id="aec176f7c2acb803af08829e5203af9e5" name="aec176f7c2acb803af08829e5203af9e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec176f7c2acb803af08829e5203af9e5">&#9670;&#160;</a></span>getNome()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Cartao::getNome </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Obt&eacute;m o nome do cart&ntilde;o. </p>
+<dl class="section return"><dt>Retorna</dt><dd>Uma string representando o nome do cart&ntilde;o. </dd></dl>
+
+</div>
+</div>
+<a id="af8e0344f32ac0be4fbdf1a635be167dd" name="af8e0344f32ac0be4fbdf1a635be167dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8e0344f32ac0be4fbdf1a635be167dd">&#9670;&#160;</a></span>setCodigo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Cartao::setCodigo </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>novoCodigo</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Define um novo c&oacute;digo para o cart&ntilde;o. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">novoCodigo</td><td>O novo c&oacute;digo a ser definido. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa8e2bdb28e8c24f3e8c8a12963d1ab95" name="aa8e2bdb28e8c24f3e8c8a12963d1ab95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8e2bdb28e8c24f3e8c8a12963d1ab95">&#9670;&#160;</a></span>setColuna()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Cartao::setColuna </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>novaColuna</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Define uma nova coluna para o cart&ntilde;o. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">novaColuna</td><td>A nova coluna a ser definida. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aef377bf94b9f6a10ddfd88350aca1f2f" name="aef377bf94b9f6a10ddfd88350aca1f2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef377bf94b9f6a10ddfd88350aca1f2f">&#9670;&#160;</a></span>setDescricao()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Cartao::setDescricao </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>novaDescricao</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Define uma nova descri&ccedil;&atilde;o para o cart&ntilde;o. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">novaDescricao</td><td>A nova descri&ccedil;&atilde;o a ser definida. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa60129da8e7ca2589f31468e66602783" name="aa60129da8e7ca2589f31468e66602783"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa60129da8e7ca2589f31468e66602783">&#9670;&#160;</a></span>setNome()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Cartao::setNome </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>novoNome</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Define um novo nome para o cart&ntilde;o. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">novoCodigo</td><td>O novo nome a ser definido. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>A documentação para esta classe foi gerada a partir dos seguintes ficheiros:<ul>
 <li><a class="el" href="_cartao_8hpp_source.html">Cartao.hpp</a></li>
 <li><b>Cartao.cpp</b></li>
@@ -133,7 +381,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setColuna</b> (string
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_cartao.html">Cartao</a></li>
-    <li class="footer">Gerado em Terça, 3 de Outubro de 2023 22:07:17 para trabalho-tp1 por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Gerado em Segunda, 9 de Outubro de 2023 09:27:49 para trabalho-tp1 por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
