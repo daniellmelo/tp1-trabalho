@@ -1,14 +1,30 @@
 // -*- coding: utf-8 -*-
 #include <iostream>
 
-#include "src/testes/unitarios/entidade/UTCarta.hpp"
-#include "src/testes/unitarios/entidade/UTConta.hpp"
-#include "src/testes/unitarios/entidade/UTQuadro.hpp"
+#include "./src/testes/unitarios/entidade/UTCarta.hpp"
+#include "./src/testes/unitarios/entidade/UTConta.hpp"
+#include "./src/testes/unitarios/entidade/UTQuadro.hpp"
+
+#include "./src/testes/unitarios/dominio/UTCodigo.hpp"
 
 using namespace std;
 
 int main()
 {
+cout << "Teste de dominios" << endl;
+    UTCodigo testeCodigo;
+
+
+    switch(testeCodigo.run()){
+        case UTCodigo::SUCESSO: cout << "\033[32mSUCESSO\033[0m - CODIGO" << endl;
+                                break;
+        case UTCodigo::FALHA  : cout << "\033[31mFALHA\033[0m   - CODIGO" << endl;
+                                break;
+    }
+
+
+
+cout << "Teste de entidades" << endl;
     UTConta testeConta;
 
     switch(testeConta.run()){
