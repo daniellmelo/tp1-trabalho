@@ -6,25 +6,65 @@
 #include "./src/testes/unitarios/entidade/UTQuadro.hpp"
 
 #include "./src/testes/unitarios/dominio/UTCodigo.hpp"
+#include "./src/testes/unitarios/dominio/UTColuna.hpp"
+#include "./src/testes/unitarios/dominio/UTEmail.hpp"
+#include "./src/testes/unitarios/dominio/UTLimite.hpp"
+#include "./src/testes/unitarios/dominio/UTSenha.hpp"
+#include "./src/testes/unitarios/dominio/UTTexto.hpp"
 
 using namespace std;
 
 int main()
 {
-cout << "Teste de dominios" << endl;
+cout << "Testes de dominios" << endl;
     UTCodigo testeCodigo;
-
-
     switch(testeCodigo.run()){
         case UTCodigo::SUCESSO: cout << "\033[32mSUCESSO\033[0m - CODIGO" << endl;
                                 break;
         case UTCodigo::FALHA  : cout << "\033[31mFALHA\033[0m   - CODIGO" << endl;
                                 break;
-    }
+    };
 
+    UTColuna testeColuna;
+    switch(testeColuna.run()){
+        case UTColuna::SUCESSO: cout << "\033[32mSUCESSO\033[0m - COLUNA" << endl;
+                                break;
+        case UTColuna::FALHA  : cout << "\033[31mFALHA\033[0m   - COLUNA" << endl;
+                                break;
+    };
 
+    UTEmail testeEmail;
+    switch(testeEmail.run()){
+        case UTEmail::SUCESSO: cout << "\033[32mSUCESSO\033[0m - EMAIL" << endl;
+                                break;
+        case UTEmail::FALHA  : cout << "\033[31mFALHA\033[0m   - EMAIL" << endl;
+                                break;
+    };
 
-cout << "Teste de entidades" << endl;
+    UTLimite testeLimite;
+    switch(testeLimite.run()){
+        case UTLimite::SUCESSO: cout << "\033[32mSUCESSO\033[0m - LIMITE" << endl;
+                                break;
+        case UTLimite::FALHA  : cout << "\033[31mFALHA\033[0m   - LIMITE" << endl;
+                                break;
+    };
+
+    UTSenha testeSenha;
+    switch(testeSenha.run()){
+        case UTSenha::SUCESSO: cout << "\033[32mSUCESSO\033[0m - SENHA" << endl;
+                                break;
+        case UTSenha::FALHA  : cout << "\033[31mFALHA\033[0m   - SENHA" << endl;
+                                break;
+    };
+
+    UTSenha testeTexto;
+    switch(testeTexto.run()){
+        case UTTexto::SUCESSO: cout << "\033[32mSUCESSO\033[0m - Texto" << endl;
+                                break;
+        case UTTexto::FALHA  : cout << "\033[31mFALHA\033[0m   - Texto" << endl;
+                                break;
+    };
+cout << "Testes de entidades" << endl;
     UTConta testeConta;
 
     switch(testeConta.run()){
