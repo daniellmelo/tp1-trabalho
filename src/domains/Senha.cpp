@@ -7,7 +7,6 @@ Senha::Senha(std::string senha){
         try{
         validar(senha);
         m_senha = senha;
-        std::cout << "Senha valida" << std::endl;
         }catch (std::invalid_argument& e){
             std::cout << e.what() << std::endl;
             throw std::invalid_argument("Formato de senha inválido.");
