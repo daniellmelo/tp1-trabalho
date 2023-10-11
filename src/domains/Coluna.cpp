@@ -27,6 +27,6 @@ void Coluna::setColuna(std::string novaColuna){
         validar(novaColuna);
         m_coluna = novaColuna;
     } catch (std::invalid_argument& e){
-        std::cout << e.what() << std::endl;
+        throw std::invalid_argument(e);
     }
 };
