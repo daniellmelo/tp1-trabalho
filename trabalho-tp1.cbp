@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="include" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -22,6 +23,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -52,24 +54,14 @@
 		<Unit filename="src/entities/Conta.hpp" />
 		<Unit filename="src/entities/Quadro.cpp" />
 		<Unit filename="src/entities/Quadro.hpp" />
-		<Unit filename="src/testes/unitarios/dominio/CodigoTeste.cpp" />
-		<Unit filename="src/testes/unitarios/dominio/CodigoTeste.hpp" />
-		<Unit filename="src/testes/unitarios/dominio/ColunaTeste.cpp" />
-		<Unit filename="src/testes/unitarios/dominio/ColunaTeste.hpp" />
-		<Unit filename="src/testes/unitarios/dominio/EmailTeste.cpp" />
-		<Unit filename="src/testes/unitarios/dominio/EmailTeste.hpp" />
-		<Unit filename="src/testes/unitarios/dominio/LimiteTeste.cpp" />
-		<Unit filename="src/testes/unitarios/dominio/LimiteTeste.hpp" />
-		<Unit filename="src/testes/unitarios/dominio/SenhaTeste.cpp" />
-		<Unit filename="src/testes/unitarios/dominio/SenhaTeste.hpp" />
-		<Unit filename="src/testes/unitarios/dominio/TextoTeste.cpp" />
-		<Unit filename="src/testes/unitarios/dominio/TextoTeste.hpp" />
-		<Unit filename="src/testes/unitarios/entidade/CartaoTeste.cpp" />
-		<Unit filename="src/testes/unitarios/entidade/CartaoTeste.hpp" />
-		<Unit filename="src/testes/unitarios/entidade/ContaTeste.cpp" />
-		<Unit filename="src/testes/unitarios/entidade/ContaTeste.hpp" />
-		<Unit filename="src/testes/unitarios/entidade/QuadroTeste.cpp" />
-		<Unit filename="src/testes/unitarios/entidade/QuadroTeste.hpp" />
+		<Unit filename="src/testes/unitarios/entidade/UTCarta.cpp" />
+		<Unit filename="src/testes/unitarios/entidade/UTCarta.hpp" />
+		<Unit filename="src/testes/unitarios/entidade/UTConta.cpp" />
+		<Unit filename="src/testes/unitarios/entidade/UTConta.hpp" />
+		<Unit filename="src/testes/unitarios/entidade/UTQuadro.cpp" />
+		<Unit filename="src/testes/unitarios/entidade/UTQuadro.hpp" />
+		<Unit filename="src/testes/unitarios/entidade/entities-tests.cpp" />
+		<Unit filename="src/testes/unitarios/entidade/entities-tests.hpp" />
 		<Extensions>
 			<DoxyBlocks>
 				<comment_style block="2" line="2" />
