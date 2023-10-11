@@ -10,7 +10,7 @@
 /// @brief Classe que representa uma coluna.
 ///
 /// Esta classe representa uma coluna, que pode ser validada de acordo com algum crit&eacute;rio definido.
-class Coluna: public virtual Dominio{
+class Coluna: public virtual Dominio{ //222035625
 private:
     std::string m_coluna; ///< A coluna.
 public:

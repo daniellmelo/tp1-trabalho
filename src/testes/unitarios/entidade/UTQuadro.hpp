@@ -2,7 +2,7 @@
 #include <string>
 #include "../../../entities/Quadro.hpp"
 
-class UTQuadro {
+class UTQuadro { //190063882
 	private:
 		const std::string CODIGO_VALIDO = "AA00";
 		const std::string NOME_VALIDO = "Meu quadro";

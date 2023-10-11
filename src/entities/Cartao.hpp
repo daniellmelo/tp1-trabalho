@@ -13,7 +13,7 @@
 ///
 /// Esta classe representa um cart&atilde;o que cont&eacute;m informa&ccedil;&otilde;es como nome, descri&ccedil;&atilde;o, c&oacute;digo e coluna.
 
-class Cartao {
+class Cartao { //190063882
     public:
         /// @brief Construtor da classe Cart&atilde;o.
         ///

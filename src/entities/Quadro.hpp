@@ -12,7 +12,7 @@
 /// @brief Classe que representa um quadro.
 ///
 /// Esta classe representa um quadro que cont&eacute;m informa&ccedil;&otilde;es como nome, descri&ccedil;&atilde;o, c&oacute;digo e limite.
-class Quadro { // 222035625
+class Quadro { // 202037604
 private:
     Texto  m_nome; ///< O nome do quadro.
     Texto  m_descricao; ///< A descri&ccedil;&atilde;o do quadro.

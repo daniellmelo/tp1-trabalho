@@ -11,7 +11,7 @@
 ///
 /// Esta classe representa um limite, que &eacute; uma sequ&ecirc;ncia de caracteres.
 /// Ela fornece m&eacute;todos para definir e obter o limite, bem como para validar sua formata&ccedil;&atilde;o.
-class Limite : public Dominio{
+class Limite : public Dominio{ //190063882
 private:
     std::string m_limite; ///< O limite.
 
