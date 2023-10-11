@@ -2,6 +2,8 @@
 #include <iostream>
 #include <regex>
 
+Codigo::Codigo(){};
+
 Codigo::Codigo(std::string codigo){
     try{
         validar(codigo);
@@ -30,6 +32,6 @@ void Codigo::setCodigo(std::string novoCodigo){
         validar(novoCodigo);
         m_codigo = novoCodigo;
     } catch (std::invalid_argument& e){
-        std::cout << e.what() << std::endl;
+        throw e;
     }
 };

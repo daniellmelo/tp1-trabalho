@@ -14,6 +14,7 @@
 /// Ela fornece m&eacute;todos para obter e definir o c&oacute;digo, bem como para validar sua formata&ccedil;&atilde;o.
 class Codigo : public Dominio{ // 222035625
 public:
+    Codigo();
     /// @brief Construtor da classe C&oacute;digo.
     ///
     /// @param codigo A sequ&ecirc;ncia de caracteres que representa o c&oacute;digo.
