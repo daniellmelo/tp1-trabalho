@@ -1,5 +1,5 @@
 #include "UTCodigo.hpp"
-#include <iostream>
+#include <string>
 
 const std::string UTCodigo::VALOR_VALIDO   = "BB00";   // Defini??????o de constante para evitar n???mero m???gico.
 const std::string UTCodigo::VALOR_INVALIDO = "AA3030";   // Defini??????o de constante para evitar n???mero m???gico.

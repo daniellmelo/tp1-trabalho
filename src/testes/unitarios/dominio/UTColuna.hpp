@@ -1,7 +1,7 @@
 #pragma once
 #include "../../../domains/Coluna.hpp"
 
-class UTColuna {
+class UTColuna { //222035625
 private:
     const static std::string VALOR_VALIDO;   // Defini??????o de constante para evitar n???mero m???gico.
     const static std::string VALOR_INVALIDO;   // Defini??????o de constante para evitar n???mero m???gico.
