@@ -2,8 +2,6 @@
 #include <iostream>
 #include <regex>
 
-Codigo::Codigo(){};
-
 Codigo::Codigo(std::string codigo){
     try{
         validar(codigo);
