@@ -1,4 +1,3 @@
-
 #include "Limite.hpp"
 #include <iostream>
 
@@ -25,7 +24,8 @@ void Limite::setLimite(std::string novoLimite)
         validar(novoLimite);
         m_limite = novoLimite;
     } catch (std::invalid_argument& e){
-        std::cout << e.what() << std::endl;
+        //std::cout << e.what() << std::endl;
+        throw std::invalid_argument(e);
     }
 }
 

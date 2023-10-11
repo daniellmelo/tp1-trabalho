@@ -60,7 +60,8 @@ void Senha::setSenha(std::string novaSenha){
     try {
         validar(novaSenha);
         m_senha = novaSenha;
-    } catch (std::invalid_argument){
-        std::cout << "Senha invalida." << std::endl;
+    } catch (std::invalid_argument &e){
+        //std::cout << "Senha invalida." << std::endl;
+        throw std::invalid_argument(e);
     }
 }

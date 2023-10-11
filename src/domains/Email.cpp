@@ -21,7 +21,8 @@ void Email::setEmail(std::string novoEmail){
         validar(novoEmail);
         m_email = novoEmail;
     } catch (std::invalid_argument& e){
-        std::cout << e.what() << std::endl;
+        // std::cout << e.what() << std::endl;
+        throw std::invalid_argument(e);
     }
 };
 

@@ -73,7 +73,8 @@ void Texto::setTexto(std::string novoTexto){
         validar(novoTexto);
         m_texto = novoTexto;
     } catch (std::invalid_argument& e){
-        std::cout << e.what() << std::endl;
+        throw std::invalid_argument(e);
+        //std::cout << e.what() << std::endl;
     }
 }
 
