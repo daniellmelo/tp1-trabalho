@@ -1,11 +1,9 @@
 // -*- coding: utf-8 -*-
 #include <iostream>
 
-#include "src/entities/Quadro.hpp"
-#include "src/entities/Cartao.hpp"
-#include "src/entities/Conta.hpp"
-
-#include "src/testes/unitarios/entidade/entities-tests.hpp"
+#include "src/testes/unitarios/entidade/UTCarta.hpp"
+#include "src/testes/unitarios/entidade/UTConta.hpp"
+#include "src/testes/unitarios/entidade/UTQuadro.hpp"
 
 using namespace std;
 
@@ -44,7 +42,7 @@ int main()
         break;
     };
 
-    //Criacao de Conta
+    /*Criacao de Conta
         cout << "=-=-=-=-=-= Criando conta =-=-=-=-=-=" << endl;
         Conta c1(string("a.b@example.com"), string("Joao da Silva Jr"), string("xH?1nFm"));
         cout << "NOME: " << c1.getNome() << endl;
@@ -94,7 +92,7 @@ int main()
         cout << cartao1.getCodigo() << endl;
         cout << cartao1.getNome() << endl;
         cout << cartao1.getDescricao() << endl;
-        cout << cartao1.getColuna() << endl;
+        cout << cartao1.getColuna() << endl;*/
     return 0;
 };
 
