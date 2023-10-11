@@ -54,6 +54,18 @@
 		<Unit filename="src/entities/Conta.hpp" />
 		<Unit filename="src/entities/Quadro.cpp" />
 		<Unit filename="src/entities/Quadro.hpp" />
+		<Unit filename="src/testes/unitarios/dominio/UTCodigo.cpp" />
+		<Unit filename="src/testes/unitarios/dominio/UTCodigo.hpp" />
+		<Unit filename="src/testes/unitarios/dominio/UTColuna.cpp" />
+		<Unit filename="src/testes/unitarios/dominio/UTColuna.hpp" />
+		<Unit filename="src/testes/unitarios/dominio/UTEmail.cpp" />
+		<Unit filename="src/testes/unitarios/dominio/UTEmail.hpp" />
+		<Unit filename="src/testes/unitarios/dominio/UTLimite.cpp" />
+		<Unit filename="src/testes/unitarios/dominio/UTLimite.hpp" />
+		<Unit filename="src/testes/unitarios/dominio/UTSenha.cpp" />
+		<Unit filename="src/testes/unitarios/dominio/UTSenha.hpp" />
+		<Unit filename="src/testes/unitarios/dominio/UTTexto.cpp" />
+		<Unit filename="src/testes/unitarios/dominio/UTTexto.hpp" />
 		<Unit filename="src/testes/unitarios/entidade/UTCarta.cpp" />
 		<Unit filename="src/testes/unitarios/entidade/UTCarta.hpp" />
 		<Unit filename="src/testes/unitarios/entidade/UTConta.cpp" />
@@ -61,7 +73,6 @@
 		<Unit filename="src/testes/unitarios/entidade/UTQuadro.cpp" />
 		<Unit filename="src/testes/unitarios/entidade/UTQuadro.hpp" />
 		<Unit filename="src/testes/unitarios/entidade/entities-tests.cpp" />
-		<Unit filename="src/testes/unitarios/entidade/entities-tests.hpp" />
 		<Extensions>
 			<DoxyBlocks>
 				<comment_style block="2" line="2" />
