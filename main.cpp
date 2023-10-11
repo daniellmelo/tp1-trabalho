@@ -13,10 +13,10 @@ int main()
 
     switch(testeConta.run()){
     case UTConta::SUCESSO:
-        cout << "SUCESSO - CONTA" << endl;
+        cout << "\033[32mSUCESSO\033[0m - CONTA\033[0m" << endl;
         break;
     case UTConta::FALHA:
-        cout << "FALHA - CONTA" << endl;
+        cout << "\033[31mFALHA\033[0m - CONTA" << endl;
         break;
     };
 
@@ -24,10 +24,10 @@ int main()
 
     switch(testeQuadro.run()){
     case UTQuadro::SUCESSO:
-        cout << "SUCESSO - QUADRO" << endl;
+        cout << "\033[32mSUCESSO\033[0m - QUADRO" << endl;
         break;
     case UTQuadro::FALHA:
-        cout << "FALHA - QUADRO" << endl;
+        cout << "\033[31mFALHA\033[0m - QUADRO" << endl;
         break;
     };
 
@@ -35,10 +35,10 @@ int main()
 
     switch(testeCartao.run()){
     case UTCartao::SUCESSO:
-        cout << "SUCESSO - CARTAO" << endl;
+        cout << "\033[32mSUCESSO\033[0m - CARTAO" << endl;
         break;
     case UTCartao::FALHA:
-        cout << "FALHA - CARTAO" << endl;
+        cout << "\033[31mFALHA\033[0m - CARTAO" << endl;
         break;
     };
 
